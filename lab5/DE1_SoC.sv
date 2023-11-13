@@ -82,6 +82,10 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
             s_start: begin
                 ns <= s_stall;
             end
+
+            // s_erasestall: 
+            //     if (count == 127) ns <= s_drawline;
+            //     else ns <= s_erasestall;
                 
             s_stall:
                 ns <= s_drawline;
@@ -92,8 +96,11 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
             end
 
             s_finished_line: begin
-                if (read_addr < 600) begin
-                    ns <= s_drawline;
+                if (read_addr < 607) begin
+                    // if (read_addr % 6 >= 2) 
+                    //     ns <= s_erasestall;
+                    // else 
+                        ns <= s_stall;
                 end
                 else ns <= s_done;
             end
@@ -108,6 +115,14 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
             read_addr <= 0;
             line_drawer_reset <= 1'b1;
         end
+        
+        // if (ns == s_stall && ps != s_stall) begin
+        //     count <= 0;
+        // end
+        
+        // if (ps == s_stall) begin
+        //     count <= count + 1'b1;
+        // end
 
         if (ps == s_drawline) begin
             line_drawer_reset <= 1'b0;
@@ -134,6 +149,10 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
     assign y0 = rom_out[27:19];
     assign x1 = rom_out[18:9];
     assign y1 = rom_out[8:0];
+    // assign x0 = 61;
+    // assign y0 = 146;
+    // assign x1 = 180;
+    // assign y1 = 20;
 
 
 endmodule  // DE1_SoC
@@ -165,12 +184,10 @@ module DE1_SoC_tb();
     integer i;
     initial begin
                                 @(posedge CLOCK_50);
-                                @(posedge CLOCK_50);
-                                @(posedge CLOCK_50);
         SW[0] <= 1;             @(posedge CLOCK_50);
         SW[0] <= 0;             @(posedge CLOCK_50);
 
-        for (i = 0; i < 100 * 16384; i++) begin
+        for (i = 0; i < 500; i++) begin
                                 @(posedge CLOCK_50);
         end
         $stop;

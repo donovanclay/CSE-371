@@ -1,26 +1,30 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /DE1_SoC_tb/CLOCK_50
-add wave -noupdate {/DE1_SoC_tb/dut/divided_clocks[13]}
-add wave -noupdate {/DE1_SoC_tb/dut/SW[0]}
-add wave -noupdate /DE1_SoC_tb/dut/lines/reset
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x0
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y0
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x1
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y1
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y
-add wave -noupdate /DE1_SoC_tb/dut/hard_reset
-add wave -noupdate /DE1_SoC_tb/dut/line_drawer_reset
-add wave -noupdate -radix decimal /DE1_SoC_tb/dut/read_addr
-add wave -noupdate -radix unsigned /DE1_SoC_tb/dut/rom_out
-add wave -noupdate /DE1_SoC_tb/dut/line_color
-add wave -noupdate /DE1_SoC_tb/dut/line_done
-add wave -noupdate /DE1_SoC_tb/dut/lines/ps
-add wave -noupdate {/DE1_SoC_tb/LEDR[9]}
-add wave -noupdate /DE1_SoC_tb/i
+add wave -noupdate /line_drawer_tb/clk
+add wave -noupdate /line_drawer_tb/reset
+add wave -noupdate /line_drawer_tb/done
+add wave -noupdate -radix unsigned /line_drawer_tb/x0
+add wave -noupdate -radix unsigned /line_drawer_tb/y0
+add wave -noupdate -radix unsigned /line_drawer_tb/x1
+add wave -noupdate -radix unsigned /line_drawer_tb/y1
+add wave -noupdate -radix unsigned /line_drawer_tb/x
+add wave -noupdate -radix unsigned /line_drawer_tb/y
+add wave -noupdate -radix decimal /line_drawer_tb/dut/my_x0
+add wave -noupdate -radix decimal /line_drawer_tb/dut/my_x1
+add wave -noupdate -radix decimal /line_drawer_tb/dut/my_y0
+add wave -noupdate -radix decimal /line_drawer_tb/dut/my_y1
+add wave -noupdate -radix decimal /line_drawer_tb/dut/delta_x
+add wave -noupdate -radix decimal /line_drawer_tb/dut/delta_y
+add wave -noupdate -radix unsigned /line_drawer_tb/dut/y_step
+add wave -noupdate -radix decimal /line_drawer_tb/dut/error
+add wave -noupdate /line_drawer_tb/dut/error_tracker
+add wave -noupdate /line_drawer_tb/dut/error_bool
+add wave -noupdate /line_drawer_tb/dut/is_steep
+add wave -noupdate /line_drawer_tb/dut/y0vsy1
+add wave -noupdate /line_drawer_tb/i
+add wave -noupdate /line_drawer_tb/dut/ps
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {207 ps} 0}
+WaveRestoreCursors {{Cursor 1} {970 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -36,4 +40,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {998 ps}
+WaveRestoreZoom {0 ps} {42158 ps}

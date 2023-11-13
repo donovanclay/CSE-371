@@ -18,13 +18,21 @@ black = 0
 static_starts = [
     (305, 54),
     (237, 413),
-    (259, 300)
+    (259, 300),
+    (435, 421), 
+    (584, 421),
+    (435, 63),
+    (474, 172)
 ]
 
 static_ends = [
     (387, 420),
     (306, 51),
-    (360, 300)
+    (360, 300),
+    (435, 63),
+    (584, 63),
+    (474, 172),
+    (584, 63)
 ]
 
 start_points = [
@@ -46,6 +54,7 @@ file.write(preface)
 address = 0
 line_number = 0
 while line_number < len(static_starts):
+    
     number = 1
     number = (number << x_bits) + static_starts[line_number][x_coor]
     number = (number << y_bits) + static_starts[line_number][y_coor]
@@ -55,8 +64,11 @@ while line_number < len(static_starts):
         
     print("\t{}    :   {};".format(address, number))
     file.write("\t{}    :   {};\n".format(address, number))
+    print("line number: {}".format(line_number))
     line_number += 1
     address += 1
+    
+
 
 animation_step = 0
 while animation_step < 100:

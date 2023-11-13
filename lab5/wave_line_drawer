@@ -15,7 +15,7 @@ add wave -noupdate -radix decimal /line_drawer_tb/dut/my_y0
 add wave -noupdate -radix decimal /line_drawer_tb/dut/my_y1
 add wave -noupdate -radix decimal /line_drawer_tb/dut/delta_x
 add wave -noupdate -radix decimal /line_drawer_tb/dut/delta_y
-add wave -noupdate -radix decimal /line_drawer_tb/dut/y_step
+add wave -noupdate -radix unsigned /line_drawer_tb/dut/y_step
 add wave -noupdate -radix decimal /line_drawer_tb/dut/error
 add wave -noupdate /line_drawer_tb/dut/error_tracker
 add wave -noupdate /line_drawer_tb/dut/error_bool
@@ -24,7 +24,7 @@ add wave -noupdate /line_drawer_tb/dut/y0vsy1
 add wave -noupdate /line_drawer_tb/i
 add wave -noupdate /line_drawer_tb/dut/ps
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {3750 ps} 0}
+WaveRestoreCursors {{Cursor 1} {970 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -40,4 +40,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {29558 ps}
+WaveRestoreZoom {0 ps} {42158 ps}

@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5
 vclock_divider
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1699844778
+Z2 !s110 1699857768
 !i10b 1
 !s100 ;;cR1iFKl;SYA5AjF[83c3
 Ic]7KP2VdgN8VCEKP[BMEA0
@@ -26,56 +26,56 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1699844778.000000
+Z5 !s108 1699857768.000000
 !s107 ./clock_divider.sv|
 !s90 -reportprogress|300|./clock_divider.sv|
 !i113 1
 Z6 tCvgOpt 0
 vDE1_SoC
 R1
-R2
+Z7 !s110 1699857769
 !i10b 1
 !s100 ]D?ah1F?Cn7US0JU2CShQ0
 IFY7QKjMYW7z`aR9VCQgmA0
 R3
-Z7 !s105 DE1_SoC_sv_unit
+Z8 !s105 DE1_SoC_sv_unit
 S1
 R0
-Z8 w1699829545
-Z9 8./DE1_SoC.sv
-Z10 F./DE1_SoC.sv
+Z9 w1699829545
+Z10 8./DE1_SoC.sv
+Z11 F./DE1_SoC.sv
 L0 21
 R4
 r1
 !s85 0
 31
-R5
-Z11 !s107 ./DE1_SoC.sv|
-Z12 !s90 -reportprogress|300|./DE1_SoC.sv|
+Z12 !s108 1699857769.000000
+Z13 !s107 ./DE1_SoC.sv|
+Z14 !s90 -reportprogress|300|./DE1_SoC.sv|
 !i113 1
 R6
 n@d@e1_@so@c
 vDE1_SoC_tb
 R1
-R2
+R7
 !i10b 1
 !s100 d>dH882XEeQnE4A[dTQdm1
 InLd9b1;UjTnd6<CRZLa^M3
 R3
-R7
+R8
 S1
 R0
-R8
 R9
 R10
+R11
 L0 142
 R4
 r1
 !s85 0
 31
-R5
-R11
 R12
+R13
+R14
 !i113 1
 R6
 n@d@e1_@so@c_tb
@@ -89,7 +89,7 @@ R0
 w1699740362
 8./line_data_rom.v
 F./line_data_rom.v
-Z13 L0 40
+Z15 L0 40
 R4
 r1
 !s85 0
@@ -101,48 +101,48 @@ r1
 R6
 vline_drawer
 R1
-Z14 !s110 1699844777
+Z16 !s110 1699859297
 !i10b 1
-!s100 7b<kkGPK;7oQJoa[cQV`?2
-Id?oi1ULZdIBb1;b^k0O>B1
+!s100 g_=Bei^C0X2j6GzIJl@lW3
+IFR;1M?8_P2eSQ5fYlzkT?3
 R3
-Z15 !s105 line_drawer_sv_unit
+Z17 !s105 line_drawer_sv_unit
 S1
 R0
-Z16 w1699843139
-Z17 8./line_drawer.sv
-Z18 F./line_drawer.sv
+Z18 w1699859292
+Z19 8./line_drawer.sv
+Z20 F./line_drawer.sv
 L0 18
 R4
 r1
 !s85 0
 31
-Z19 !s108 1699844777.000000
-Z20 !s107 ./line_drawer.sv|
-Z21 !s90 -reportprogress|300|./line_drawer.sv|
+Z21 !s108 1699859297.000000
+Z22 !s107 ./line_drawer.sv|
+Z23 !s90 -reportprogress|300|./line_drawer.sv|
 !i113 1
 R6
 vline_drawer_tb
 R1
-R14
+R16
 !i10b 1
-!s100 J>4CX:8G0Hdj6QHCAA0eb1
-IHW0F=Jo<LH_jA0=^K?34f0
+!s100 nao0KD]CRQF=9@iV@U`D31
+IgXb=c_C[ojL55]BX][olE2
 R3
-R15
+R17
 S1
 R0
-R16
-R17
 R18
-L0 147
+R19
+R20
+L0 149
 R4
 r1
 !s85 0
 31
-R19
-R20
 R21
+R22
+R23
 !i113 1
 R6
 vlines_rom
@@ -155,7 +155,7 @@ R0
 w1699755162
 8./lines_rom.v
 F./lines_rom.v
-R13
+R15
 R4
 r1
 !s85 0

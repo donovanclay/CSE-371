@@ -73,9 +73,11 @@ module line_drawer(clk, reset, x0, y0, x1, y1, x, y, done);
                 y_step = (delta_x < delta_y) ? 1 : 0;
             end else begin
                 y_step = (delta_x > delta_y) ? 1 : 0;
+                // y_step = 0;
             end
         end else begin
-            y_step = (delta_y < delta_x) ? 1 : 0;
+            // y_step = (delta_y < delta_x) ? 1 : 0;
+            y_step = (y0 < y1) ? 1 : 0;
         end
     end
 
@@ -158,7 +160,7 @@ module line_drawer_tb();
 
     integer i;
     initial begin
-        reset <= 1;    x0 <= 61; y0 <= 146; x1 <= 180; y1 <= 20;      @(posedge clk);
+        reset <= 1;    x0 <= 305; y0 <= 54; x1 <= 387; y1 <= 420;      @(posedge clk);
         reset <= 0;                                             @(posedge clk);
 
         for (i = 0; i < 400; i++) begin

@@ -4915,3 +4915,212 @@ do runlab_DE1_SoC.do
 # ** Note: $stop    : ./DE1_SoC.sv(176)
 #    Time: 163840450 ps  Iteration: 1  Instance: /DE1_SoC_tb
 # Break in Module DE1_SoC_tb at ./DE1_SoC.sv line 176
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:40:10 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 22:40:10 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:40:12 on Nov 12,2023, Elapsed time: 3:33:52
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work line_drawer_tb 
+# Start time: 22:40:13 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.line_drawer_tb
+# Loading work.line_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./line_drawer.sv(167)
+#    Time: 40150 ps  Iteration: 1  Instance: /line_drawer_tb
+# Break in Module line_drawer_tb at ./line_drawer.sv line 167
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:48 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 22:42:48 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:48 on Nov 12,2023
+# vlog -reportprogress 300 ./VGA_framebuffer.sv 
+# -- Compiling module VGA_framebuffer
+# 
+# Top level modules:
+# 	VGA_framebuffer
+# End time: 22:42:48 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:48 on Nov 12,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 22:42:48 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:48 on Nov 12,2023
+# vlog -reportprogress 300 ./lines_rom.v 
+# -- Compiling module lines_rom
+# 
+# Top level modules:
+# 	lines_rom
+# End time: 22:42:48 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:42:49 on Nov 12,2023
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC_tb
+# End time: 22:42:49 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:42:50 on Nov 12,2023, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 22:42:50 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.DE1_SoC
+# Loading work.clock_divider
+# Loading work.VGA_framebuffer
+# Loading work.line_drawer
+# Loading work.lines_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./DE1_SoC.sv(176)
+#    Time: 163840450 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ./DE1_SoC.sv line 176
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:27 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 22:59:27 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:59:29 on Nov 12,2023, Elapsed time: 0:16:39
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work line_drawer_tb 
+# Start time: 22:59:30 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.line_drawer_tb
+# Loading work.line_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./line_drawer.sv(167)
+#    Time: 40150 ps  Iteration: 1  Instance: /line_drawer_tb
+# Break in Module line_drawer_tb at ./line_drawer.sv line 167
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:03:54 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 23:03:54 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:03:56 on Nov 12,2023, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work line_drawer_tb 
+# Start time: 23:03:56 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.line_drawer_tb
+# Loading work.line_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./line_drawer.sv(168)
+#    Time: 40150 ps  Iteration: 1  Instance: /line_drawer_tb
+# Break in Module line_drawer_tb at ./line_drawer.sv line 168
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/wave_DE1_SoC}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/wave_line_drawer}
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:05:35 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 23:05:35 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:05:36 on Nov 12,2023, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work line_drawer_tb 
+# Start time: 23:05:36 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.line_drawer_tb
+# Loading work.line_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./line_drawer.sv(168)
+#    Time: 40150 ps  Iteration: 1  Instance: /line_drawer_tb
+# Break in Module line_drawer_tb at ./line_drawer.sv line 168
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:53 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 23:06:53 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:06:54 on Nov 12,2023, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work line_drawer_tb 
+# Start time: 23:06:54 on Nov 12,2023
+# Loading sv_std.std
+# Loading work.line_drawer_tb
+# Loading work.line_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./line_drawer.sv(169)
+#    Time: 40150 ps  Iteration: 1  Instance: /line_drawer_tb
+# Break in Module line_drawer_tb at ./line_drawer.sv line 169
+do runlab_line_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:08:17 on Nov 12,2023
+# vlog -reportprogress 300 ./line_drawer.sv 
+# -- Compiling module line_drawer
+# -- Compiling module line_drawer_tb
+# 
+# Top level modules:
+# 	line_drawer_tb
+# End time: 23:08:17 on Nov 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
