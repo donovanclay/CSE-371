@@ -1,0 +1,40 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /FIR_filter_tb/dut/N
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/WRITE_WIDTH
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/DATA_WIDTH
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/ADDR_WIDTH
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/clk
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/reset
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/rd
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/wr
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/empty
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/full
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/w_data
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/r_data
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/w_addr
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/r_addr
+add wave -noupdate /FIR_filter_tb/dut/my_fifo/w_en
+add wave -noupdate -expand /FIR_filter_tb/dut/my_fifo/r_unit/array_reg
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/c_unit/rd_ptr
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/c_unit/rd_ptr_next
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/c_unit/wr_ptr
+add wave -noupdate -radix unsigned /FIR_filter_tb/dut/my_fifo/c_unit/wr_ptr_next
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {296 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 238
+configure wave -valuecolwidth 156
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {1838 ps}

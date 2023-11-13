@@ -1,0 +1,8 @@
+
+State Machine - |hw1p2|ps
+Name ps~6 ps~5 ps~4 
+ps.000 0 0 0 
+ps.001 0 0 1 
+ps.010 0 1 0 
+ps.011 0 1 1 
+ps.100 1 0 0 

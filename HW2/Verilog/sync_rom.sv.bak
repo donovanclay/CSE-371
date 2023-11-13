@@ -1,0 +1,12 @@
+module sync_rom (input logic clk, 
+	input logic [3:0] addr,
+	output logic [6:0] data);
+	// signal declaration
+	logic [6:0] rom [0:15];
+	// load binary values from a dummy text file into ROM
+	initial
+	$readmemb("data.txt", rom);
+	// synchronously reads out data from requested addr
+	always_ff @(posedge clk)
+	data <= rom[addr];
+endmodule // sync_rom

@@ -1,0 +1,35 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /top_level_bs_tb/CLOCK_50
+add wave -noupdate -divider Inputs
+add wave -noupdate /top_level_bs_tb/SW
+add wave -noupdate -radix decimal /top_level_bs_tb/A
+add wave -noupdate {/top_level_bs_tb/KEY[3]}
+add wave -noupdate {/top_level_bs_tb/KEY[0]}
+add wave -noupdate /top_level_bs_tb/reset
+add wave -noupdate /top_level_bs_tb/start
+add wave -noupdate -divider Outputs
+add wave -noupdate -radix unsigned /top_level_bs_tb/dut/loc
+add wave -noupdate /top_level_bs_tb/HEX0
+add wave -noupdate /top_level_bs_tb/HEX1
+add wave -noupdate {/top_level_bs_tb/LEDR[9]}
+add wave -noupdate {/top_level_bs_tb/LEDR[0]}
+add wave -noupdate /top_level_bs_tb/i
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {1561 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 298
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {5408 ps}

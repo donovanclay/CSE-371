@@ -1,0 +1,15 @@
+module addr_counter(
+	input logic clock, reset, 
+	output logic [4:0] addr);
+	
+	logic [4:0] address;
+	
+	always_ff @(posedge clock)
+		if (reset) address <= 0;
+		
+		else if (address == 5'b11111) 
+			address <= 0;
+		else address <= address + 1;
+			
+	
+endmodule 

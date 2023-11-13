@@ -1,0 +1,39 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /DE1_SoC_tb/CLOCK_50
+add wave -noupdate {/DE1_SoC_tb/dut/divided_clocks[13]}
+add wave -noupdate {/DE1_SoC_tb/dut/SW[0]}
+add wave -noupdate /DE1_SoC_tb/dut/lines/reset
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x0
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y0
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x1
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y1
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/x
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/y
+add wave -noupdate /DE1_SoC_tb/dut/hard_reset
+add wave -noupdate /DE1_SoC_tb/dut/line_drawer_reset
+add wave -noupdate -radix decimal /DE1_SoC_tb/dut/read_addr
+add wave -noupdate -radix unsigned /DE1_SoC_tb/dut/rom_out
+add wave -noupdate /DE1_SoC_tb/dut/line_color
+add wave -noupdate /DE1_SoC_tb/dut/line_done
+add wave -noupdate /DE1_SoC_tb/dut/lines/ps
+add wave -noupdate {/DE1_SoC_tb/LEDR[9]}
+add wave -noupdate /DE1_SoC_tb/i
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {207 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {998 ps}

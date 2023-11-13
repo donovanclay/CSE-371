@@ -1,0 +1,335 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab_bs_control.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:48:28 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# ** Error: ./binarysearch_controller.sv(18): (vlog-2730) Undefined variable: 'p'.
+# ** Error: ./binarysearch_controller.sv(37): Illegal assignment expression in continuous assignment.
+# -- Compiling module binarysearch_controller_tb
+# End time: 22:48:29 on Nov 01,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarysearch_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:50:56 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# ** Error: ./binarysearch_controller.sv(37): Illegal assignment expression in continuous assignment.
+# -- Compiling module binarysearch_controller_tb
+# End time: 22:50:56 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarysearch_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:52:04 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# ** Error: (vlog-13069) ./binarysearch_controller.sv(37): near "<=": syntax error, unexpected <=.
+# -- Compiling module binarysearch_controller_tb
+# End time: 22:52:04 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarysearch_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:52:20 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# ** Error: ./binarysearch_controller.sv(38): Illegal assignment expression in continuous assignment.
+# -- Compiling module binarysearch_controller_tb
+# End time: 22:52:20 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarysearch_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:53:02 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# -- Compiling module binarysearch_controller_tb
+# 
+# Top level modules:
+# 	binarysearch_controller_tb
+# End time: 22:53:02 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarysearch_controller_tb 
+# Start time: 22:53:04 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.binarysearch_controller_tb
+# Loading work.binarysearch_controller
+# WARNING: No extended dataflow license exists
+# ** Error: Cannot open macro file: wave_binarysearch_controller
+# Error in macro ./runlab_bs_control.do line 33
+# Cannot open macro file: wave_binarysearch_controller
+#     while executing
+# "do wave_binarysearch_controller"
+add wave -position end  sim:/binarysearch_controller_tb/clk
+add wave -position end  sim:/binarysearch_controller_tb/reset
+add wave -position end  sim:/binarysearch_controller_tb/start
+add wave -position end  sim:/binarysearch_controller_tb/count_zero
+add wave -position end  sim:/binarysearch_controller_tb/done_in
+add wave -position end  sim:/binarysearch_controller_tb/decr
+add wave -position end  sim:/binarysearch_controller_tb/found
+add wave -position end  sim:/binarysearch_controller_tb/load_regs
+add wave -position end  sim:/binarysearch_controller_tb/below
+add wave -position end  sim:/binarysearch_controller_tb/above
+add wave -position end  sim:/binarysearch_controller_tb/A
+add wave -position end  sim:/binarysearch_controller_tb/rom_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/part2/wave_binarysearch_controller}
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:16 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# ** Error: ./binarysearch_controller.sv(1): (vlog-2730) Undefined variable: 'loc'.
+# ** Error: ./binarysearch_controller.sv(1): Identifier must be declared with a port mode: loc.
+# -- Compiling module binarysearch_controller_tb
+# End time: 22:54:16 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./binarysearch_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:54:36 on Nov 01,2023
+# vlog -reportprogress 300 ./binarysearch_controller.sv 
+# -- Compiling module binarysearch_controller
+# -- Compiling module binarysearch_controller_tb
+# 
+# Top level modules:
+# 	binarysearch_controller_tb
+# End time: 22:54:37 on Nov 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 22:54:38 on Nov 01,2023, Elapsed time: 0:01:34
+# Errors: 8, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work binarysearch_controller_tb 
+# Start time: 22:54:38 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.binarysearch_controller_tb
+# Loading work.binarysearch_controller
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./binarysearch_controller.sv(60)
+#    Time: 150 ps  Iteration: 1  Instance: /binarysearch_controller_tb
+# Break in Module binarysearch_controller_tb at ./binarysearch_controller.sv line 60
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:31 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 22:56:31 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:56:36 on Nov 01,2023, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work bs_controller_tb 
+# Start time: 22:56:36 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.bs_controller_tb
+# Loading work.bs_controller
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/clk'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 3
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/reset'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 4
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/start'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 5
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/count_zero'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 6
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/done_in'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 7
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/decr'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 8
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/found'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 9
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/load_regs'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 10
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/below'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 11
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/above'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 12
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/A'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 13
+# ** Error: (vish-4014) No objects found matching '/binarysearch_controller_tb/rom_out'.
+# Executing ONERROR command at macro ./wave_binarysearch_controller line 14
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./bs_controller.sv(60)
+#    Time: 150 ps  Iteration: 1  Instance: /bs_controller_tb
+# Break in Module bs_controller_tb at ./bs_controller.sv line 60
+add wave -position end  sim:/bs_controller_tb/clk
+add wave -position end  sim:/bs_controller_tb/reset
+add wave -position end  sim:/bs_controller_tb/start
+add wave -position end  sim:/bs_controller_tb/count_zero
+add wave -position end  sim:/bs_controller_tb/done_in
+add wave -position end  sim:/bs_controller_tb/decr
+add wave -position end  sim:/bs_controller_tb/found
+add wave -position end  sim:/bs_controller_tb/load_regs
+add wave -position end  sim:/bs_controller_tb/below
+add wave -position end  sim:/bs_controller_tb/above
+add wave -position end  sim:/bs_controller_tb/A
+add wave -position end  sim:/bs_controller_tb/rom_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/part2/wave_binarysearch_controller}
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:56:50 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 22:56:50 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:56:53 on Nov 01,2023, Elapsed time: 0:00:17
+# Errors: 36, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work bs_controller_tb 
+# Start time: 22:56:53 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.bs_controller_tb
+# Loading work.bs_controller
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./bs_controller.sv(60)
+#    Time: 150 ps  Iteration: 1  Instance: /bs_controller_tb
+# Break in Module bs_controller_tb at ./bs_controller.sv line 60
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:10 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# ** Error: ./bs_controller.sv(56): (vlog-2730) Undefined variable: 'a'.
+# ** Error: (vlog-13069) ./bs_controller.sv(56): near "@": syntax error, unexpected '@', expecting ';'.
+# End time: 22:58:11 on Nov 01,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./bs_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:18 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# ** Error: (vlog-13069) ./bs_controller.sv(56): near "@": syntax error, unexpected '@', expecting ';'.
+# End time: 22:58:18 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_control.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./bs_controller.sv""
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:58:33 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 22:58:33 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:58:36 on Nov 01,2023, Elapsed time: 0:01:43
+# Errors: 9, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work bs_controller_tb 
+# Start time: 22:58:36 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.bs_controller_tb
+# Loading work.bs_controller
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./bs_controller.sv(62)
+#    Time: 650 ps  Iteration: 1  Instance: /bs_controller_tb
+# Break in Module bs_controller_tb at ./bs_controller.sv line 62
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:59:17 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 22:59:17 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:59:24 on Nov 01,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work bs_controller_tb 
+# Start time: 22:59:25 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.bs_controller_tb
+# Loading work.bs_controller
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./bs_controller.sv(62)
+#    Time: 650 ps  Iteration: 1  Instance: /bs_controller_tb
+# Break in Module bs_controller_tb at ./bs_controller.sv line 62
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/part2/wave_binarysearch_controller}
+do runlab_bs_control.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:03 on Nov 01,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 23:00:03 on Nov 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:00:08 on Nov 01,2023, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work bs_controller_tb 
+# Start time: 23:00:08 on Nov 01,2023
+# Loading sv_std.std
+# Loading work.bs_controller_tb
+# Loading work.bs_controller
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./bs_controller.sv(62)
+#    Time: 650 ps  Iteration: 1  Instance: /bs_controller_tb
+# Break in Module bs_controller_tb at ./bs_controller.sv line 62
+# End time: 23:28:35 on Nov 01,2023, Elapsed time: 0:28:27
+# Errors: 0, Warnings: 0

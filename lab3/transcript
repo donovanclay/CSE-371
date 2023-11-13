@@ -1,0 +1,888 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab_FIR_filter.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:45 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:41:45 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:45 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:41:45 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:45 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:41:45 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:45 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 15:41:45 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:45 on Oct 27,2023
+# vlog -reportprogress 300 ./FIR_filter.sv 
+# -- Compiling module FIR_filter
+# -- Compiling module FIR_filter_tb
+# 
+# Top level modules:
+# 	FIR_filter_tb
+# End time: 15:41:45 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_filter_tb 
+# Start time: 15:41:46 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.FIR_filter_tb
+# Loading work.FIR_filter
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./FIR_filter.sv(77)
+#    Time: 12550 ps  Iteration: 1  Instance: /FIR_filter_tb
+# Break in Module FIR_filter_tb at ./FIR_filter.sv line 77
+do runlab_FIR_filter.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:34 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:43:34 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:34 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:43:34 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:34 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:43:34 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:34 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 15:43:34 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:34 on Oct 27,2023
+# vlog -reportprogress 300 ./FIR_filter.sv 
+# -- Compiling module FIR_filter
+# -- Compiling module FIR_filter_tb
+# 
+# Top level modules:
+# 	FIR_filter_tb
+# End time: 15:43:34 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:43:36 on Oct 27,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_filter_tb 
+# Start time: 15:43:36 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.FIR_filter_tb
+# Loading work.FIR_filter
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./FIR_filter.sv(77)
+#    Time: 3150 ps  Iteration: 1  Instance: /FIR_filter_tb
+# Break in Module FIR_filter_tb at ./FIR_filter.sv line 77
+do runlab_FIR_filter.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:29 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:44:29 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:30 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:44:30 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:30 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:44:30 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:30 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 15:44:30 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:30 on Oct 27,2023
+# vlog -reportprogress 300 ./FIR_filter.sv 
+# -- Compiling module FIR_filter
+# -- Compiling module FIR_filter_tb
+# 
+# Top level modules:
+# 	FIR_filter_tb
+# End time: 15:44:30 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:44:31 on Oct 27,2023, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_filter_tb 
+# Start time: 15:44:31 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.FIR_filter_tb
+# Loading work.FIR_filter
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./FIR_filter.sv(77)
+#    Time: 1150 ps  Iteration: 1  Instance: /FIR_filter_tb
+# Break in Module FIR_filter_tb at ./FIR_filter.sv line 77
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:37 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:51:38 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:38 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:51:38 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:38 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:51:38 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:38 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# ** Error: (vlog-13069) ./task2_tb.sv(20): near "reset": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) ./task2_tb.sv(25): near "end": syntax error, unexpected end.
+# ** Error: (vlog-13069) ./task2_tb.sv(31): near "end": syntax error, unexpected end.
+# End time: 15:51:38 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_task2 line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./task2_tb.sv""
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:49 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:51:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:49 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:51:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:49 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:51:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:49 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# ** Error: (vlog-13069) ./task2_tb.sv(25): near "end": syntax error, unexpected end.
+# ** Error: (vlog-13069) ./task2_tb.sv(31): near "end": syntax error, unexpected end.
+# End time: 15:51:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_task2 line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./task2_tb.sv""
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:59 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:51:59 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:59 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:51:59 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:59 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:51:59 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:51:59 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:51:59 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:52:01 on Oct 27,2023, Elapsed time: 0:07:30
+# Errors: 11, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb 
+# Start time: 15:52:01 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# ** Error: (vsim-3033) ./task2_tb.sv(8): Instantiation of 'note_rom' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /task2_tb File: ./task2_tb.sv
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_task2 PAUSED at line 31
+do runlab_FIR_filter.txt
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:27 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:52:27 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:28 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:52:28 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:28 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:52:28 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:28 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 15:52:28 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:28 on Oct 27,2023
+# vlog -reportprogress 300 ./note_rom.v 
+# -- Compiling module note_rom
+# 
+# Top level modules:
+# 	note_rom
+# End time: 15:52:28 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:28 on Oct 27,2023
+# vlog -reportprogress 300 ./FIR_filter.sv 
+# -- Compiling module FIR_filter
+# -- Compiling module FIR_filter_tb
+# 
+# Top level modules:
+# 	FIR_filter_tb
+# End time: 15:52:28 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FIR_filter_tb 
+# Start time: 15:52:01 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.FIR_filter_tb
+# Loading work.FIR_filter
+# Loading work.fifo
+# Loading work.fifo_ctrl
+# Loading work.reg_file
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./FIR_filter.sv(77)
+#    Time: 1150 ps  Iteration: 1  Instance: /FIR_filter_tb
+# Break in Module FIR_filter_tb at ./FIR_filter.sv line 77
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:43 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:52:43 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:43 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:52:43 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:43 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:52:44 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:52:44 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:52:44 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:52:45 on Oct 27,2023, Elapsed time: 0:00:44
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb 
+# Start time: 15:52:45 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'task2_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /task2_tb/my_note_rom File: ./note_rom.v
+# ** Error: (vsim-3033) ./note_rom.v(59): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /task2_tb/my_note_rom File: ./note_rom.v
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_task2 PAUSED at line 31
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:53:50 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:53:50 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:53:50 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:53:50 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:53:50 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:53:50 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:53:50 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:53:50 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb 
+# Start time: 15:52:45 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# ** Error: (vsim-3033) ./note_rom.v(59): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /task2_tb/my_note_rom File: ./note_rom.v
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_task2 PAUSED at line 31
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:22 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:54:22 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:22 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:54:22 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:22 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:54:22 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:22 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:54:22 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb 
+# Start time: 15:52:45 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# ** Error: (vsim-3033) ./note_rom.v(59): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /task2_tb/my_note_rom File: ./note_rom.v
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_task2 PAUSED at line 31
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:25 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:56:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:25 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:56:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:25 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:56:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:25 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:56:26 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb -Lf altera_mf_ver 
+# Start time: 15:52:45 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: wave_task2
+# Error in macro ./runlab_task2 line 37
+# Cannot open macro file: wave_task2
+#     while executing
+# "do wave_task2"
+add wave -position end  sim:/task2_tb/clk
+add wave -position end  sim:/task2_tb/reset
+add wave -position end  sim:/task2_tb/read
+add wave -position end  sim:/task2_tb/addr
+add wave -position end  sim:/task2_tb/Romout
+add wave -position end  sim:/task2_tb/CLOCK_50
+add wave -position end  sim:/task2_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/wave_task2}
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:49 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:56:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:49 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:56:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:49 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:56:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:56:49 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:56:49 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:56:51 on Oct 27,2023, Elapsed time: 0:04:06
+# Errors: 7, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb -Lf altera_mf_ver 
+# Start time: 15:56:51 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./task2_tb.sv(34)
+#    Time: 2050 ps  Iteration: 1  Instance: /task2_tb
+# Break in Module task2_tb at ./task2_tb.sv line 34
+add wave -position end  sim:/task2_tb/count1/addr
+add wave -position end  sim:/task2_tb/count1/address
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/wave_task2}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/wave_task2}
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:58:25 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:58:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:58:25 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:58:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:58:25 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:58:26 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:58:26 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:58:26 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:58:27 on Oct 27,2023, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb -Lf altera_mf_ver 
+# Start time: 15:58:27 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./task2_tb.sv(34)
+#    Time: 2050 ps  Iteration: 1  Instance: /task2_tb
+# Break in Module task2_tb at ./task2_tb.sv line 34
+add wave -position end  sim:/task2_tb/count1/clock
+add wave -position end  sim:/task2_tb/count1/reset
+add wave -position end  sim:/task2_tb/count1/enable
+add wave -position end  sim:/task2_tb/count1/addr
+add wave -position end  sim:/task2_tb/count1/address
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab3/wave_task2}
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:59:54 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 15:59:54 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:59:54 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 15:59:54 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:59:54 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 15:59:54 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:59:54 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 15:59:54 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:59:57 on Oct 27,2023, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb -Lf altera_mf_ver 
+# Start time: 15:59:57 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./task2_tb.sv(34)
+#    Time: 2050 ps  Iteration: 1  Instance: /task2_tb
+# Break in Module task2_tb at ./task2_tb.sv line 34
+do runlab_task2
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:25 on Oct 27,2023
+# vlog -reportprogress 300 ./fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# -- Compiling module fifo_ctrl_tb
+# 
+# Top level modules:
+# 	fifo_ctrl_tb
+# End time: 16:01:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:25 on Oct 27,2023
+# vlog -reportprogress 300 ./reg_file.sv 
+# -- Compiling module reg_file
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 16:01:25 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:25 on Oct 27,2023
+# vlog -reportprogress 300 ./addr_counter.sv 
+# -- Compiling module addr_counter
+# 
+# Top level modules:
+# 	addr_counter
+# End time: 16:01:26 on Oct 27,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:01:26 on Oct 27,2023
+# vlog -reportprogress 300 ./task2_tb.sv 
+# -- Compiling module task2_tb
+# 
+# Top level modules:
+# 	task2_tb
+# End time: 16:01:26 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:01:29 on Oct 27,2023, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work task2_tb -Lf altera_mf_ver 
+# Start time: 16:01:29 on Oct 27,2023
+# Loading sv_std.std
+# Loading work.task2_tb
+# Loading work.addr_counter
+# Loading work.note_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./task2_tb.sv(34)
+#    Time: 2050 ps  Iteration: 1  Instance: /task2_tb
+# Break in Module task2_tb at ./task2_tb.sv line 34
+# End time: 16:22:13 on Oct 27,2023, Elapsed time: 0:20:44
+# Errors: 0, Warnings: 0

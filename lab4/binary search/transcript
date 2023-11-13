@@ -1,0 +1,4543 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:00:14 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:00:14 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:00:14 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:00:14 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:00:15 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:00:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:00:15 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level.sv 
+# ** Error: (vlog-7) Failed to open design unit file "./top_level.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 11:00:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_bs_top_level.do line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./top_level.sv""
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:02 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:02:02 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:02 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:02:02 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:02 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:02:02 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:02:02 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:02:03 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:02:04 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# WARNING: No extended dataflow license exists
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/CLOCK50'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 3
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/reset'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 4
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/start'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 5
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 6
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/A'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 7
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/rom_out'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 8
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 9
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/done'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 10
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 11
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 12
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/load_regs'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 13
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 14
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 15
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/ps'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 16
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 18
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 19
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 20
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 21
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 22
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/read_addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 23
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/loc'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 24
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 25
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 26
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/address'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 28
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/q'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 29
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/CLOCK50'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 30
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/reset'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 31
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/start'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 32
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 33
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/A'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 34
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/rom_out'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 35
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 36
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/done'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 37
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 38
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 39
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/load_regs'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 40
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 41
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 42
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/ps'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 43
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 45
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 46
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 47
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 48
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 49
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/read_addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 50
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/loc'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 51
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 52
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 53
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/address'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 55
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/q'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 56
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/CLOCK50'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 57
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/reset'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 58
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/start'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 59
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 60
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/A'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 61
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/rom_out'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 62
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 63
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/done'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 64
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 65
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 66
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/load_regs'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 67
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 68
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 69
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_controller/ps'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 70
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/decr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 72
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/below'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 73
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/above'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 74
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/found'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 75
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count_zero'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 76
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/read_addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 77
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/loc'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 78
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/addr'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 79
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_datapath/count'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 80
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/address'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 82
+# ** Error: (vish-4014) No objects found matching '/top_level_tb/dut/my_rom/q'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 83
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(76)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 76
+add wave -position end  sim:/top_level_bs_tb/CLOCK50
+add wave -position end  sim:/top_level_bs_tb/SW
+add wave -position end  sim:/top_level_bs_tb/KEY
+add wave -position end  sim:/top_level_bs_tb/HEX0
+add wave -position end  sim:/top_level_bs_tb/LEDR
+add wave -position end  sim:/top_level_bs_tb/reset
+add wave -position end  sim:/top_level_bs_tb/start
+add wave -position end  sim:/top_level_bs_tb/A
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/runlab_bs_top_level.do}
+do runlab_bs_top_level.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/runlab_bs_top_level.do}
+do runlab_bs_top_level.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:03:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:03:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:03:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:03:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:03:49 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:03:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:03:49 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:03:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:03:52 on Nov 06,2023, Elapsed time: 0:01:48
+# Errors: 225, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:03:52 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(76)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 76
+# WARNING: No extended dataflow license exists
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:27 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:10:27 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:27 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:10:27 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:27 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:10:27 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:27 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:10:28 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:10:40 on Nov 06,2023, Elapsed time: 0:06:48
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:10:42 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(76)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 76
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:11:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:11:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:11:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:11:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:11:49 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:11:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:11:49 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:11:50 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:11:55 on Nov 06,2023, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:11:55 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(76)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 76
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:12:57 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:12:57 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:12:57 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:12:57 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:12:57 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:12:57 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:12:57 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:12:58 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:13:02 on Nov 06,2023, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:13:02 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/clk
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/reset
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/load_regs
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/decr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/below
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/above
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/found
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/count_zero
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/read_addr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/loc
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/count
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr_below
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr_above
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:13:58 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:13:58 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:13:59 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:13:59 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:13:59 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:13:59 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:13:59 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:13:59 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:14:01 on Nov 06,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:14:02 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:52 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:14:52 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:52 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:14:52 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:53 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:14:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:53 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:14:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:14:58 on Nov 06,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:14:58 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:16:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:16:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:39 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:16:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:39 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:16:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:16:44 on Nov 06,2023, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:16:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in top_level_bs_tb for port 'CLOCK50'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_bs_tb/dut File: ./top_level.sv
+# ** Warning: (vsim-3017) ./top_level_bs.sv(50): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_bs_tb/dut File: ./top_level.sv
+# ** Warning: (vsim-3722) ./top_level_bs.sv(50): [TFMPC] - Missing connection for port 'CLOCK50'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_bs_top_level.do PAUSED at line 30
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:17:41 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:17:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:17:41 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:17:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:17:41 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:17:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:17:41 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs
+# 	top_level_bs_tb
+# End time: 11:17:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:16:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in top_level_bs_tb for port 'CLOCK50'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_bs_tb/dut File: ./top_level.sv
+# ** Warning: (vsim-3017) ./top_level_bs.sv(50): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_bs_tb/dut File: ./top_level.sv
+# ** Warning: (vsim-3722) ./top_level_bs.sv(50): [TFMPC] - Missing connection for port 'CLOCK50'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_bs_top_level.do PAUSED at line 30
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:00 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:19:00 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:00 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:19:00 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:00 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:19:00 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:00 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:19:00 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:16:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vsim-8378) ./top_level_bs.sv(50): Port size (10) does not match connection size (8) for implicit .name connection port 'SW'. The port definition is at: ./top_level_bs.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /top_level_bs_tb/dut File: ./top_level_bs.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_bs_top_level.do PAUSED at line 30
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:29:14 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:29:15 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:29:15 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:29:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:29:15 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:29:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:29:15 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:29:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:16:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vish-4014) No objects found matching '/top_level_bs_tb/CLOCK50'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 3
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+DO runlab_bs_datapath.do
+# invalid command name "DO"
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:25 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:31:26 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:26 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:31:26 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:26 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:31:26 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:31:26 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:31:26 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:31:28 on Nov 06,2023, Elapsed time: 0:14:44
+# Errors: 7, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:31:31 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: (vish-4014) No objects found matching '/top_level_bs_tb/CLOCK50'.
+# Executing ONERROR command at macro ./wave_bs_top_level line 3
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+add wave -position end  sim:/top_level_bs_tb/CLOCK_50
+add wave -position end  sim:/top_level_bs_tb/SW
+add wave -position end  sim:/top_level_bs_tb/KEY
+add wave -position end  sim:/top_level_bs_tb/HEX0
+add wave -position end  sim:/top_level_bs_tb/HEX1
+add wave -position end  sim:/top_level_bs_tb/LEDR
+add wave -position end  sim:/top_level_bs_tb/reset
+add wave -position end  sim:/top_level_bs_tb/start
+add wave -position end  sim:/top_level_bs_tb/A
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:00 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:41:01 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:01 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:41:01 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:01 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:41:01 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:41:01 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:41:02 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:41:08 on Nov 06,2023, Elapsed time: 0:09:37
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:41:09 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/load_regs
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/decr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/below
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/above
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/found
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/count_zero
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/read_addr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/loc
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/count
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr_below
+add wave -position end  sim:/top_level_bs_tb/dut/my_datapath/addr_above
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:20 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:43:20 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:20 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:43:20 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:20 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:43:20 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:20 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:43:20 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:43:23 on Nov 06,2023, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:43:23 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/clk
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/reset
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/start
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/count_zero
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/A
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/rom_out
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/addr
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/done
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/decr
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/found
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/load_regs
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/below
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/above
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/ps
+add wave -position end  sim:/top_level_bs_tb/dut/my_controller/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:44:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:44:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:44:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:44:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:44:43 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:44:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:44:43 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:44:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:44:46 on Nov 06,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:44:46 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:46:12 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:46:12 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:46:12 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:46:12 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:46:12 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:46:12 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:46:12 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:46:13 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 11:46:21 on Nov 06,2023, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:46:21 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 11:59:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 11:59:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:43 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 11:59:44 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:44 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 11:59:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 11:59:46 on Nov 06,2023, Elapsed time: 0:13:25
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 11:59:48 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:10 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:00:10 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:11 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:00:11 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:11 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:00:11 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:11 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:00:11 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:00:13 on Nov 06,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:00:13 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:03:23 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:03:23 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:03:23 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:03:23 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:03:23 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:03:23 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:03:23 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:03:23 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:03:46 on Nov 06,2023, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:03:47 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:04:40 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:04:40 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:04:40 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:04:40 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:04:40 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:04:40 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:04:41 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:04:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:04:44 on Nov 06,2023, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:04:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+add wave -position end  sim:/top_level_bs_tb/dut/loc
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:06:18 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:06:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:06:18 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:06:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:06:18 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:06:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:06:18 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:06:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:06:20 on Nov 06,2023, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:06:20 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+add wave -position end  sim:/top_level_bs_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:37 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:07:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:37 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:07:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:37 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:07:38 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:07:38 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:07:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:07:41 on Nov 06,2023, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:07:41 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(77)
+#    Time: 2350 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 77
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:09:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:09:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:39 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:09:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:40 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:09:40 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:09:50 on Nov 06,2023, Elapsed time: 0:02:09
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:09:50 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(83)
+#    Time: 3150 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 83
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:11:32 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:11:32 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:11:33 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:11:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:11:33 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:11:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:11:33 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:11:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:12:01 on Nov 06,2023, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:12:02 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(83)
+#    Time: 3850 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 83
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:12:34 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:12:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:12:34 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:12:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:12:34 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:12:35 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:12:35 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:12:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:12:42 on Nov 06,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:12:42 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(83)
+#    Time: 3850 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 83
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:13:44 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:13:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:13:44 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:13:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:13:44 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:13:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:13:44 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:13:45 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:13:50 on Nov 06,2023, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:13:50 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(91)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 91
+do runlab_bs_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:14:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 12:14:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:14:43 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 12:14:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:14:43 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 12:14:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:14:43 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_bs.sv 
+# -- Compiling module top_level_bs
+# -- Compiling module top_level_bs_tb
+# 
+# Top level modules:
+# 	top_level_bs_tb
+# End time: 12:14:43 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:14:52 on Nov 06,2023, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_bs_tb -Lf altera_mf_ver 
+# Start time: 12:14:52 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_bs_tb
+# Loading work.top_level_bs
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading work.seg7
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_bs.sv(91)
+#    Time: 5150 ps  Iteration: 1  Instance: /top_level_bs_tb
+# Break in Module top_level_bs_tb at ./top_level_bs.sv line 91
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_bs_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:04 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# ** Error: ./counter_datapath.sv(5): In, out, or inout does not appear in port list: A_out.
+# End time: 15:15:04 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_counter_top_level.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter_datapath.sv""
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:48 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:15:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:48 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# ** Error: ./counter_controller.sv(14): (vlog-2730) Undefined variable: 'A'.
+# ** Error: ./counter_controller.sv(29): (vlog-2730) Undefined variable: 'A'.
+# End time: 15:15:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_counter_top_level.do line 19
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./counter_controller.sv""
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:48 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:16:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:48 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:16:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:16:48 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:16:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:16:50 on Nov 06,2023, Elapsed time: 3:01:58
+# Errors: 9, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:16:51 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# ** Error: Cannot open macro file: wave_counter_top_level
+# Error in macro ./runlab_counter_top_level.do line 35
+# Cannot open macro file: wave_counter_top_level
+#     while executing
+# "do wave_counter_top_level"
+add wave -position end  sim:/top_level_task1_tb/CLOCK_50
+add wave -position end  sim:/top_level_task1_tb/SW
+add wave -position end  sim:/top_level_task1_tb/KEY
+add wave -position end  sim:/top_level_task1_tb/HEX0
+add wave -position end  sim:/top_level_task1_tb/HEX1
+add wave -position end  sim:/top_level_task1_tb/LEDR
+add wave -position end  sim:/top_level_task1_tb/reset
+add wave -position end  sim:/top_level_task1_tb/start
+add wave -position end  sim:/top_level_task1_tb/A
+add wave -position end  sim:/top_level_task1_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:17:15 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:17:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:17:15 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:17:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:17:16 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:17:16 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:17:17 on Nov 06,2023, Elapsed time: 0:00:26
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:17:17 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:18:17 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:18:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:18:17 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:18:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:18:17 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:18:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:18:19 on Nov 06,2023, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:18:19 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:20:31 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:20:31 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:20:31 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:20:31 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:20:31 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:20:31 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:20:34 on Nov 06,2023, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:20:35 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:21:35 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:21:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:21:35 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:21:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:21:35 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:21:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:21:47 on Nov 06,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:21:47 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+add wave -position end  sim:/top_level_task1_tb/dut/result
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:23:33 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:23:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:23:33 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:23:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:23:34 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:23:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:23:36 on Nov 06,2023, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:23:36 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+add wave -position end  sim:/top_level_task1_tb/dut/SW
+add wave -position end  sim:/top_level_task1_tb/dut/KEY
+add wave -position end  sim:/top_level_task1_tb/dut/HEX0
+add wave -position end  sim:/top_level_task1_tb/dut/HEX1
+add wave -position end  sim:/top_level_task1_tb/dut/LEDR
+add wave -position end  sim:/top_level_task1_tb/dut/clk
+add wave -position end  sim:/top_level_task1_tb/dut/reset
+add wave -position end  sim:/top_level_task1_tb/dut/start
+add wave -position end  sim:/top_level_task1_tb/dut/done_counter
+add wave -position end  sim:/top_level_task1_tb/dut/A
+add wave -position end  sim:/top_level_task1_tb/dut/clear_result
+add wave -position end  sim:/top_level_task1_tb/dut/load_a
+add wave -position end  sim:/top_level_task1_tb/dut/right_shift
+add wave -position end  sim:/top_level_task1_tb/dut/incr
+add wave -position end  sim:/top_level_task1_tb/dut/result
+add wave -position end  sim:/top_level_task1_tb/dut/A_in
+add wave -position end  sim:/top_level_task1_tb/dut/A_out
+add wave -position end  sim:/top_level_task1_tb/dut/hex_task_1_0
+add wave -position end  sim:/top_level_task1_tb/dut/hex_task_1_1
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:26:36 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:26:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:26:36 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:26:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:26:36 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:26:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:26:38 on Nov 06,2023, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:26:38 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+add wave -position 16  sim:/top_level_task1_tb/dut/my_count_controller/ps
+add wave -position 17  sim:/top_level_task1_tb/dut/my_count_controller/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_counter_top_level}
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:44 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:29:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:44 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:29:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:44 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:29:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:29:46 on Nov 06,2023, Elapsed time: 0:03:08
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:29:46 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(77)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 77
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:05 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:33:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:05 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:33:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:05 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:33:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:33:11 on Nov 06,2023, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:33:11 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(84)
+#    Time: 2550 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 84
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:27 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:41:28 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:28 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:41:28 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:28 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# ** Warning: ./top_level_task1.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ./top_level_task1.sv(78): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:41:28 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# End time: 15:41:30 on Nov 06,2023, Elapsed time: 0:08:19
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:41:31 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(84)
+#    Time: 2550 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 84
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:45:32 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:45:32 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:45:32 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:45:33 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:45:33 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:45:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:45:35 on Nov 06,2023, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:45:35 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(84)
+#    Time: 2550 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 84
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:46:17 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:46:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:46:17 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:46:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:46:17 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:46:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:46:21 on Nov 06,2023, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:46:21 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(85)
+#    Time: 2650 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 85
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:48:52 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:48:52 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:48:52 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:48:52 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:48:52 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:48:52 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:48:59 on Nov 06,2023, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:49:00 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(87)
+#    Time: 2750 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 87
+do runlab_counter_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:45 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 15:49:45 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:45 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 15:49:45 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:45 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task1.sv 
+# -- Compiling module top_level_task1
+# -- Compiling module top_level_task1_tb
+# 
+# Top level modules:
+# 	top_level_task1_tb
+# End time: 15:49:45 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:49:54 on Nov 06,2023, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task1_tb -Lf altera_mf_ver 
+# Start time: 15:49:54 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task1_tb
+# Loading work.top_level_task1
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task1.sv(90)
+#    Time: 3050 ps  Iteration: 1  Instance: /top_level_task1_tb
+# Break in Module top_level_task1_tb at ./top_level_task1.sv line 90
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:37 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:03:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:37 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:03:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:38 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:03:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:38 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:03:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:38 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:03:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:38 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:03:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:38 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# ** Error: ./top_level_task2.sv(82): (vlog-2730) Undefined variable: 'P'.
+# ** Error: (vlog-13069) ./top_level_task2.sv(82): near "=": syntax error, unexpected '=', expecting ++ or --.
+# End time: 16:03:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_task2_top_level.do line 24
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./top_level_task2.sv""
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:03:55 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:03:55 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:04:05 on Nov 06,2023, Elapsed time: 0:14:11
+# Errors: 5, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:04:06 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: wave_task2_top_level
+# Error in macro ./runlab_task2_top_level.do line 39
+# Cannot open macro file: wave_task2_top_level
+#     while executing
+# "do wave_task2_top_level"
+add wave -position end  sim:/top_level_task2_tb/CLOCK_50
+add wave -position end  sim:/top_level_task2_tb/SW
+add wave -position end  sim:/top_level_task2_tb/KEY
+add wave -position end  sim:/top_level_task2_tb/HEX0
+add wave -position end  sim:/top_level_task2_tb/HEX1
+add wave -position end  sim:/top_level_task2_tb/LEDR
+add wave -position end  sim:/top_level_task2_tb/reset
+add wave -position end  sim:/top_level_task2_tb/start
+add wave -position end  sim:/top_level_task2_tb/which_task
+add wave -position end  sim:/top_level_task2_tb/A
+add wave -position end  sim:/top_level_task2_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:36 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:04:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:36 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:04:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:36 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:04:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:36 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:04:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:36 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:04:37 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:37 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:04:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:04:37 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:04:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:04:39 on Nov 06,2023, Elapsed time: 0:00:33
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:04:39 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(96)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 96
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:48 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:06:49 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:06:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:06:55 on Nov 06,2023, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:06:55 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(96)
+#    Time: 2250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 96
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:53 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:09:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:53 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:09:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:53 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:09:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:53 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:09:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:54 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:09:54 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:54 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:09:54 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:09:54 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:09:54 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:09:59 on Nov 06,2023, Elapsed time: 0:03:04
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:09:59 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(100)
+#    Time: 1750 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 100
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:37 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:10:37 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:10:38 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:10:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:10:40 on Nov 06,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:10:41 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(100)
+#    Time: 1950 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 100
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:15:07 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:15:07 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:07 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:15:07 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:15:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:15:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:15:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:15:08 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:15:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:15:10 on Nov 06,2023, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:15:10 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(109)
+#    Time: 3650 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 109
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:33 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:16:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:33 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:16:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:33 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:16:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:33 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:16:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:34 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:16:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:34 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:16:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:34 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:16:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:16:36 on Nov 06,2023, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:16:36 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(109)
+#    Time: 4350 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 109
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:46 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:19:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:46 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:19:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:46 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:19:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:47 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:19:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:47 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:19:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:47 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:19:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:19:47 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:19:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:19:51 on Nov 06,2023, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:19:52 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:21:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:08 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:21:09 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:21:12 on Nov 06,2023, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:21:12 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+add wave -position end  sim:/top_level_task2_tb/dut/loc
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:23:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:23:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:23:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:15 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:23:15 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:16 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:23:16 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:16 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:23:16 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:16 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:23:16 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:23:18 on Nov 06,2023, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:23:18 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+add wave -position end  sim:/top_level_task2_tb/dut/my_datapath/loc
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:05 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:25:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:05 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:25:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:05 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:25:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:05 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:25:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:06 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:25:06 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:06 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:25:06 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:06 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:25:06 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:25:08 on Nov 06,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:25:08 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+add wave -position end  sim:/top_level_task2_tb/dut/my_controller/A
+add wave -position end  sim:/top_level_task2_tb/dut/my_controller/addr
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:25:46 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:25:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:25:48 on Nov 06,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:25:48 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+add wave -position end  sim:/top_level_task2_tb/dut/my_controller/below
+add wave -position end  sim:/top_level_task2_tb/dut/my_controller/above
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:26:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:26:41 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:26:42 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:26:44 on Nov 06,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:26:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:27:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:27:34 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:27:35 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 16:27:51 on Nov 06,2023, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:27:51 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:31:39 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 16:31:39 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:31:44 on Nov 06,2023, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 16:31:44 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4250 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:08 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 17:00:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:08 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 17:00:08 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:08 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 17:00:09 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:09 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 17:00:09 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:09 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 17:00:09 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:09 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 17:00:09 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:09 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 17:00:09 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:00:26 on Nov 06,2023, Elapsed time: 0:28:42
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 17:00:26 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4350 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:49 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 17:00:49 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:00:57 on Nov 06,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 17:00:57 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4550 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:17 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 17:01:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:17 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 17:01:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:17 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 17:01:17 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:17 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 17:01:18 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:18 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 17:01:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:18 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 17:01:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:01:18 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 17:01:18 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:01:24 on Nov 06,2023, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 17:01:24 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4450 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/binary search/wave_task2_top_level}
+do runlab_task2_top_level.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./basic_D_FF.sv 
+# -- Compiling module basic_D_FF
+# 
+# Top level modules:
+# 	basic_D_FF
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_datapath.sv 
+# -- Compiling module bs_datapath
+# -- Compiling module bs_datapath_tb
+# 
+# Top level modules:
+# 	bs_datapath_tb
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./bs_controller.sv 
+# -- Compiling module bs_controller
+# -- Compiling module bs_controller_tb
+# 
+# Top level modules:
+# 	bs_controller_tb
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_controller.sv 
+# -- Compiling module counter_controller
+# 
+# Top level modules:
+# 	counter_controller
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./counter_datapath.sv 
+# -- Compiling module counter_datapath
+# 
+# Top level modules:
+# 	counter_datapath
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 17:02:35 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:02:35 on Nov 06,2023
+# vlog -reportprogress 300 ./top_level_task2.sv 
+# -- Compiling module top_level_task2
+# -- Compiling module top_level_task2_tb
+# 
+# Top level modules:
+# 	top_level_task2_tb
+# End time: 17:02:36 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:02:38 on Nov 06,2023, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work top_level_task2_tb -Lf altera_mf_ver 
+# Start time: 17:02:38 on Nov 06,2023
+# Loading sv_std.std
+# Loading work.top_level_task2_tb
+# Loading work.top_level_task2
+# Loading work.basic_D_FF
+# Loading work.counter_controller
+# Loading work.counter_datapath
+# Loading work.seg7
+# Loading work.rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.bs_controller
+# Loading work.bs_datapath
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./top_level_task2.sv(111)
+#    Time: 4450 ps  Iteration: 1  Instance: /top_level_task2_tb
+# Break in Module top_level_task2_tb at ./top_level_task2.sv line 111
+# End time: 18:03:17 on Nov 06,2023, Elapsed time: 1:00:39
+# Errors: 0, Warnings: 0

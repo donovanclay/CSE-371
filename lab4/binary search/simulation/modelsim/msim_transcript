@@ -1,0 +1,59 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/donov/OneDrive\ -\ donovan.clay/OneDrive/1)\ School/2023-24\ UW/1)\ Fall/CSE\ 371/lab1 {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1/detectorFSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:09 on Sep 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1" C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1/detectorFSM.sv 
+# -- Compiling module detectorFSM
+# -- Compiling module detectorFSM_tb
+# 
+# Top level modules:
+# 	detectorFSM_tb
+# End time: 13:35:10 on Sep 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.detectorFSM
+# vsim work.detectorFSM 
+# Start time: 13:36:44 on Sep 30,2023
+# Loading sv_std.std
+# Loading work.detectorFSM
+vsim work.detectorFSM_tb
+# End time: 13:36:55 on Sep 30,2023, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim work.detectorFSM_tb 
+# Start time: 13:36:56 on Sep 30,2023
+# Loading sv_std.std
+# Loading work.detectorFSM_tb
+# Loading work.detectorFSM
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/detectorFSM_tb/dut/clk
+add wave -position end  sim:/detectorFSM_tb/dut/reset
+add wave -position end  sim:/detectorFSM_tb/dut/outer
+add wave -position end  sim:/detectorFSM_tb/dut/inner
+add wave -position end  sim:/detectorFSM_tb/dut/enter
+add wave -position end  sim:/detectorFSM_tb/dut/exit
+add wave -position end  sim:/detectorFSM_tb/dut/ps
+add wave -position end  sim:/detectorFSM_tb/dut/ns
+add wave -position end  sim:/detectorFSM_tb/dut/sensors
+run -all
+# ** Note: $stop    : C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1/detectorFSM.sv(87)
+#    Time: 1050 ps  Iteration: 1  Instance: /detectorFSM_tb
+# Break in Module detectorFSM_tb at C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1/detectorFSM.sv line 87
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1/wave_detectorFSM}
+run runlab
+# Invalid time value: runlab
+do runlab
+# Cannot open macro file: runlab
+# End time: 13:42:33 on Sep 30,2023, Elapsed time: 0:05:37
+# Errors: 2, Warnings: 1

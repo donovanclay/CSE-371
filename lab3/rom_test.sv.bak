@@ -1,0 +1,16 @@
+module rom_test (CLOCK_50, SW, LEDR);
+	input logic CLOCK_50;
+	input logic [9:0] SW;
+	input logic [9:0] LEDR;
+
+	logic [16:0] address;
+	logic [23:0] data;
+	
+	assign address = {{7{1'b0}}, SW[9:0]};
+	
+	assign LEDR[9:0] = data[9:0];
+	
+	note_rom dut(CLOCK_50, address, data);	
+	
+
+endmodule 

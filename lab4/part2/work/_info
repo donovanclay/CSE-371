@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab4/part2
+vbinarysearch_controller
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1698904477
+!i10b 1
+!s100 3]G<RO:`;o4Hi[5Z[PKRH2
+I9=?P;0BCORRACVQ0SCf6[1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 binarysearch_controller_sv_unit
+S1
+R0
+Z5 w1698904473
+Z6 8./binarysearch_controller.sv
+Z7 F./binarysearch_controller.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1698904476.000000
+Z10 !s107 ./binarysearch_controller.sv|
+Z11 !s90 -reportprogress|300|./binarysearch_controller.sv|
+!i113 1
+Z12 tCvgOpt 0
+vbinarysearch_controller_tb
+R1
+R2
+!i10b 1
+!s100 nW;nzD?5]Q^c:`?ZL_Z?]2
+I0kU772N79XCD2k=45kTb30
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+Z13 L0 42
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vbs_controller
+R1
+Z14 !s110 1698904803
+!i10b 1
+!s100 X@TV_0b@:aOf1EjdJ:CVV1
+InMh^bKB@g31G[]]CJL2]f1
+R3
+Z15 !s105 bs_controller_sv_unit
+S1
+R0
+Z16 w1698904795
+Z17 8./bs_controller.sv
+Z18 F./bs_controller.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z19 !s108 1698904803.000000
+Z20 !s107 ./bs_controller.sv|
+Z21 !s90 -reportprogress|300|./bs_controller.sv|
+!i113 1
+R12
+vbs_controller_tb
+R1
+R14
+!i10b 1
+!s100 =_Yf=`:Oc]aoBTmeH`7hI3
+IgEb=<?`bDCB_C::9WP`ba1
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+R13
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12

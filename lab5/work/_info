@@ -1,0 +1,191 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5
+vclock_divider
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1699844778
+!i10b 1
+!s100 ;;cR1iFKl;SYA5AjF[83c3
+Ic]7KP2VdgN8VCEKP[BMEA0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 clock_divider_sv_unit
+S1
+R0
+w1699768560
+8./clock_divider.sv
+F./clock_divider.sv
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1699844778.000000
+!s107 ./clock_divider.sv|
+!s90 -reportprogress|300|./clock_divider.sv|
+!i113 1
+Z6 tCvgOpt 0
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 ]D?ah1F?Cn7US0JU2CShQ0
+IFY7QKjMYW7z`aR9VCQgmA0
+R3
+Z7 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z8 w1699829545
+Z9 8./DE1_SoC.sv
+Z10 F./DE1_SoC.sv
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 ./DE1_SoC.sv|
+Z12 !s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R6
+n@d@e1_@so@c
+vDE1_SoC_tb
+R1
+R2
+!i10b 1
+!s100 d>dH882XEeQnE4A[dTQdm1
+InLd9b1;UjTnd6<CRZLa^M3
+R3
+R7
+S1
+R0
+R8
+R9
+R10
+L0 142
+R4
+r1
+!s85 0
+31
+R5
+R11
+R12
+!i113 1
+R6
+n@d@e1_@so@c_tb
+vline_data_rom
+!s110 1699826395
+!i10b 1
+!s100 dQ3zE1SH[[HT2<5HCe`GA2
+I3`3;V:@ol<W;TIn8=Tae<0
+R3
+R0
+w1699740362
+8./line_data_rom.v
+F./line_data_rom.v
+Z13 L0 40
+R4
+r1
+!s85 0
+31
+!s108 1699826395.000000
+!s107 ./line_data_rom.v|
+!s90 -reportprogress|300|./line_data_rom.v|
+!i113 1
+R6
+vline_drawer
+R1
+Z14 !s110 1699844777
+!i10b 1
+!s100 7b<kkGPK;7oQJoa[cQV`?2
+Id?oi1ULZdIBb1;b^k0O>B1
+R3
+Z15 !s105 line_drawer_sv_unit
+S1
+R0
+Z16 w1699843139
+Z17 8./line_drawer.sv
+Z18 F./line_drawer.sv
+L0 18
+R4
+r1
+!s85 0
+31
+Z19 !s108 1699844777.000000
+Z20 !s107 ./line_drawer.sv|
+Z21 !s90 -reportprogress|300|./line_drawer.sv|
+!i113 1
+R6
+vline_drawer_tb
+R1
+R14
+!i10b 1
+!s100 J>4CX:8G0Hdj6QHCAA0eb1
+IHW0F=Jo<LH_jA0=^K?34f0
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 147
+R4
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R6
+vlines_rom
+R2
+!i10b 1
+!s100 UP5fk^<K4mGKeK]RWAV_23
+ISa@Dmonl;;Y3d^Aijjk>c1
+R3
+R0
+w1699755162
+8./lines_rom.v
+F./lines_rom.v
+R13
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./lines_rom.v|
+!s90 -reportprogress|300|./lines_rom.v|
+!i113 1
+R6
+vVGA_framebuffer
+R1
+R2
+!i10b 1
+!s100 CocS=<?=M@3CI^_?A0CO33
+IGN7e1`WVbiFFaY<<9S2XF1
+R3
+!s105 VGA_framebuffer_sv_unit
+S1
+R0
+w1699503995
+8./VGA_framebuffer.sv
+F./VGA_framebuffer.sv
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./VGA_framebuffer.sv|
+!s90 -reportprogress|300|./VGA_framebuffer.sv|
+!i113 1
+R6
+n@v@g@a_framebuffer

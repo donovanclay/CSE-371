@@ -1,0 +1,32 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /bs_controller_tb/clk
+add wave -noupdate /bs_controller_tb/reset
+add wave -noupdate /bs_controller_tb/start
+add wave -noupdate /bs_controller_tb/count_zero
+add wave -noupdate /bs_controller_tb/done_in
+add wave -noupdate /bs_controller_tb/decr
+add wave -noupdate /bs_controller_tb/found
+add wave -noupdate /bs_controller_tb/load_regs
+add wave -noupdate /bs_controller_tb/below
+add wave -noupdate /bs_controller_tb/above
+add wave -noupdate /bs_controller_tb/A
+add wave -noupdate /bs_controller_tb/rom_out
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {150 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 192
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {1025 ps}

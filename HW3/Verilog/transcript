@@ -1,0 +1,138 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+ls
+# DE1_SoC.qpf           
+# DE1_SoC.qsf           
+# DE1_SoC.qws           
+# Launch_ModelSim.bat   
+# fifo.sv               
+# fifo.sv.bak           
+# fifo_ctrl.sv          
+# fifo_ctrl.sv.bak      
+# fifo_tb.sv            
+# fifo_tb.sv.bak        
+# hw3p3.sv              
+# hw3p3.sv.bak          
+# reg_file.sv           
+# reg_file.sv.bak       
+# runlab.do             
+# runlab_fifo.txt       
+# runlab_fifo_ctrl.txt  
+# runlab_hw3p3.txt      
+# runlab_reg_file.txt   
+# transcript            
+# vsim.wlf              
+# wave_fifo             
+# wave_fifo_ctrl        
+# wave_hw3p3            
+# wave_reg_file         
+# wave_sign_mag         
+# wlft1xt92z            
+# wlft3m132d            
+# wlft4dajn1            
+# wlft4m974i            
+# wlft51m1jk            
+# wlft54f3f2            
+# wlft5g5skd            
+# wlft5nkw0r            
+# wlft8he2g7            
+# wlft9exs1d            
+# wlftafeeh0            
+# wlftared7b            
+# wlftcxywv6            
+# wlftdmbdey            
+# wlftdn92ev            
+# wlfte5wi3m            
+# wlftf40w2w            
+# wlftf8xx8k            
+# wlftf997rb            
+# wlftgq31y2            
+# wlfthr9wkk            
+# wlfthx1hwj            
+# wlftiekn6j            
+# wlftma5vrq            
+# wlftnj72rm            
+# wlftqf407r            
+# wlftsf2qg2            
+# wlftw6dvgx            
+# wlftwd5ady            
+# wlftwvazjj            
+# wlftxjewmi            
+# wlftz6exr2            
+# 
+# db:
+# .cmp.kpt                                       
+# DE1_SoC.(0).cnf.cdb                            
+# DE1_SoC.(0).cnf.hdb                            
+# DE1_SoC.(1).cnf.cdb                            
+# DE1_SoC.(1).cnf.hdb                            
+# DE1_SoC.(2).cnf.cdb                            
+# DE1_SoC.(2).cnf.hdb                            
+# DE1_SoC.(3).cnf.cdb                            
+# DE1_SoC.(3).cnf.hdb                            
+# DE1_SoC.(4).cnf.cdb                            
+# DE1_SoC.(4).cnf.hdb                            
+# DE1_SoC.(5).cnf.cdb                            
+# DE1_SoC.(5).cnf.hdb                            
+# DE1_SoC.asm.qmsg                               
+# DE1_SoC.asm.rdb                                
+# DE1_SoC.cbx.xml                                
+# DE1_SoC.cmp.idb                                
+# DE1_SoC.cmp.rdb                                
+# DE1_SoC.cmp_merge.kpt                          
+# DE1_SoC.cyclonev_io_sim_cache.ff_0c_fast.hsd   
+# DE1_SoC.cyclonev_io_sim_cache.ff_85c_fast.hsd  
+# DE1_SoC.cyclonev_io_sim_cache.tt_0c_slow.hsd   
+# DE1_SoC.cyclonev_io_sim_cache.tt_85c_slow.hsd  
+# DE1_SoC.db_info                                
+# DE1_SoC.eda.qmsg                               
+# DE1_SoC.fit.qmsg                               
+# DE1_SoC.hier_info                              
+# DE1_SoC.hif                                    
+# DE1_SoC.lpc.html                               
+# DE1_SoC.lpc.rdb                                
+# DE1_SoC.lpc.txt                                
+# DE1_SoC.map.ammdb                              
+# DE1_SoC.map.bpm                                
+# DE1_SoC.map.cdb                                
+# DE1_SoC.map.hdb                                
+# DE1_SoC.map.kpt                                
+# DE1_SoC.map.logdb                              
+# DE1_SoC.map.qmsg                               
+# DE1_SoC.map.rdb                                
+# DE1_SoC.map_bb.cdb                             
+# DE1_SoC.map_bb.hdb                             
+# DE1_SoC.map_bb.logdb                           
+# DE1_SoC.pre_map.hdb                            
+# DE1_SoC.root_partition.map.reg_db.cdb          
+# DE1_SoC.routing.rdb                            
+# DE1_SoC.rtlv.hdb                               
+# DE1_SoC.rtlv_sg.cdb                            
+# DE1_SoC.rtlv_sg_swap.cdb                       
+# DE1_SoC.sld_design_entry.sci                   
+# DE1_SoC.sld_design_entry_dsc.sci               
+# DE1_SoC.smart_action.txt                       
+# DE1_SoC.sta.qmsg                               
+# DE1_SoC.sta.rdb                                
+# DE1_SoC.tis_db_list.ddb                        
+# DE1_SoC.tiscmp.fast_1100mv_0c.ddb              
+# DE1_SoC.tiscmp.fast_1100mv_85c.ddb             
+# DE1_SoC.tiscmp.slow_1100mv_0c.ddb              
+# DE1_SoC.tiscmp.slow_1100mv_85c.ddb             
+# DE1_SoC.vpr.ammdb                              
+# DE1_SoC_partition_pins.json                    
+# prev_cmp_DE1_SoC.qmsg                          
+# 
+# incremental_db:
+# README  compiled_partitions                                                                              
+# 
+# output_files:
+# DE1_SoC.asm.rpt  DE1_SoC.fit.rpt      DE1_SoC.flow.rpt  DE1_SoC.map.summary  DE1_SoC.sof          
+# DE1_SoC.done     DE1_SoC.fit.smsg     DE1_SoC.jdi       DE1_SoC.pin          DE1_SoC.sta.rpt      
+# DE1_SoC.eda.rpt  DE1_SoC.fit.summary  DE1_SoC.map.rpt   DE1_SoC.sld          DE1_SoC.sta.summary  
+# 
+# simulation:
+# modelsim                                                                                                                                                                
+# 
+# work:
+# _info     _lib1_14.qdb  _lib1_14.qtl  _lib1_6.qpg  _vmake        
+# _lib.qdb  _lib1_14.qpg  _lib1_6.qdb   _lib1_6.qtl                

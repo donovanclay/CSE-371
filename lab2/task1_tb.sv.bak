@@ -1,0 +1,6 @@
+module task1_tb();
+	log
+	
+	task1 dut()
+	
+endmodule 

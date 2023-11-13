@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Design Procedure}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Task \#1}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Task \#2}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Overall System}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Results}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Bit-Counter Testbench}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Binary Search Testbench}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Task \#2 Top-level Testbench}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Flow Summary}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Experience Report}{11}{section.3}%

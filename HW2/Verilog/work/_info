@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/HW2/Verilog
+vsign_mag_add
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1697082949
+!i10b 1
+!s100 ^RW7j==Smn0ail;==oScm1
+IQh6877O`;aRc`8Yli2HgI3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 sign_mag_add_sv_unit
+S1
+R0
+w1697065142
+8./sign_mag_add.sv
+F./sign_mag_add.sv
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1697082949.000000
+!s107 ./sign_mag_add.sv|
+!s90 -reportprogress|300|./sign_mag_add.sv|
+!i113 1
+Z6 tCvgOpt 0
+vsign_mag_add_tb
+R1
+R2
+!i10b 1
+!s100 g?Yc31<if6TP>Z2S@``0>0
+I2>U;479bLh<1QGKDS;2dS0
+R3
+!s105 sign_mag_add_tb_sv_unit
+S1
+R0
+w1697082323
+8./sign_mag_add_tb.sv
+F./sign_mag_add_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./sign_mag_add_tb.sv|
+!s90 -reportprogress|300|./sign_mag_add_tb.sv|
+!i113 1
+R6
+vsync_rom
+R1
+R2
+!i10b 1
+!s100 IJ=8^FgMLh]j0A6:zalAb3
+IUYzf2J=M4W1VO_RIJEce90
+R3
+!s105 sync_rom_sv_unit
+S1
+R0
+w1697082923
+8./sync_rom.sv
+F./sync_rom.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 ./sync_rom.sv|
+!s90 -reportprogress|300|./sync_rom.sv|
+!i113 1
+R6

@@ -1,0 +1,10 @@
+
+State Machine - |DE1_SoC|detectorFSM:detector|ps
+Name ps.S6 ps.S5 ps.S4 ps.S3 ps.S2 ps.S1 ps.S0 
+ps.S0 0 0 0 0 0 0 0 
+ps.S1 0 0 0 0 0 1 1 
+ps.S2 0 0 0 0 1 0 1 
+ps.S3 0 0 0 1 0 0 1 
+ps.S4 0 0 1 0 0 0 1 
+ps.S5 0 1 0 0 0 0 1 
+ps.S6 1 0 0 0 0 0 1 

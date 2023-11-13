@@ -1,0 +1,36 @@
+module DE1_SoC_Task3 (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR, KEY, SW);
+
+	input  logic		 CLOCK_50;	// 50MHz clock
+	input  logic [3:0] KEY;
+	input  logic [9:0] SW;
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;	// active low
+	output logic [9:0] LEDR;
+	
+	logic [2:0] Datain, Dataout, Dataoutport2;
+	logic [4:0] WriteAddress;
+	logic Write, Clock;
+	
+	assign Datain = SW[3:1];
+	assign WriteAddress = SW[8:4];
+	assign Write = SW[0];
+	assign Clock = KEY[0];
+	
+	
+	task2 my_ram32x3 (Clock, WriteAddress, Datain, Write, Dataout);
+	ram32x3port2 my_ram32x3port2(Clock, Datain, Address, Address, wren, Dataoutport2);
+	
+	
+	seg7 hex5({{3{1'b0}}, WriteAddress[4]}, HEX5);
+	seg7 hex4(WriteAddress[3:0], HEX4);
+	assign HEX3 = 7'b1111111;
+	assign HEX2 = 7'b1111111;
+	seg7 hex1 ({{3{1'b0}}, Datain}, HEX1);
+	seg7 hex0({{3{1'b0}}, Dataout}, HEX0);
+	
+	
+endmodule 
+
+module DE1_SoC_Task2_tb();
+	
+
+endmodule 

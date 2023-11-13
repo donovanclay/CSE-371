@@ -1,0 +1,35 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix unsigned /fifo_tb/WRITE_WIDTH
+add wave -noupdate -radix unsigned /fifo_tb/DATA_WIDTH
+add wave -noupdate -radix unsigned /fifo_tb/ADDR_WIDTH
+add wave -noupdate -radix unsigned /fifo_tb/CLOCK_PERIOD
+add wave -noupdate -radix unsigned /fifo_tb/clk
+add wave -noupdate -radix unsigned /fifo_tb/reset
+add wave -noupdate -radix unsigned /fifo_tb/rd
+add wave -noupdate -radix unsigned /fifo_tb/wr
+add wave -noupdate -radix unsigned /fifo_tb/empty
+add wave -noupdate -radix unsigned /fifo_tb/full
+add wave -noupdate -radix unsigned -childformat {{{/fifo_tb/w_data[15]} -radix unsigned} {{/fifo_tb/w_data[14]} -radix unsigned} {{/fifo_tb/w_data[13]} -radix unsigned} {{/fifo_tb/w_data[12]} -radix unsigned} {{/fifo_tb/w_data[11]} -radix unsigned} {{/fifo_tb/w_data[10]} -radix unsigned} {{/fifo_tb/w_data[9]} -radix unsigned} {{/fifo_tb/w_data[8]} -radix unsigned} {{/fifo_tb/w_data[7]} -radix unsigned} {{/fifo_tb/w_data[6]} -radix unsigned} {{/fifo_tb/w_data[5]} -radix unsigned} {{/fifo_tb/w_data[4]} -radix unsigned} {{/fifo_tb/w_data[3]} -radix unsigned} {{/fifo_tb/w_data[2]} -radix unsigned} {{/fifo_tb/w_data[1]} -radix unsigned} {{/fifo_tb/w_data[0]} -radix unsigned}} -subitemconfig {{/fifo_tb/w_data[15]} {-height 15 -radix unsigned} {/fifo_tb/w_data[14]} {-height 15 -radix unsigned} {/fifo_tb/w_data[13]} {-height 15 -radix unsigned} {/fifo_tb/w_data[12]} {-height 15 -radix unsigned} {/fifo_tb/w_data[11]} {-height 15 -radix unsigned} {/fifo_tb/w_data[10]} {-height 15 -radix unsigned} {/fifo_tb/w_data[9]} {-height 15 -radix unsigned} {/fifo_tb/w_data[8]} {-height 15 -radix unsigned} {/fifo_tb/w_data[7]} {-height 15 -radix unsigned} {/fifo_tb/w_data[6]} {-height 15 -radix unsigned} {/fifo_tb/w_data[5]} {-height 15 -radix unsigned} {/fifo_tb/w_data[4]} {-height 15 -radix unsigned} {/fifo_tb/w_data[3]} {-height 15 -radix unsigned} {/fifo_tb/w_data[2]} {-height 15 -radix unsigned} {/fifo_tb/w_data[1]} {-height 15 -radix unsigned} {/fifo_tb/w_data[0]} {-height 15 -radix unsigned}} /fifo_tb/w_data
+add wave -noupdate -radix unsigned /fifo_tb/w_dataMSB
+add wave -noupdate -radix unsigned /fifo_tb/w_dataLSB
+add wave -noupdate -radix unsigned /fifo_tb/r_data
+add wave -noupdate -radix unsigned /fifo_tb/i
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {209 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 106
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {2258 ps}

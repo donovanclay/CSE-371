@@ -1,0 +1,16 @@
+module addr_counter(
+	input logic clk, enable,
+	output logic [16:0] addr);
+	
+	logic [16:0] address;
+	
+	always_ff @(posedge clock)
+		if (reset) address <= 0;
+		
+		else if (address == 1200000-1) 
+			address <= 0;
+		else address <= address + 1;
+		
+	assign addr = address;
+	
+endmodule 

@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {Question 1.}}{2}{section.1}%
+\contentsline {subsection}{\numberline {(a)}A binary multiplier that multiplies two 4-bit binary words}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {(b)}A 3-bit adder subtracter}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {Question 2.}}{3}{section.2}%
+\contentsline {subsection}{\numberline {(a)}How many 4Mi $\times $ 16 chips are needed to provide a total memory capacity of 64 Mi-bytes?}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {(b)}How many address bits are needed for our larger, 64 Mi-byte-memory assuming the same word size as the individual chips?}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {(c)}How many of the address bits are connected to each RAM chip?}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {(d)}How many of the address bits must be decoded for the chip select?}{3}{subsection.2.4}%
+\contentsline {section}{\numberline {Question 3.}}{4}{section.3}%
+\contentsline {subsection}{\numberline {(a)}Show the resource utilization}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {Question 4.}}{5}{section.4}%
+\contentsline {subsection}{\numberline {(a)}Complete the diagram below for an implementation of the $4\times 4$ register file.}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {(b)}Construct a $8\times 8$ memory diagram using the given $4\times 4$ as a building block.}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {Question 5.}Experience Report}{6}{section.5}%
+\contentsfinish 

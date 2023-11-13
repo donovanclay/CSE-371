@@ -1,0 +1,8 @@
+module task1(
+	input clock, address,
+	);
+	logic address;
+	logic 
+	ram32x3 ram(clock, 
+
+endmodule 

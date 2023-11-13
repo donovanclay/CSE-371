@@ -1,0 +1,175 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab1
+vcar_counter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1696549520
+!i10b 1
+!s100 41S_D5kAiFQA2WC>6RlR30
+IQJhjiIHimoTSi<5l>I4<o3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 car_counter_sv_unit
+S1
+R0
+Z5 w1696545195
+Z6 8./car_counter.sv
+Z7 F./car_counter.sv
+L0 7
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1696549520.000000
+Z10 !s107 ./car_counter.sv|
+Z11 !s90 -reportprogress|300|./car_counter.sv|
+!i113 1
+Z12 tCvgOpt 0
+vcar_counter_tb
+R1
+R2
+!i10b 1
+!s100 =_8Ga=nbCo3fjl=D^A5?G3
+ILFoi]>AHmL1caXE8:Z1ik2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 46
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vDE1_SoC
+R1
+Z13 !s110 1696549521
+!i10b 1
+!s100 mQaIP1<520chT7JhYTC7g1
+IDmR7W5WCZJIDoBzDQk`DD1
+R3
+Z14 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z15 w1696545349
+Z16 8./DE1_SoC.sv
+Z17 F./DE1_SoC.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+Z18 !s107 ./DE1_SoC.sv|
+Z19 !s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R12
+n@d@e1_@so@c
+vDE1_SoC_tb
+R1
+R13
+!i10b 1
+!s100 _VaBRQPz=LWRFHLej_C<02
+Incb@[SUD7dYlf=6zm;lNA3
+R3
+R14
+S1
+R0
+R15
+R16
+R17
+L0 34
+R8
+r1
+!s85 0
+31
+R9
+R18
+R19
+!i113 1
+R12
+n@d@e1_@so@c_tb
+vdetectorFSM
+R1
+R2
+!i10b 1
+!s100 57zozQSffSF@jf[d`WnDY0
+IlZ3FYOd:ES;Q@M67dPOl02
+R3
+Z20 !s105 detectorFSM_sv_unit
+S1
+R0
+Z21 w1696528401
+Z22 8./detectorFSM.sv
+Z23 F./detectorFSM.sv
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+Z24 !s107 ./detectorFSM.sv|
+Z25 !s90 -reportprogress|300|./detectorFSM.sv|
+!i113 1
+R12
+ndetector@f@s@m
+vdetectorFSM_tb
+R1
+R2
+!i10b 1
+!s100 :DgR1RSz>W`YPUGMKOHZY1
+I<?E;[0Pl0f31F<]MYj1Q@2
+R3
+R20
+S1
+R0
+R21
+R22
+R23
+L0 69
+R8
+r1
+!s85 0
+31
+R9
+R24
+R25
+!i113 1
+R12
+ndetector@f@s@m_tb
+vseg7
+R1
+R2
+!i10b 1
+!s100 RPVJIR`OD`O^NHQ4?;H;K1
+Ie25;`=S`dTQ62TM^iKAQ33
+R3
+!s105 seg7_sv_unit
+S1
+R0
+w1696124192
+8./seg7.sv
+F./seg7.sv
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+!s107 ./seg7.sv|
+!s90 -reportprogress|300|./seg7.sv|
+!i113 1
+R12

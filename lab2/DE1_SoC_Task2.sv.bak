@@ -1,0 +1,13 @@
+module DE1_SoC_Task2 (CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, LEDR);
+
+	input  logic		 CLOCK_50;	// 50MHz clock
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;	// active low
+	output logic [9:0] LEDR;
+	
+	logic logic [2:0] data;
+	logic logic [5:0] address;
+	logic logic wren, clock;
+	
+	task2 my_ram32x3 ()
+	
+endmodule 
