@@ -28,10 +28,8 @@ module line_drawer(clk, reset, x0, y0, x1, y1, x, y, done);
     logic [10:0] my_x0, my_x1, my_y0, my_y1, delta_x, delta_y;
     logic y_step;
     
-    
     assign delta_x = (x1 > x0) ? x1 - x0 : x0 - x1;
     assign delta_y = (y1 > y0) ? y1 - y0 : y0 - y1;
-    
 
     logic error_bool, is_steep;
     assign is_steep = (delta_y > delta_x);
@@ -41,8 +39,6 @@ module line_drawer(clk, reset, x0, y0, x1, y1, x, y, done);
     logic y0vsy1; 
 
     assign y0vsy1 = y0 < y1;
-
-    
 
     enum {s_start, s_draw, s_done} ps, ns;
 
@@ -60,35 +56,19 @@ module line_drawer(clk, reset, x0, y0, x1, y1, x, y, done);
     assign done = (ps == s_done);
 
     always_comb begin
-        // if (is_steep && y0 > y1 && x1 > x0) begin
-        //     y_step = 0;
-        // end else 
-        // if (is_steep) begin
-        //     y_step = (x0 > x1) ? 1 : 0;
-        // end else begin
-        //     y_step = (y0 < y1) ? 1 : 0;
-        // end
         if (is_steep) begin
             if (y0 < y1) begin
                 y_step = (delta_x < delta_y) ? 1 : 0;
             end else begin
                 y_step = (delta_x > delta_y) ? 1 : 0;
-                // y_step = 0;
             end
         end else begin
-            // y_step = (delta_y < delta_x) ? 1 : 0;
             y_step = (y0 < y1) ? 1 : 0;
         end
     end
 
     always_ff @(posedge clk) begin
         if (ps == s_start) begin
-            // if (is_steep && y0 > y1 && x1 > x0) begin
-            //     my_x0 = y1;
-            //     my_x1 = y0;
-            //     my_y0 = x0;
-            //     my_y1 = x1;
-            // end else 
             if (is_steep && y0 > y1) begin
                 my_x0 = y1;
                 my_x1 = y0;
@@ -146,7 +126,8 @@ module line_drawer(clk, reset, x0, y0, x1, y1, x, y, done);
 
 endmodule  // line_drawer
 
-module line_drawer_tb();
+// horizontal line
+module line_drawer_horizontal_tb();
     logic clk, reset, done;
     logic [10:0] x0, y0, x1, y1, x, y;
 
@@ -160,10 +141,36 @@ module line_drawer_tb();
 
     integer i;
     initial begin
-        reset <= 1;    x0 <= 305; y0 <= 54; x1 <= 387; y1 <= 420;      @(posedge clk);
+        reset <= 1;    x0 <= 100; y0 <= 50; x1 <= 200; y1 <= 50;      @(posedge clk); 
+        // reset <= 1;    x0 <= 305; y0 <= 54; x1 <= 387; y1 <= 420;      @(posedge clk);
         reset <= 0;                                             @(posedge clk);
 
-        for (i = 0; i < 400; i++) begin
+        for (i = 0; i < 102; i++) begin
+                    @(posedge clk);
+        end
+        $stop;
+    end
+
+endmodule // line_drawer_horizontal_tb
+
+module line_drawer_vertical_tb();
+    logic clk, reset, done;
+    logic [10:0] x0, y0, x1, y1, x, y;
+
+    line_drawer dut (clk, reset, x0, y0, x1, y1, x, y, done);
+
+    parameter CLOCK_PERIOD = 100;
+    initial begin
+        clk <= 0;
+        forever #(CLOCK_PERIOD/2) clk <= ~clk;
+    end
+
+    integer i;
+    initial begin
+        reset <= 1;    x0 <= 100; y0 <= 50; x1 <= 100; y1 <= 100;      @(posedge clk); 
+        reset <= 0;                                             @(posedge clk);
+
+        for (i = 0; i < 53; i++) begin
                     @(posedge clk);
         end
         $stop;

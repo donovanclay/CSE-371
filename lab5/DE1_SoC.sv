@@ -35,16 +35,11 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
     output VGA_SYNC_N;
     output VGA_VS;
 
-    assign HEX0 = '1;
-    assign HEX1 = '1;
-    assign HEX2 = '1;
-    assign HEX3 = '1;
-    assign HEX4 = '1;
-    assign HEX5 = '1;
-    assign LEDR[8:0] = SW[8:0];
-
     logic line_color;
-    logic [10:0] x0, y0, x1, y1, x, y;
+    logic [10:0] x0, y0, x1, y1, clear_x0, clear_x1, clear_y, x, y;
+
+    assign clear_x0 = 0;
+    assign clear_x1 = 639;
 
     logic [31:0] divided_clocks;
     clock_divider clock_div (CLOCK_50, divided_clocks);
@@ -73,19 +68,31 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
     logic [38:0] rom_out;
 
     assign hard_reset = SW[0];
-    enum {s_start, s_stall, s_drawline, s_finished_line, s_done} ps, ns;
+    enum {s_clear, s_clear_drawline, s_clear_finished_line, s_start, s_stall, s_drawline, s_finished_line, s_done} ps, ns;
     
     logic [8:0] count;
 
     always_comb begin
         case (ps)
+            s_clear: begin
+                ns <= s_clear_drawline;
+            end
+
+            s_clear_drawline: begin
+                if (line_done) ns <= s_clear_finished_line;
+                else ns <= s_clear_drawline;
+            end
+
+            s_clear_finished_line: begin
+                if (clear_y >= 479) begin
+                    ns <= s_clear;
+                end else 
+                    ns <= s_clear_drawline;
+            end
+
             s_start: begin
                 ns <= s_stall;
             end
-
-            // s_erasestall: 
-            //     if (count == 127) ns <= s_drawline;
-            //     else ns <= s_erasestall;
                 
             s_stall:
                 ns <= s_drawline;
@@ -97,32 +104,34 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
 
             s_finished_line: begin
                 if (read_addr < 607) begin
-                    // if (read_addr % 6 >= 2) 
-                    //     ns <= s_erasestall;
-                    // else 
-                        ns <= s_stall;
+                    ns <= s_stall;
                 end
                 else ns <= s_done;
             end
 
             s_done: ns <= s_start;
-
         endcase
     end
 
     always_ff @(posedge divided_clocks[13]) begin
+        if (ps == s_clear) begin
+            clear_y <= 0;
+            line_drawer_reset <= 1'b1;
+        end
+
+        if (ps == s_clear_drawline) begin
+            line_drawer_reset <= 1'b0;
+        end
+
+        if (ps == s_clear_finished_line) begin
+            clear_y <= clear_y + 1'b1;
+            line_drawer_reset <= 1'b1;
+        end
+
         if (ps == s_start) begin
             read_addr <= 0;
             line_drawer_reset <= 1'b1;
         end
-        
-        // if (ns == s_stall && ps != s_stall) begin
-        //     count <= 0;
-        // end
-        
-        // if (ps == s_stall) begin
-        //     count <= count + 1'b1;
-        // end
 
         if (ps == s_drawline) begin
             line_drawer_reset <= 1'b0;
@@ -134,25 +143,41 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
         end 
     end
 
+    logic [1:0] test;
+
     always_ff @(posedge divided_clocks[13]) begin
         if (hard_reset) begin
-            ps <= s_start;
+            if (ps != s_clear && ps != s_clear_drawline && ps != s_clear_finished_line) begin
+                test <= 1;
+                ps <= s_clear;
+            end
+            else begin
+                ps <= ns;
+                test <= 2;
+            end
         end 
-        else ps <= ns;
+        else begin
+            ps <= ns;
+            test <= 3;
+        end
     end
 
     lines_rom my_rom (read_addr, CLOCK_50, rom_out);
 
     assign LEDR[9] = divided_clocks[13];
-    assign line_color = rom_out[38];
-    assign x0 = rom_out[37:28];
-    assign y0 = rom_out[27:19];
-    assign x1 = rom_out[18:9];
-    assign y1 = rom_out[8:0];
-    // assign x0 = 61;
-    // assign y0 = 146;
-    // assign x1 = 180;
-    // assign y1 = 20;
+    assign line_color = (hard_reset) ? 1'b0: rom_out[38];
+    assign x0 = (hard_reset) ? clear_x0 : rom_out[37:28];
+    assign y0 = (hard_reset) ? clear_y : rom_out[27:19];
+    assign x1 = (hard_reset) ? clear_x1 : rom_out[18:9];
+    assign y1 = (hard_reset) ? clear_y : rom_out[8:0];
+
+    assign HEX0 = '1;
+    assign HEX1 = '1;
+    assign HEX2 = '1;
+    assign HEX3 = '1;
+    assign HEX4 = '1;
+    assign HEX5 = '1;
+    assign LEDR[8:0] = SW[8:0];
 
 
 endmodule  // DE1_SoC
@@ -185,9 +210,11 @@ module DE1_SoC_tb();
     initial begin
                                 @(posedge CLOCK_50);
         SW[0] <= 1;             @(posedge CLOCK_50);
+        for (i = 0; i < 245760; i++) begin
+                                @(posedge CLOCK_50);
+        end
         SW[0] <= 0;             @(posedge CLOCK_50);
-
-        for (i = 0; i < 500; i++) begin
+        for (i = 0; i < 245760; i++) begin
                                 @(posedge CLOCK_50);
         end
         $stop;
