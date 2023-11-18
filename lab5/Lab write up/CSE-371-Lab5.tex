@@ -59,7 +59,6 @@
 
 \tcbuselibrary{breakable}
 
-
 \begin{document}
 	\maketitle
  
@@ -73,11 +72,11 @@
         In this lab, we implemented a system that has the ability to display animations on a VGA terminal using the DE1\_SoC's computer video-out port, this system is also known as a VGA controller. Many of the modules needed were provided as starter code, therefore we were tasked with designing and programming the modules responsible for drawing lines and creating a system to output an animation to the VGA terminal.
         
         \subsection{Task \#1}
-            The first task in this lab was to download the starter code for the project and become familiar with it. We began with an overview of the background information. The VGA terminal is a 640x480 resolution and the configuration of the pixels are determined by the pixel buffer module provided. The pixel buffer controller outputs data in sequential order, starting from the top left corner and proceeding horizontally, then vertically until reaching the bottom right corner. To change the contents of a pixel, simply pass a coordinate to the buffer along with the color of the pixel. The last step in this task was to run the simulation on LabsLand to ensure that the starter code would output as expected. \\
+            The first task in this lab was to download the starter code for the project and become familiar with it. We began with an overview of the background information. The VGA terminal is a 640x480 resolution and the configuration of the pixels are determined by the pixel buffer module provided. The pixel buffer controller outputs data in sequential order, starting from the top left corner and proceeding horizontally, then vertically until reaching the bottom right corner. To change the contents of a pixel, simply pass a coordinate to the buffer along with the color of the pixel. The last step in this task was to run the simulation on LabsLand to ensure that the starter code would output as expected.
 
             The screen began in a rainbow gradient and once the system started it became a black screen as expected.
         \subsection{Task \#2}
-            The next step was to draw a line on the VGA terminal using the line\_drawer module. The purpose of this module was to receive a start point and an endpoint with x and y coordinates, every clock cycle the system outputs the coordinates of the line connecting the points so that (x0, y0) slowly increments to (x1, y1). The line between the two points will be drawn on the VGA terminal by the line\_drawer module outputting each coordinate to the pixel buffer with an associated color, in this case white. 
+            The next step was to draw a line on the VGA terminal using the line\_drawer module. The purpose of this module was to receive a start point and an endpoint with x and y coordinates, every clock cycle the system outputs the coordinates of a point along the line connecting the input points so that (x0, y0) slowly increments to (x1, y1). The line between the two points will be drawn on the VGA terminal by the line\_drawer module outputting each coordinate to the pixel buffer with an associated color, in this case white. 
 
             \begin{figure}[H]
                 \centering
@@ -85,12 +84,21 @@
                 \caption{Line Drawer ASM chart}
             \end{figure}
             
-            To implement the line\_drawer module, we used the Bresenham algorithm. The system begins in the start state which sets all the values of x0, y0, x1, and y1. The values that are hard coded in the module may not be the same as the corresponding inputs. The idea our implementation runs with is that x0 is always incremented by 1 every clock cycle and y0 is only incremented when the error of y is greater than one. For example, a slope of 1/2 would wait two increments of x before y is increased because the error is finally greater than or equal to 1, the error would be (0, .50, 1) which we would then increase y. Technically if the slope of the line is less than one then the (x0, y0) and (x1, y1) values match input. If the slope of the line is greater than one, then the inputs become (y0, x0) and (y1, x1) so that y0 is now in the x place and gets increased every cycle and x0 is now responsible for incrementing when the error is greater than one. Considering the system only works when the slope is less than one, this ensures that it also works for when slope is greater than 1. A variable called is\_steep tracks this value swap and updates other parts of the code to ensure the system still works when this happens. The last case for the start is that if x0 > x1, the line goes to the left instead of the right, in this case the x0 becomes x1 and y0 becomes y1, and vice versa, then the system runs as it typically would. These conditionals and swapping of values ensure that our system works for all cases. 
+            To implement the line\_drawer module, we used the Bresenham algorithm. The system begins in the start state which sets all the values of my\_x0, my\_y0, my\_x1, and my\_y1. The values that are hard coded in the module may not be the same as the corresponding inputs. The idea our implementation runs with is that x0 is always incremented by 1 every clock cycle and y0 is only incremented when the error of y is greater than one. For example, a slope of 1/2 would wait two increments of x before y is increased because the error is finally greater than or equal to 1, the error would be (0, .50, 1) which we would then increase y. Technically if the slope of the line is less than one then the (x0, y0) and (x1, y1) values match input. If the slope of the line is greater than one, then the inputs become (y0, x0) and (y1, x1) so that y0 is now in the x place and gets increased every cycle and x0 is now responsible for incrementing when the error is greater than one. Considering the system only works when the slope is less than one, this ensures that it also works for when slope is greater than 1. A variable called is\_steep tracks this value swap and updates other parts of the code to ensure the system still works when this happens. The last case for the start is that if x0 $>$ x1, the line goes to the left instead of the right, in this case the x0 becomes x1 and y0 becomes y1, and vice versa, then the system runs as it typically would. These conditionals and swapping of values ensure that our system works for all cases. 
             
             Once the system is in the draw state, the coordinates of the line begin to be incremented and output to the pixel buffer. The is\_steep variable described before determines if the system should use delta\_x or delta\_y to track error and updates accordingly. Then the system begins to increase x every clock cycle and y when the error is greater than 1. The swapping in the start state and the variable ensure that the entire system works regardless of the orientation of the system. Once x0 and x1 are equal or x0 is greater, the system switches to the done state. In this state it signals to the top-level controller that the line is done and the top-level then coordinates its next state.
         
+        \newpage
         \subsection{Task \#3}
-            The final step of the lab was to use the line\_drawer to make an animation of our choice. To implement our animation, we thought it would be best to provide our line\_drawer module with x0, y0, x1, y1 values output in order by a ROM. The system begins in a start state which resets the address counter and the line\_drawer module. Then it moves to the stall state for a clock cycle before moving to the “drawline” state. In the draw line state, it turns off the reset signal so the line\_drawer module can function and stays in the state until the module signals that it is done drawing the line. Then the next state of the system is the finished\_line state, which increases the count of the address accessed by the ROM and resets the line\_drawer again to prepare for the next line input. The system continues to do this until all the addresses of the ROM have been read and output, then it restarts it states.
+            The final step of the lab was to use the line\_drawer to make an animation of our choice. To implement our animation, we thought it would be best to provide our line\_drawer module with x0, y0, x1, y1 values output in order by a ROM. The following diagram shows the encoding of the data stored in the ROM. 
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.41]{Images/ROM encoding.pdf}
+                \caption{ROM encoding}
+            \end{figure}
+            The system begins in a start state which resets the address counter and the line\_drawer module. Then it moves to the stall state for a clock cycle before moving to the “drawline” state. The purpose of the stall state is to wait for the ROM to output it's data. In the draw line state, it turns off the reset signal so the line\_drawer module will start and stays in the state until the module signals that it is done drawing the line. Then the next state of the system is the finished\_line state, which increases the count of the address accessed by the ROM and resets the line\_drawer again to prepare for the next line input. The ROM holds data which draws 3 lines and then erases the lines and then draws the 3 lines again with the y coordinates shifted down by one. This makes it appear as if the lines are moving down the screen. The system continues to do this until all the addresses of the ROM have been read and output, then it cyles back to the start state to start at the beginning of the ROM. 
+
+            The other part of task \#3 was making the reset function which ``erases'' everything from the screen. Since we know the dimensions of the display never changes, we chose to implement this by drawing 480 horizontal lines with the color off. The x-coordinates of the erasing lines will always be the same so we only needed a counter for the y-value of the lines. For the erasing, the state logic for starting the line drawer module and waiting for it to finish is exactly the same. The only difference is we increment a y-value, rather than a read address. 
 
             \begin{figure}[H]
                 \centering
@@ -99,11 +107,17 @@
             \end{figure}
 
         \subsection{Overall System}
-            (insert block diagram)
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.34]{Images/top level block diagram.pdf}
+                \caption{Top Level Block Diagram}
+            \end{figure}
+
+            The most important part of the top level module is controlling the line drawing module. It uses the module to both run the animation and ``erase'' the screen when SW[0] is on. So, the top level module has logic to manage the read address of the ROM, reseting the line drawer, and the y-coordinate for ``erasing''. It also includes a clock divider to slow down the speed that it goes through the ROM's addresses. However, the line drawer still draws at the full 50MHz speed.
 
     \newpage
     \section{Results}
-        The system we implemented in this lab has the ability to output pixel configurations to a VGA terminal as well as draw lines on the terminal to create an animation. Most of the code in this lab was provided, so we only implemented and tested two modules, the line\_drawer and the top module. However, there was not much testing of the VGA terminal output as completion of the third task could be confirmed with a simple eye-test of the final output. The only module that did require testing was the line\_drawer module. 
+        The system we implemented in this lab has the ability to output pixel configurations to a VGA terminal as well as draw lines on the terminal to create an animation. The VGA driver code in this lab was provided, so we only implemented and tested two modules, the line\_drawer and the top module. However, there was not much testing of the VGA terminal output as completion of the third task could be confirmed with a simple eye-test of the final output. The only module that did require testing was the line\_drawer module. 
 
         \subsection{Line-Drawer Testbench}
             
@@ -115,21 +129,74 @@
                         \caption{Horizontal Line Testbench}
                     \end{figure}
                 \item \textbf{Vertical Line} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.5]{Images/vertical line testbench.png}
+                        \caption{Vertical Line Testbench}
+                    \end{figure}
                 \item \textbf{Left-up Gradual} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.6]{Images/left-up gradual line testbench.png}
+                        \caption{Left Up Gradual Line Testbench}
+                    \end{figure}
                 \item \textbf{Left-up Steep} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.5]{Images/left-up steep line testbench.png}
+                        \caption{Left Up Steep Line Testbench}
+                    \end{figure}
                 \item \textbf{Right-up Gradual} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.55]{Images/right-up gradual line testbench.png}
+                        \caption{Right Up Gradual Line Testbench}
+                    \end{figure}
                 \item \textbf{Right-up Steep} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.5]{Images/right-up steep line testbench.png}
+                        \caption{Right Up Steep Line Testbench}
+                    \end{figure}
+
+                \newpage
                 \item \textbf{Left-down Gradual} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.6]{Images/left-down gradual line testbench.png}
+                        \caption{Left Down Gradual Line Testbench}
+                    \end{figure}
                 \item \textbf{Left-down Steep} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.5]{Images/left-down steep line testbench.png}
+                        \caption{Left Down Steep Line Testbench}
+                    \end{figure}
                 \item \textbf{Right-down Gradual} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.6]{Images/right-down gradual line testbench.png}
+                        \caption{Right Down Gradual Line Testbench}
+                    \end{figure}
+                \newpage
                 \item \textbf{Right-down Steep} \\
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[scale = 0.5]{Images/right-down steep line testbench.png}
+                        \caption{Right Down Steep Line Testbench}
+                    \end{figure}
+
+                These test benches show the input values of x0, y0, x1, y1 and process of the line drawer module incrementally moving from (x0, y0) to (x1, y1). In all the testbenches, we can see the line drawer's output starts at either (x0, y0) or (x1, y1) and finishes at the opposing coordinate. These test benches thoroughly exhaust all the different cases of lines the line drawing module can be asked to draw. 
             \end{description}
 
         \subsection{DE1\_SoC}
-            As I stated in the section above, the top-level did not require any testing as the output could be viewed simply with an eye-test. The output that was given when we ran our system in LabsLand was the following. \\
-            (add picture of animation) \\
+            As stated in the section above, the top-level did not require any testing as the output could be viewed simply with an eye-test. The output that was given when we ran our system in LabsLand was the following. \\
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.5]{Images/VGA output.png}
+                \caption{VGA output}
+            \end{figure}
             The animation outputs in a legible manner the word/name “CAM”.
-        
         \newpage
         \subsection{Flow Summary}
             \begin{description}
@@ -176,16 +243,13 @@
             
     \newpage
     \section{Experience Report}
-        (change this)
-        This lab was harder, it took a while at first to review implementations of control and datapath modules from lecture. However, once that was figured out the ASMD chart was simple to follow for the first task and generating one for task two was not too challenging either. Implementing task 2 was hard though. Figuring out timing issues with the ROM was difficult and took a significant amount of time to debug. Another challenge we encountered was trying to run the two tasks on the same board, but now that we found a method to do so the next labs we will be able to use our experience.
-    
+        This lab was harder, it took a while for us to figure out how to properly set the values for y\_step and initializing the values of my\_x0, my\_y0, my\_x1, my\_y1. Those were the main bugs because the lab spec outlines code for sequential code, but we have to translate it into something combinational. \\
 
-        This lab took approximately 16 hours, broken down as follows:
+        This lab took approximately 23 hours, broken down as follows:
         \begin{description}
-            \item[Reading:] 45 minutes
             \item[Design:] 15 minutes
-            \item[Coding:] 7 hours
-            \item[Debugging:] 5 hours
+            \item[Coding:] 12 hours
+            \item[Debugging:] 7 hours
             \item[Write up:] 3 hours
         \end{description}   
         

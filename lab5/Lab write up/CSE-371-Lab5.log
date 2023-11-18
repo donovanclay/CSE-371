@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  17 NOV 2023 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  17 NOV 2023 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -821,28 +821,28 @@ LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 63.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 62.
  (./CSE-371-Lab5.aux)
 \openout1 = `CSE-371-Lab5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -879,7 +879,7 @@ LaTeX Font Info:    ... okay on input line 63.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 63.
+Package chemgreek Info: Activating mapping `default' on line 62.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -902,7 +902,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (c:/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 63.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 62.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -913,20 +913,20 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks46
 \inpenc@posthook=\toks47
 )
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 62.
  (./CSE-371-Lab5.out) (./CSE-371-Lab5.out)
 \@outlinefile=\write4
 \openout4 = `CSE-371-Lab5.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 65.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64.
  (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -939,117 +939,186 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70     \newpage
+l.69     \newpage
                   [1]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-
 
 pdfTeX warning: pdflatex.exe (file ./Images/line drawer diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <Images/line drawer diagram.pdf, id=108, 726.79526pt x 1235.57607pt>
 File: Images/line drawer diagram.pdf Graphic file (type pdf)
 <use Images/line drawer diagram.pdf>
-Package pdftex.def Info: Images/line drawer diagram.pdf  used on input line 84.
+Package pdftex.def Info: Images/line drawer diagram.pdf  used on input line 83.
 (pdftex.def)             Requested size: 377.93571pt x 642.50325pt.
 [2]
 Overfull \vbox (15.67323pt too high) has occurred while \output is active []
 
- [3 <./Images/line drawer diagram.pdf>]
+ [3 <./Images/line drawer diagram.pdf>] [4]
+
+pdfTeX warning: pdflatex.exe (file ./Images/ROM encoding.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/ROM encoding.pdf, id=141, 1135.3617pt x 93.4692pt>
+File: Images/ROM encoding.pdf Graphic file (type pdf)
+<use Images/ROM encoding.pdf>
+Package pdftex.def Info: Images/ROM encoding.pdf  used on input line 96.
+(pdftex.def)             Requested size: 465.50131pt x 38.32262pt.
+
 
 pdfTeX warning: pdflatex.exe (file ./Images/top level ASM chart.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/top level ASM chart.pdf, id=135, 301.125pt x 1489.48462pt>
+<Images/top level ASM chart.pdf, id=142, 301.125pt x 1489.48462pt>
 File: Images/top level ASM chart.pdf Graphic file (type pdf)
 <use Images/top level ASM chart.pdf>
-Package pdftex.def Info: Images/top level ASM chart.pdf  used on input line 97.
+Package pdftex.def Info: Images/top level ASM chart.pdf  used on input line 105.
 (pdftex.def)             Requested size: 129.48122pt x 640.46591pt.
-[4]
+[5 <./Images/ROM encoding.pdf>]
 Overfull \vbox (13.6359pt too high) has occurred while \output is active []
 
- [5 <./Images/top level ASM chart.pdf>] [6]
-<Images/horizontal line testbench.png, id=164, 977.6525pt x 349.80687pt>
+ [6 <./Images/top level ASM chart.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/top level block diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/top level block diagram.pdf, id=177, 1304.95526pt x 615.25856pt>
+File: Images/top level block diagram.pdf Graphic file (type pdf)
+<use Images/top level block diagram.pdf>
+Package pdftex.def Info: Images/top level block diagram.pdf  used on input line 112.
+(pdftex.def)             Requested size: 443.67892pt x 209.18513pt.
+[7 <./Images/top level block diagram.pdf>]
+<Images/horizontal line testbench.png, id=193, 923.45pt x 177.66376pt>
 File: Images/horizontal line testbench.png Graphic file (type png)
 <use Images/horizontal line testbench.png>
-Package pdftex.def Info: Images/horizontal line testbench.png  used on input line 114.
-(pdftex.def)             Requested size: 488.82506pt x 174.903pt.
+Package pdftex.def Info: Images/horizontal line testbench.png  used on input line 128.
+(pdftex.def)             Requested size: 461.72386pt x 88.83165pt.
 
-Overfull \hbox (19.07004pt too wide) in paragraph at lines 114--115
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
+<Images/vertical line testbench.png, id=195, 930.97812pt x 178.16562pt>
+File: Images/vertical line testbench.png Graphic file (type png)
+<use Images/vertical line testbench.png>
+Package pdftex.def Info: Images/vertical line testbench.png  used on input line 134.
+(pdftex.def)             Requested size: 465.48792pt x 89.08258pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
  []
 
+<Images/left-up gradual line testbench.png, id=196, 474.77374pt x 174.6525pt>
+File: Images/left-up gradual line testbench.png Graphic file (type png)
+<use Images/left-up gradual line testbench.png>
+Package pdftex.def Info: Images/left-up gradual line testbench.png  used on input line 140.
+(pdftex.def)             Requested size: 284.86644pt x 104.7923pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 137--142
 
  []
 
+<Images/left-up steep line testbench.png, id=197, 918.93312pt x 175.15437pt>
+File: Images/left-up steep line testbench.png Graphic file (type png)
+<use Images/left-up steep line testbench.png>
+Package pdftex.def Info: Images/left-up steep line testbench.png  used on input line 146.
+(pdftex.def)             Requested size: 459.46544pt x 87.57697pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-[7 <./Images/horizontal line testbench.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 136--157
+[8 <./Images/horizontal line testbench.png> <./Images/vertical line testbench.png> <./Images/left-up gradual line testbench.png>]
+<Images/right-up gradual line testbench.png, id=209, 729.22438pt x 178.16562pt>
+File: Images/right-up gradual line testbench.png Graphic file (type png)
+<use Images/right-up gradual line testbench.png>
+Package pdftex.def Info: Images/right-up gradual line testbench.png  used on input line 152.
+(pdftex.def)             Requested size: 401.07465pt x 97.99138pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
-[9] [10] (./CSE-371-Lab5.aux)
+<Images/right-up steep line testbench.png, id=210, 918.43124pt x 176.66pt>
+File: Images/right-up steep line testbench.png Graphic file (type png)
+<use Images/right-up steep line testbench.png>
+Package pdftex.def Info: Images/right-up steep line testbench.png  used on input line 158.
+(pdftex.def)             Requested size: 459.2145pt x 88.32977pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+
+ []
+
+[9 <./Images/left-up steep line testbench.png> <./Images/right-up gradual line testbench.png> <./Images/right-up steep line testbench.png>]
+<Images/left-down gradual line testbench.png, id=222, 750.30313pt x 178.16562pt>
+File: Images/left-down gradual line testbench.png Graphic file (type png)
+<use Images/left-down gradual line testbench.png>
+Package pdftex.def Info: Images/left-down gradual line testbench.png  used on input line 166.
+(pdftex.def)             Requested size: 450.18535pt x 106.90019pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--168
+
+ []
+
+<Images/left-down steep line testbench.png, id=223, 920.43875pt x 176.66pt>
+File: Images/left-down steep line testbench.png Graphic file (type png)
+<use Images/left-down steep line testbench.png>
+Package pdftex.def Info: Images/left-down steep line testbench.png  used on input line 172.
+(pdftex.def)             Requested size: 460.21825pt x 88.32977pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
+
+ []
+
+<Images/right-down gradual line testbench.png, id=224, 724.7075pt x 176.66pt>
+File: Images/right-down gradual line testbench.png Graphic file (type png)
+<use Images/right-down gradual line testbench.png>
+Package pdftex.def Info: Images/right-down gradual line testbench.png  used on input line 178.
+(pdftex.def)             Requested size: 434.82785pt x 105.99681pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
+
+ []
+
+[10 <./Images/left-down gradual line testbench.png> <./Images/left-down steep line testbench.png> <./Images/right-down gradual line testbench.png>]
+<Images/right-down steep line testbench.png, id=236, 873.76437pt x 178.16562pt>
+File: Images/right-down steep line testbench.png Graphic file (type png)
+<use Images/right-down steep line testbench.png>
+Package pdftex.def Info: Images/right-down steep line testbench.png  used on input line 185.
+(pdftex.def)             Requested size: 436.88112pt x 89.08258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
+
+ []
+
+<Images/VGA output.png, id=237, 561.09625pt x 310.66063pt>
+File: Images/VGA output.png Graphic file (type png)
+<use Images/VGA output.png>
+Package pdftex.def Info: Images/VGA output.png  used on input line 196.
+(pdftex.def)             Requested size: 280.54744pt x 155.32993pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
+
+ []
+
+[11 <./Images/right-down steep line testbench.png> <./Images/VGA output.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--224
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+[13] (./CSE-371-Lab5.aux)
 Package rerunfilecheck Info: File `CSE-371-Lab5.out' has not changed.
 (rerunfilecheck)             Checksum: A6157EE4445BF95A8D1A193E55AC3476;1140.
  ) 
 Here is how much of TeX's memory you used:
- 34512 strings out of 476093
- 734364 string characters out of 5795577
- 1859787 words of memory out of 5000000
- 54335 multiletter control sequences out of 15000+600000
+ 34611 strings out of 476093
+ 738052 string characters out of 5795577
+ 1857787 words of memory out of 5000000
+ 54407 multiletter control sequences out of 15000+600000
  520658 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,96p,1671b,1016s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on CSE-371-Lab5.pdf (11 pages, 265735 bytes).
+ 84i,11n,96p,1689b,1043s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on CSE-371-Lab5.pdf (14 pages, 543100 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 

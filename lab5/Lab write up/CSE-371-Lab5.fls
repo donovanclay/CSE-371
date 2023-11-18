@@ -1260,21 +1260,82 @@ INPUT ./Images/line drawer diagram.pdf
 INPUT Images/line drawer diagram.pdf
 INPUT ./Images/line drawer diagram.pdf
 INPUT ./Images/line drawer diagram.pdf
+INPUT ./Images/ROM encoding.pdf
+INPUT ./Images/ROM encoding.pdf
+INPUT Images/ROM encoding.pdf
+INPUT ./Images/ROM encoding.pdf
+INPUT ./Images/ROM encoding.pdf
 INPUT ./Images/top level ASM chart.pdf
 INPUT ./Images/top level ASM chart.pdf
 INPUT Images/top level ASM chart.pdf
 INPUT ./Images/top level ASM chart.pdf
 INPUT ./Images/top level ASM chart.pdf
+INPUT ./Images/top level block diagram.pdf
+INPUT ./Images/top level block diagram.pdf
+INPUT Images/top level block diagram.pdf
+INPUT ./Images/top level block diagram.pdf
+INPUT ./Images/top level block diagram.pdf
 INPUT ./Images/horizontal line testbench.png
 INPUT ./Images/horizontal line testbench.png
 INPUT Images/horizontal line testbench.png
 INPUT ./Images/horizontal line testbench.png
 INPUT ./Images/horizontal line testbench.png
+INPUT ./Images/vertical line testbench.png
+INPUT ./Images/vertical line testbench.png
+INPUT Images/vertical line testbench.png
+INPUT ./Images/vertical line testbench.png
+INPUT ./Images/vertical line testbench.png
+INPUT ./Images/left-up gradual line testbench.png
+INPUT ./Images/left-up gradual line testbench.png
+INPUT Images/left-up gradual line testbench.png
+INPUT ./Images/left-up gradual line testbench.png
+INPUT ./Images/left-up gradual line testbench.png
+INPUT ./Images/left-up steep line testbench.png
+INPUT ./Images/left-up steep line testbench.png
+INPUT Images/left-up steep line testbench.png
+INPUT ./Images/left-up steep line testbench.png
+INPUT ./Images/left-up steep line testbench.png
+INPUT ./Images/right-up gradual line testbench.png
+INPUT ./Images/right-up gradual line testbench.png
+INPUT Images/right-up gradual line testbench.png
+INPUT ./Images/right-up gradual line testbench.png
+INPUT ./Images/right-up gradual line testbench.png
+INPUT ./Images/right-up steep line testbench.png
+INPUT ./Images/right-up steep line testbench.png
+INPUT Images/right-up steep line testbench.png
+INPUT ./Images/right-up steep line testbench.png
+INPUT ./Images/right-up steep line testbench.png
+INPUT ./Images/left-down gradual line testbench.png
+INPUT ./Images/left-down gradual line testbench.png
+INPUT Images/left-down gradual line testbench.png
+INPUT ./Images/left-down gradual line testbench.png
+INPUT ./Images/left-down gradual line testbench.png
+INPUT ./Images/left-down steep line testbench.png
+INPUT ./Images/left-down steep line testbench.png
+INPUT Images/left-down steep line testbench.png
+INPUT ./Images/left-down steep line testbench.png
+INPUT ./Images/left-down steep line testbench.png
+INPUT ./Images/right-down gradual line testbench.png
+INPUT ./Images/right-down gradual line testbench.png
+INPUT Images/right-down gradual line testbench.png
+INPUT ./Images/right-down gradual line testbench.png
+INPUT ./Images/right-down gradual line testbench.png
+INPUT ./Images/right-down steep line testbench.png
+INPUT ./Images/right-down steep line testbench.png
+INPUT Images/right-down steep line testbench.png
+INPUT ./Images/right-down steep line testbench.png
+INPUT ./Images/right-down steep line testbench.png
+INPUT ./Images/VGA output.png
+INPUT ./Images/VGA output.png
+INPUT Images/VGA output.png
+INPUT ./Images/VGA output.png
+INPUT ./Images/VGA output.png
 INPUT CSE-371-Lab5.aux
 INPUT ./CSE-371-Lab5.out
 INPUT ./CSE-371-Lab5.out
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb

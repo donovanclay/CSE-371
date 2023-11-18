@@ -38,6 +38,7 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
     logic line_color;
     logic [10:0] x0, y0, x1, y1, clear_x0, clear_x1, clear_y, x, y;
 
+    // x coordinates for the sides of the display
     assign clear_x0 = 0;
     assign clear_x1 = 639;
 
@@ -60,17 +61,17 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
         .VGA_BLANK_n	(VGA_BLANK_N), 
         .VGA_SYNC_n		(VGA_SYNC_N));
                 
-    logic line_done, animation_done, hard_reset, line_drawer_reset;
+    logic line_done, hard_reset, line_drawer_reset;
 
     line_drawer lines (.clk(divided_clocks[0]), .reset(line_drawer_reset),.x0, .y0, .x1, .y1, .x, .y, .done(line_done));
 
     logic [11:0] read_addr;
     logic [38:0] rom_out;
 
+    // controls erasing the entire screen
     assign hard_reset = SW[0];
+
     enum {s_clear, s_clear_drawline, s_clear_finished_line, s_start, s_stall, s_drawline, s_finished_line, s_done} ps, ns;
-    
-    logic [8:0] count;
 
     always_comb begin
         case (ps)
@@ -78,12 +79,18 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
                 ns <= s_clear_drawline;
             end
 
+            // line drawer is drawing the line 
             s_clear_drawline: begin
+                // if the line drawer is finished drawing the line, leave the state
                 if (line_done) ns <= s_clear_finished_line;
+
+                // otherwise stay in the draw state
                 else ns <= s_clear_drawline;
             end
 
             s_clear_finished_line: begin
+                // if we finished erasing the screen, restart erasing the screen
+                // otherwise erase the next horizontal line. 
                 if (clear_y >= 479) begin
                     ns <= s_clear;
                 end else 
@@ -94,77 +101,92 @@ module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW, CLOCK_50,
                 ns <= s_stall;
             end
                 
+            // state to wait for the ROM to output its data
             s_stall:
                 ns <= s_drawline;
 
+            // line drawer is drawing the line 
             s_drawline: begin
+                // if the line drawer is finished drawing the line, leave the state
                 if (line_done) ns <= s_finished_line;
+
+                // otherwise stay in the draw state
                 else ns <= s_drawline;
             end
 
             s_finished_line: begin
+                // if there is more data to read in the ROM, move to the next address
                 if (read_addr < 607) begin
                     ns <= s_stall;
                 end
+
+                // reached the end of the data in the ROM
                 else ns <= s_done;
             end
 
+            // restart the animation
             s_done: ns <= s_start;
         endcase
     end
 
     always_ff @(posedge divided_clocks[13]) begin
+        // initialize the y-value to 0 and reset the line drawer
         if (ps == s_clear) begin
             clear_y <= 0;
             line_drawer_reset <= 1'b1;
         end
 
+        // start the line drawer
         if (ps == s_clear_drawline) begin
             line_drawer_reset <= 1'b0;
         end
 
+        // increment the y-value and reset the line drawer
         if (ps == s_clear_finished_line) begin
             clear_y <= clear_y + 1'b1;
             line_drawer_reset <= 1'b1;
         end
 
+        // initialize the read address to 0 and reset the line drawer
         if (ps == s_start) begin
             read_addr <= 0;
             line_drawer_reset <= 1'b1;
         end
 
+        // start the line drawer
         if (ps == s_drawline) begin
             line_drawer_reset <= 1'b0;
         end 
 
+        // increment the read address and reset the line drawer
         if (ps == s_finished_line) begin
             read_addr <= read_addr + 1'b1;
             line_drawer_reset <= 1'b1;
         end 
     end
 
-    logic [1:0] test;
-
     always_ff @(posedge divided_clocks[13]) begin
         if (hard_reset) begin
-            if (ps != s_clear && ps != s_clear_drawline && ps != s_clear_finished_line) begin
-                test <= 1;
+            // if we aren't currently in the process of erasing, 
+            // start erasing
+            if (ps != s_clear && 
+                ps != s_clear_drawline && 
+                ps != s_clear_finished_line) begin
                 ps <= s_clear;
-            end
-            else begin
+            end else begin
                 ps <= ns;
-                test <= 2;
             end
-        end 
-        else begin
+        end else begin
             ps <= ns;
-            test <= 3;
         end
     end
 
+    // ROM which holds data for the animation of "CAM"
     lines_rom my_rom (read_addr, CLOCK_50, rom_out);
 
     assign LEDR[9] = divided_clocks[13];
+
+    // muxes to choose between erasing or showing the animation.
     assign line_color = (hard_reset) ? 1'b0: rom_out[38];
     assign x0 = (hard_reset) ? clear_x0 : rom_out[37:28];
     assign y0 = (hard_reset) ? clear_y : rom_out[27:19];

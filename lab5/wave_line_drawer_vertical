@@ -11,7 +11,7 @@ add wave -noupdate -radix unsigned /line_drawer_vertical_tb/x
 add wave -noupdate -radix unsigned /line_drawer_vertical_tb/y
 add wave -noupdate /line_drawer_vertical_tb/i
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {1460 ps} 0}
+WaveRestoreCursors {{Cursor 1} {3100 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 81
 configure wave -valuecolwidth 100
@@ -27,4 +27,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {6458 ps}
+WaveRestoreZoom {0 ps} {5723 ps}
