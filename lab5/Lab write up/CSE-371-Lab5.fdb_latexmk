@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1700279228 "c:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/Lab write up/CSE-371-Lab5.tex" "CSE-371-Lab5.pdf" "CSE-371-Lab5" 1700279232 0
-  "CSE-371-Lab5.aux" 1700279232 4131 8d44bed9e1a177c4a6f9b7263c651232 "pdflatex"
-  "CSE-371-Lab5.out" 1700279232 1140 a6157ee4445bf95a8d1a193e55ac3476 "pdflatex"
-  "CSE-371-Lab5.tex" 1700279227 16937 88fa879feacf9f77fd3a330130aa56e3 ""
-  "CSE-371-Lab5.toc" 1700279232 752 2ac529e70a6a5e24a0b3b56ad4e17ffe "pdflatex"
+["pdflatex"] 1700280296 "c:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/Lab write up/CSE-371-Lab5.tex" "CSE-371-Lab5.pdf" "CSE-371-Lab5" 1700280301 0
+  "CSE-371-Lab5.aux" 1700280301 4131 8d44bed9e1a177c4a6f9b7263c651232 "pdflatex"
+  "CSE-371-Lab5.out" 1700280301 1140 a6157ee4445bf95a8d1a193e55ac3476 "pdflatex"
+  "CSE-371-Lab5.tex" 1700280287 16931 c5ae8596f9ca1f781ead946a0e61ffc8 ""
+  "CSE-371-Lab5.toc" 1700280301 752 2ac529e70a6a5e24a0b3b56ad4e17ffe "pdflatex"
   "Images/ROM encoding.pdf" 1700277208 14651 86d91681ac4035062c165ca57201922c ""
   "Images/VGA output.png" 1700275791 88492 320d2876c8d0af6fcdd32ab0515418f8 ""
   "Images/horizontal line testbench.png" 1700272671 30688 cec2d29c1962a068790c54815d48c679 ""
@@ -19,7 +19,7 @@
   "Images/top level ASM chart.pdf" 1700254664 27425 f286e37b30f89b6ec3687560763ff3f0 ""
   "Images/top level block diagram.pdf" 1700271262 34016 6d4c398b1680383c9b8342fe122e1bdb ""
   "Images/vertical line testbench.png" 1700272076 29193 f8aa88950e743ac01f521cfbdd717986 ""
-  "c:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/Lab write up/CSE-371-Lab5.tex" 1700279227 16937 88fa879feacf9f77fd3a330130aa56e3 ""
+  "c:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab5/Lab write up/CSE-371-Lab5.tex" 1700280287 16931 c5ae8596f9ca1f781ead946a0e61ffc8 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1673582353 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1673575414 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1673575414 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""

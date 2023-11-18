@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  17 NOV 2023 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  17 NOV 2023 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1085,20 +1085,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--187
 <Images/VGA output.png, id=237, 561.09625pt x 310.66063pt>
 File: Images/VGA output.png Graphic file (type png)
 <use Images/VGA output.png>
-Package pdftex.def Info: Images/VGA output.png  used on input line 196.
+Package pdftex.def Info: Images/VGA output.png  used on input line 195.
 (pdftex.def)             Requested size: 280.54744pt x 155.32993pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--198
+Underfull \hbox (badness 10000) in paragraph at lines 192--197
 
  []
 
 [11 <./Images/right-down steep line testbench.png> <./Images/VGA output.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--224
+Underfull \hbox (badness 10000) in paragraph at lines 202--223
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
@@ -1115,7 +1115,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,11n,96p,1689b,1043s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on CSE-371-Lab5.pdf (14 pages, 543100 bytes).
+Output written on CSE-371-Lab5.pdf (14 pages, 543094 bytes).
 PDF statistics:
  298 PDF objects out of 1000 (max. 8388607)
  209 compressed objects within 3 object streams
