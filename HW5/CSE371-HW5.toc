@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {Question 1.}}{2}{section.1}%
+\contentsline {section}{\numberline {Question 2.}}{3}{section.2}%
+\contentsline {section}{\numberline {Question 3.}}{4}{section.3}%
+\contentsline {subsection}{\numberline {(a)}Draw the DFG}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {(b)}Cuts}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {(c)}}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {Question 4.}}{7}{section.4}%
+\contentsline {subsection}{\numberline {(a)}What element adds the most delay?}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {(b)}Does the same element add the most delay for hold slack? Why does this make sense?}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {(c)}What is the fastest frequency you can set the clock to for this to pass setup timing?}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {(d)}SETUP: Which of the options had the most setup slack?}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {(e)}SETUP: How does increasing voltage speed change the speed of a circuit?}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {(f)}SETUP: How does increasing temperature change the speed of a circuit?}{7}{subsection.4.6}%
+\contentsline {subsection}{\numberline {(g)}HOLD: Which of the options had the most hold slack?}{7}{subsection.4.7}%
+\contentsline {subsection}{\numberline {(h)}HOLD: How does increasing voltage speed change the speed of a circuit?}{8}{subsection.4.8}%
+\contentsline {subsection}{\numberline {(i)}HOLD: How does increasing temperature change the speed of a circuit?}{8}{subsection.4.9}%
+\contentsline {section}{\numberline {Question 5.}Experience Report}{9}{section.5}%
+\contentsfinish 

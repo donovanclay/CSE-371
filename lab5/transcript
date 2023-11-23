@@ -1626,3 +1626,5 @@ do runlab_line_drawer_right_down_steep.do
 # ** Note: $stop    : ./line_drawer.sv(384)
 #    Time: 5650 ps  Iteration: 1  Instance: /line_drawer_right_down_steep_tb
 # Break in Module line_drawer_right_down_steep_tb at ./line_drawer.sv line 384
+# End time: 13:02:39 on Nov 18,2023, Elapsed time: 18:22:18
+# Errors: 0, Warnings: 0
