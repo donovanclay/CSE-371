@@ -1,0 +1,444 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+ls
+# DE1_SoC.sv  player_location.sv  transcript                                                
+# 
+# lab6:
+# 371-Lab6-proposal.pdf  371-Lab6.pdf  drivers                                                
+# 
+# Proposal:
+# CSE-371-Lab6-Proposal.aux          CSE-371-Lab6-Proposal.fls  CSE-371-Lab6-Proposal.out  CSE-371-Lab6-Proposal.synctex.gz  CSE-371-Lab6-Proposal.toc  Lab 6 Proposal.pdf    
+# CSE-371-Lab6-Proposal.fdb_latexmk  CSE-371-Lab6-Proposal.log  CSE-371-Lab6-Proposal.pdf  CSE-371-Lab6-Proposal.tex         Lab 6 Proposal.drawio                            
+# 
+# simulation:
+# Launch_ModelSim.bat                                                                                                                                                                
+# 
+# __MACOSX:
+# ._lab6  lab6                                                                              
+cd ..
+ls
+# line_data.mif                                                                                                                                                                
+# 
+# docs:
+# Audio_Guide.pdf  GPIO_example.sv     Lab_Report_Example.pdf  Quartus_Install.pdf     Verilog_Tutorial.pdf        
+# GPIO_Guide.pdf   GPIO_example_tb.sv  LabsLand_Setup.pdf      Verilog_CheatSheet.pdf  refresher                   
+# 
+# HW1:
+# CSE371-HW1.aux          CSE371-HW1.fls  CSE371-HW1.out  CSE371-HW1.synctex.gz  CSE371-HW1.toc  Verilog    
+# CSE371-HW1.fdb_latexmk  CSE371-HW1.log  CSE371-HW1.pdf  CSE371-HW1.tex         Images                     
+# 
+# HW2:
+# 371_hw2.pdf             CSE371-HW2.fls  CSE371-HW2.pdf         CSE371-HW2.toc  __MACOSX    
+# CSE371-HW2.aux          CSE371-HW2.log  CSE371-HW2.synctex.gz  Images                      
+# CSE371-HW2.fdb_latexmk  CSE371-HW2.out  CSE371-HW2.tex         Verilog                     
+# 
+# HW3:
+# 371_hw3.pdf             CSE371-HW3.fls  CSE371-HW3.pdf         CSE371-HW3.toc  __MACOSX    
+# CSE371-HW3.aux          CSE371-HW3.log  CSE371-HW3.synctex.gz  Images                      
+# CSE371-HW3.fdb_latexmk  CSE371-HW3.out  CSE371-HW3.tex         Verilog                     
+# 
+# HW4:
+# .DS_Store               CSE371-HW4.log         CSE371-HW4.toc      muxdff.v    
+# 371_hw4.pdf             CSE371-HW4.out         Fixed Verilog code  regne.v     
+# CSE371-HW4.aux          CSE371-HW4.pdf         Images              shiftlne.v  
+# CSE371-HW4.fdb_latexmk  CSE371-HW4.synctex.gz  divider.v                       
+# CSE371-HW4.fls          CSE371-HW4.tex         downcount.v                     
+# 
+# HW5:
+# 371_hw5.pdf     CSE371-HW5.fdb_latexmk  CSE371-HW5.log  CSE371-HW5.pdf         CSE371-HW5.tex  Images              
+# CSE371-HW5.aux  CSE371-HW5.fls          CSE371-HW5.out  CSE371-HW5.synctex.gz  CSE371-HW5.toc  TimingAnalyzer.qar  
+# 
+# lab0:
+# DE1_SOC_golden_top.v  DE1_SoC.qpf  DE1_SoC.qsf  DE1_SoC.qws  DE1_SoC_assignment_defaults.qdf  db  qar_info.json          
+# 
+# lab1:
+# 371_lab1.pdf                       
+# DE1_SoC.asm.rpt                    
+# DE1_SoC.done                       
+# DE1_SoC.eda.rpt                    
+# DE1_SoC.fit.rpt                    
+# DE1_SoC.fit.smsg                   
+# DE1_SoC.fit.summary                
+# DE1_SoC.flow.rpt                   
+# DE1_SoC.jdi                        
+# DE1_SoC.map.rpt                    
+# DE1_SoC.map.smsg                   
+# DE1_SoC.map.summary                
+# DE1_SoC.pin                        
+# DE1_SoC.qpf                        
+# DE1_SoC.qsf                        
+# DE1_SoC.qws                        
+# DE1_SoC.sld                        
+# DE1_SoC.sof                        
+# DE1_SoC.sta.rpt                    
+# DE1_SoC.sta.summary                
+# DE1_SoC.sv                         
+# DE1_SoC.sv.bak                     
+# DE1_SoC_nativelink_simulation.rpt  
+# DE1_SoC_tb.sv                      
+# Lab write up                       
+# Launch_ModelSim.bat                
+# c5_pin_model_dump.txt              
+# car_counter.sv                     
+# car_counter.sv.bak                 
+# db                                 
+# detectorFSM.sv                     
+# detectorFSM.sv.bak                 
+# incremental_db                     
+# output_files                       
+# runlab.do                          
+# runlab_DE1.txt                     
+# runlab_car_counter.txt             
+# runlab_detectorFSM.txt             
+# seg7.sv                            
+# seg7.sv.bak                        
+# simulation                         
+# transcript                         
+# vsim.wlf                           
+# wave_DE1                           
+# wave_car_counter                   
+# wave_detectorFSM                   
+# work                               
+# 
+# lab1 start:
+# 371_lab1.pdf  DE1_SoC.sv  DE1_SoC_tb.sv  Launch_ModelSim.bat  runlab.do                        
+# 
+# lab2:
+# 371_lab2.pdf             
+# DE1_SoC.asm.rpt          
+# DE1_SoC.done             
+# DE1_SoC.fit.rpt          
+# DE1_SoC.fit.smsg         
+# DE1_SoC.fit.summary      
+# DE1_SoC.flow.rpt         
+# DE1_SoC.jdi              
+# DE1_SoC.map.rpt          
+# DE1_SoC.map.smsg         
+# DE1_SoC.map.summary      
+# DE1_SoC.pin              
+# DE1_SoC.qpf              
+# DE1_SoC.qsf              
+# DE1_SoC.qws              
+# DE1_SoC.sld              
+# DE1_SoC.sof              
+# DE1_SoC.sta.rpt          
+# DE1_SoC.sta.summary      
+# DE1_SoC_Task2.sv         
+# DE1_SoC_Task2.sv.bak     
+# DE1_SoC_Task2_tb.sv      
+# DE1_SoC_Task2_tb.sv.bak  
+# DE1_SoC_Task3.sv         
+# DE1_SoC_Task3.sv.bak     
+# DE1_SoC_Task3_tb.sv      
+# DE1_SoC_Task3_tb.sv.bak  
+# Lab write up             
+# Launch_ModelSim.bat      
+# __MACOSX                 
+# addr_counter.sv          
+# addr_counter.sv.bak      
+# basic_D_FF.sv            
+# c5_pin_model_dump.txt    
+# clock_divider.sv         
+# clock_divider.sv.bak     
+# db                       
+# greybox_tmp              
+# incremental_db           
+# output_files             
+# ram32x3.mif              
+# ram32x3.qip              
+# ram32x3.v                
+# ram32x3.ver              
+# ram32x3_bb.v             
+# ram32x3port2.qip         
+# ram32x3port2.v           
+# ram32x3port2_bb.v        
+# runlab.do                
+# runlab_DE1.txt           
+# runlab_detectorFSM.txt   
+# runlab_task1.txt         
+# runlab_task2.txt         
+# runlab_task2DE1.txt      
+# runlab_task3DE1.txt      
+# seg7.sv                  
+# seg7.sv.bak              
+# simulation               
+# task1.sv                 
+# task1.sv.bak             
+# task1_tb.sv              
+# task1_tb.sv.bak          
+# task2.sv                 
+# task2.sv.bak             
+# task2_tb.sv              
+# task2_tb.sv.bak          
+# transcript               
+# vsim.wlf                 
+# wave_DE1                 
+# wave_task1               
+# wave_task2               
+# wave_task2DE1            
+# wave_task3DE1            
+# work                     
+# 
+# lab3:
+# Altera_UP_Audio_Bit_Counter.v        
+# Altera_UP_Audio_In_Deserializer.v    
+# Altera_UP_Audio_Out_Serializer.v     
+# Altera_UP_Clock_Edge.v               
+# Altera_UP_I2C.v                      
+# Altera_UP_I2C_AV_Auto_Initialize.v   
+# Altera_UP_I2C_DC_Auto_Initialize.v   
+# Altera_UP_I2C_LCM_Auto_Initialize.v  
+# Altera_UP_SYNC_FIFO.v                
+# Altera_UP_Slow_Clock_Generator.v     
+# DE1_SoC.qpf                          
+# DE1_SoC.qsf                          
+# DE1_SoC.qws                          
+# DE1_SoC_Task2.sv                     
+# DE1_SoC_Task2.sv.bak                 
+# FIR_filter.sv                        
+# FIR_filter.sv.bak                    
+# Lab write up                         
+# Launch_ModelSim.bat                  
+# __MACOSX                             
+# addr_counter.sv                      
+# addr_counter.sv.bak                  
+# audio_and_video_config.v             
+# audio_codec.v                        
+# c5_pin_model_dump.txt                
+# clock_generator.v                    
+# db                                   
+# ee371_lab3.pdf                       
+# fifo.sv                              
+# fifo_ctrl.sv                         
+# fifo_ctrl.sv.bak                     
+# greybox_tmp                          
+# incremental_db                       
+# lab3starterkit.zip                   
+# list for lab report.txt              
+# note_data.mif                        
+# note_data.ver                        
+# note_data_gen.py                     
+# note_gen_tutorial.pdf                
+# note_rom.qip                         
+# note_rom.v                           
+# note_rom_bb.v                        
+# output_files                         
+# part1.qpf                            
+# part1.qsf                            
+# part1.qws                            
+# part1.sld                            
+# part1.sof                            
+# part1.sta.rpt                        
+# part1.sta.summary                    
+# part1.v                              
+# piano_noisy.mp3                      
+# reg_file.sv                          
+# reg_file.sv.bak                      
+# rom.qip                              
+# rom.v                                
+# rom_bb.v                             
+# rom_test.sv                          
+# rom_test.sv.bak                      
+# runlab.do                            
+# runlab_FIR_filter.txt                
+# runlab_fifo.txt                      
+# runlab_task2                         
+# simulation                           
+# task2_tb.sv                          
+# task2part1.sv                        
+# task2part1.sv.bak                    
+# task3.sv.bak                         
+# transcript                           
+# vsim.wlf                             
+# wave_FIR_filter                      
+# wave_fifo                            
+# wave_task2                           
+# work                                 
+# 
+# lab4:
+# 371-Lab4-23au.pdf  binary search  counter_controller.sv  counter_datapath.sv  part2  seg7-1.sv  seg7.sv  top_level.sv      
+# 
+# lab5:
+# DE1_SoC.qsf                               
+# DE1_SoC.qws                               
+# DE1_SoC.sv                                
+# Lab write up                              
+# Launch_ModelSim.bat                       
+# VGA_framebuffer.sv                        
+# __MACOSX                                  
+# clock_divider.sv                          
+# db                                        
+# ee371_lab5.pdf                            
+# greybox_tmp                               
+# lab5.qpf                                  
+# line_data.mif                             
+# line_data.ver                             
+# line_data_rom.qip                         
+# line_data_rom.v                           
+# line_data_rom_bb.v                        
+# line_drawer.sv                            
+# lines_rom.qip                             
+# lines_rom.v                               
+# lines_rom_bb.v                            
+# mif_maker.py                              
+# runlab.do                                 
+# runlab_DE1_SoC.do                         
+# runlab_line_drawer.do                     
+# runlab_line_drawer_horizontal.do          
+# runlab_line_drawer_left_down_gradual.do   
+# runlab_line_drawer_left_down_steep.do     
+# runlab_line_drawer_left_up_gradual.do     
+# runlab_line_drawer_left_up_steep.do       
+# runlab_line_drawer_right_down_gradual.do  
+# runlab_line_drawer_right_down_steep.do    
+# runlab_line_drawer_right_up_gradual.do    
+# runlab_line_drawer_right_up_steep.do      
+# runlab_line_drawer_vertical.do            
+# test.py                                   
+# transcript                                
+# vsim.wlf                                  
+# wave_DE1_SoC                              
+# wave_line_drawer                          
+# wave_line_drawer_horizontal               
+# wave_line_drawer_left_down_gradual        
+# wave_line_drawer_left_down_steep          
+# wave_line_drawer_left_up_gradual          
+# wave_line_drawer_left_up_steep            
+# wave_line_drawer_right_down_gradual       
+# wave_line_drawer_right_down_steep         
+# wave_line_drawer_right_up_gradual         
+# wave_line_drawer_right_up_steep           
+# wave_line_drawer_vertical                 
+# work                                      
+# 
+# lab6:
+# DE1_SoC.sv  Proposal  __MACOSX  lab6  player_location.sv  simulation  transcript          
+# 
+# Midterm:
+# 371_hw1_soln.pdf  371_hw4_soln.pdf  Lecture 2.pdf  Lecture 5.pdf  Lecture 8.pdf           
+# 371_hw2_soln.pdf  Lecture 1.pdf     Lecture 3.pdf  Lecture 6.pdf  Lecture 9.pdf           
+# 371_hw3_soln.pdf  Lecture 10.pdf    Lecture 4.pdf  Lecture 7.pdf  Verilog_CheatSheet.pdf  
+# 
+# Setup:
+# DE1_SOC_golden_top.v  DE1_SoC.sv.bak                     db                qar_info.json  
+# DE1_SoC.qpf           DE1_SoC_assignment_defaults.qdf    fullAdder.sv      runlab.do      
+# DE1_SoC.qsf           DE1_SoC_nativelink_simulation.rpt  fullAdder.sv.bak  simulation     
+# DE1_SoC.qws           Launch_ModelSim.bat                incremental_db                   
+# DE1_SoC.sv            c5_pin_model_dump.txt              output_files                     
+cd lab6
+ls
+# DE1_SoC.sv  player_location.sv  transcript                                                
+# 
+# lab6:
+# 371-Lab6-proposal.pdf  371-Lab6.pdf  drivers                                                
+# 
+# Proposal:
+# CSE-371-Lab6-Proposal.aux          CSE-371-Lab6-Proposal.fls  CSE-371-Lab6-Proposal.out  CSE-371-Lab6-Proposal.synctex.gz  CSE-371-Lab6-Proposal.toc  Lab 6 Proposal.pdf    
+# CSE-371-Lab6-Proposal.fdb_latexmk  CSE-371-Lab6-Proposal.log  CSE-371-Lab6-Proposal.pdf  CSE-371-Lab6-Proposal.tex         Lab 6 Proposal.drawio                            
+# 
+# simulation:
+# Launch_ModelSim.bat                                                                                                                                                                
+# 
+# __MACOSX:
+# ._lab6  lab6                                                                              
+cd simulation
+ls
+# Launch_ModelSim.bat  runlab_player_location.do                                                                              
+do runlab_player_location.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:59:31 on Nov 25,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# ** Error: (vlog-13038) ../player_location.sv(5): near ")": Missing port in ansi port list.
+# End time: 23:59:31 on Nov 25,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_player_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../player_location.sv""
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:59:41 on Nov 25,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# ** Error: (vlog-13069) ../player_location.sv(25): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting ';'.
+# End time: 23:59:41 on Nov 25,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_player_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../player_location.sv""
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:00:13 on Nov 26,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# ** Error: ../player_location.sv(33): (vlog-2730) Undefined variable: 'clk'.
+# End time: 00:00:13 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_player_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../player_location.sv""
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:00:27 on Nov 26,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 00:00:27 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_location_tb 
+# Start time: 00:00:28 on Nov 26,2023
+# Loading sv_std.std
+# Loading work.player_location_tb
+# Loading work.player_location
+# ** Error: Cannot open macro file: wave_player_location
+# Error in macro ./runlab_player_location.do line 33
+# Cannot open macro file: wave_player_location
+#     while executing
+# "do wave_player_location"
+add wave -position end  sim:/player_location_tb/CLOCK_50
+add wave -position end  sim:/player_location_tb/enable
+add wave -position end  sim:/player_location_tb/reset
+add wave -position end  sim:/player_location_tb/left
+add wave -position end  sim:/player_location_tb/right
+add wave -position end  sim:/player_location_tb/out_x
+add wave -position end  sim:/player_location_tb/out_y
+add wave -position end  sim:/player_location_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_player_location}
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:01:10 on Nov 26,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 00:01:10 on Nov 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:01:12 on Nov 26,2023, Elapsed time: 0:00:44
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_location_tb 
+# Start time: 00:01:12 on Nov 26,2023
+# Loading sv_std.std
+# Loading work.player_location_tb
+# Loading work.player_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../player_location.sv(47)
+#    Time: 1750 ps  Iteration: 1  Instance: /player_location_tb
+# Break in Module player_location_tb at ../player_location.sv line 47
