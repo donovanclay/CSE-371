@@ -19,9 +19,29 @@ module DE1_SoC (
     output VGA_VS
     );
 
-    logic reset;
+    parameter SCREEN_WIDTH = 640;
+    parameter SCREEN_HEIGHT = 480;
 
-    assign reset = V_GPIO[5];
+    parameter SCREEN_PADDING_X = 10;
+    parameter SCREEN_PADDING_Y = 10;
+
+    parameter START_X = 320;
+    parameter START_Y = 454;
+
+    parameter STEP_SIZE_X = 1;
+    parameter STEP_SIZE_Y = 1;
+
+    parameter PLAYER_WIDTH = 32;
+    parameter PLAYER_HEIGHT = 32;
+
+    parameter BACKGROUND_COLOR = 24'h0;
+    parameter PLAYER_COLOR = 24'h34CA7F;
+    parameter LASER_COLOR = 24'hE91E63;
+    parameter ENEMY_COLOR = 24'hFFFFFF;
+
+    logic reset;
+    logic global_reset;
+    assign global_reset = V_GPIO[5];
     
     wire n8_up;
     wire n8_down;
@@ -29,27 +49,13 @@ module DE1_SoC (
     wire n8_right;
     wire n8_a;
     wire n8_b;
-
     wire n8_latch;
     wire n8_pulse;
-    
     wire n8_select;
     wire n8_start;
     
     assign V_GPIO[27] = n8_pulse;
     assign V_GPIO[26] = n8_latch;
-    
-    assign LEDR[0] = V_GPIO[5];
-    assign LEDR[1] = V_GPIO[6];
-    assign LEDR[2] = V_GPIO[7];
-    assign LEDR[3] = V_GPIO[8];
-    assign LEDR[4] = V_GPIO[9];
-    
-    assign LEDR[5] = V_GPIO[10]; // sw5; for debugging
-    assign LEDR[6] = V_GPIO[11]; // sw6; for debugging
-    assign LEDR[7] = V_GPIO[12]; // sw7; for debugging 
-    assign LEDR[8] = V_GPIO[13];
-    assign LEDR[9] = V_GPIO[14];
 
     n8_driver driver(
         .clk(CLOCK_50),
@@ -65,7 +71,7 @@ module DE1_SoC (
         .a(n8_a),
         .b(n8_b)
     );
-    
+
     n8_display display(
         .clk(CLOCK_50),
         .up(n8_up),
@@ -86,33 +92,112 @@ module DE1_SoC (
 
     logic [9:0] player_x;
     logic [8:0] player_y;
-    logic enable;
+    logic enable, updated_location;
 
-    assign enable = 1;
+    logic [17:0] count;
 
-    player_location player_location(
+    always_ff @(posedge CLOCK_50) begin
+        if (global_reset)
+            count = 0;
+        else 
+            count = count + 1;
+    end
+
+    assign enable = (count == (2** 18) - 1);
+    
+    assign LEDR[1] = enable;
+
+    player_location # (
+        .SCREEN_WIDTH(SCREEN_WIDTH),
+        .SCREEN_HEIGHT(SCREEN_HEIGHT),
+        .SCREEN_PADDING_X(SCREEN_PADDING_X),
+        .SCREEN_PADDING_Y(SCREEN_PADDING_Y),
+        .PLAYER_WIDTH(PLAYER_WIDTH),
+        .PLAYER_HEIGHT(PLAYER_HEIGHT),
+        .START_X(START_X),
+        .START_Y(START_Y),
+        .STEP_SIZE_X(STEP_SIZE_X),
+        .STEP_SIZE_Y(STEP_SIZE_Y)
+    )
+    player_location1 (
         .CLOCK_50(CLOCK_50),
         .enable(enable),
-        .reset(reset),
+        .global_reset(global_reset),
         .left(n8_left),
         .right(n8_right),
         .out_x(player_x),
         .out_y(player_y)
     );
-    
+
+    assign LEDR[9:2] = player_x[9:2];
+
+    logic player_drawer_reset, player_drawer_done;
+    logic [9:0] player_drawer_out_x;
+    logic [8:0] player_drawer_out_y;
+    logic [3:0] player_drawer_which_color;
+
+    player_drawer #(
+        .START_X(START_X),
+        .START_Y(START_Y),
+        .PLAYER_WIDTH(PLAYER_WIDTH),
+        .PLAYER_HEIGHT(PLAYER_HEIGHT)
+    )
+    player_drawer1 (
+        .clock(CLOCK_50),
+        .global_reset(global_reset),
+        .reset(player_drawer_done),
+        .player_x(player_x),
+        .player_y(player_y),
+        .out_x(player_drawer_out_x),
+        .out_y(player_drawer_out_y),
+        .which_color(player_drawer_which_color),
+        .done(player_drawer_done)
+    );
+
+    logic [18:0] vga_address, write_address;
+    logic [3:0] vga_write_data, write_data, vga_read_data, read_data;
+    logic vga_write_enable, write_enable;
+    display_ram my_ram (
+        .address_a(vga_address),
+        .address_b(write_address),
+        .clock(CLOCK_50),
+        .data_a(vga_write_data),
+        .data_b(write_data),
+        .wren_a(vga_write_enable),
+        .wren_b(write_enable),
+        .q_a(vga_read_data),
+        .q_b(read_data)
+    );
+
     logic [9:0] x;
     logic [8:0] y;
     logic [7:0] r, g, b;
 
-    video_driver #(.WIDTH(640), .HEIGHT(480))
-        v1 (.CLOCK_50, .reset, .x, .y, .r, .g, .b,
+    color_converter # (
+        .BACKGROUND_COLOR(BACKGROUND_COLOR),
+        .PLAYER_COLOR(PLAYER_COLOR),
+        .LASER_COLOR(LASER_COLOR),
+        .ENEMY_COLOR(ENEMY_COLOR)
+    )
+    my_cc (
+        .which_color(vga_read_data),
+        .r(r),
+        .g(g),
+        .b(b)
+    );
+
+    assign vga_address = SCREEN_WIDTH * y + x;
+    assign vga_write_enable = 1'b0;
+    assign write_address = SCREEN_WIDTH * player_drawer_out_y +
+                           player_drawer_out_x;
+    assign write_data = player_drawer_which_color;
+    assign write_enable = (!player_drawer_done);
+
+    video_driver #(.WIDTH(SCREEN_WIDTH), .HEIGHT(SCREEN_HEIGHT))
+        v1 (.CLOCK_50, .reset(glo), .x, .y, .r, .g, .b,
                 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
                 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 
-    always_ff @(posedge CLOCK_50) begin
-        r <= (n8_left) ? 122 : 0;
-        g <= x[7:0];
-        b <= y[7:0];
-    end
+    assign LEDR[0] = player_drawer_done;
 
 endmodule

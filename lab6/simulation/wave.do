@@ -1,0 +1,39 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /player_drawer_tb/clock
+add wave -noupdate /player_drawer_tb/global_reset
+add wave -noupdate /player_drawer_tb/reset
+add wave -noupdate -radix unsigned /player_drawer_tb/player_x
+add wave -noupdate -radix unsigned /player_drawer_tb/player_y
+add wave -noupdate -radix unsigned /player_drawer_tb/out_x
+add wave -noupdate -radix unsigned /player_drawer_tb/out_y
+add wave -noupdate -radix unsigned /player_drawer_tb/which_color
+add wave -noupdate /player_drawer_tb/done
+add wave -noupdate /player_drawer_tb/i
+add wave -noupdate /player_drawer_tb/dut/ps
+add wave -noupdate /player_drawer_tb/dut/ns
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/input_x
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/input_y
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/curr_x
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/prev_x
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/curr_y
+add wave -noupdate -radix unsigned /player_drawer_tb/dut/prev_y
+add wave -noupdate /player_drawer_tb/dut/erase
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {66998 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {581963 ps}
