@@ -2,14 +2,14 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /player_location_tb/CLOCK_50
 add wave -noupdate /player_location_tb/enable
-add wave -noupdate /player_location_tb/reset
 add wave -noupdate /player_location_tb/left
+add wave -noupdate /player_location_tb/global_reset
 add wave -noupdate /player_location_tb/right
 add wave -noupdate -radix unsigned /player_location_tb/out_x
 add wave -noupdate -radix unsigned /player_location_tb/out_y
 add wave -noupdate /player_location_tb/i
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {78 ps} 0}
+WaveRestoreCursors {{Cursor 1} {236 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -25,4 +25,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {1015 ps}
+WaveRestoreZoom {0 ps} {1838 ps}

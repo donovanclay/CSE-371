@@ -28,6 +28,16 @@ module DE1_SoC (
     parameter START_X = 320;
     parameter START_Y = 454;
 
+    parameter NUM_ALIENS = 20;
+
+    parameter ALIEN_GROUP_START_X = 320;
+    parameter ALIEN_GROUP_START_Y = 105;
+    parameter ALIEN_GROUP_PADDING_LEFT = 89;
+    parameter ALIEN_GROUP_PADDING_RIGHT = 454;
+
+    parameter ALIEN_WIDTH = 40;
+    parameter ALIEN_HEIGHT = 21;
+
     parameter STEP_SIZE_X = 1;
     parameter STEP_SIZE_Y = 1;
 
@@ -35,9 +45,16 @@ module DE1_SoC (
     parameter PLAYER_HEIGHT = 32;
 
     parameter BACKGROUND_COLOR = 24'h0;
+    parameter BACKGROUND_COLOR_NUM = 0;
     parameter PLAYER_COLOR = 24'h34CA7F;
+    parameter PLAYER_COLOR_NUM = 1;
     parameter LASER_COLOR = 24'hE91E63;
+    parameter LASER_COLOR_NUM = 2;
     parameter ENEMY_COLOR = 24'hFFFFFF;
+    parameter ENEMY_COLOR_NUM = 3;
+    parameter TITLE_TEXT_COLOR = 24'hFFB11E;
+    parameter TITLE_TEXT_COLOR_NUM = 4;
+
 
     logic reset;
     logic global_reset;
@@ -107,6 +124,24 @@ module DE1_SoC (
     
     assign LEDR[1] = enable;
 
+    logic [9:0] alien_group_x;
+    logic [8:0] alien_group_y;
+
+    alien_group_location # (
+        .SCREEN_WIDTH(SCREEN_WIDTH),
+        .SCREEN_HEIGHT(SCREEN_HEIGHT),
+        .ALIEN_GROUP_START_X(ALIEN_GROUP_START_X),
+        .ALIEN_GROUP_START_Y(ALIEN_GROUP_START_Y),
+        .ALIEN_GROUP_PADDING_LEFT(ALIEN_GROUP_PADDING_LEFT),
+        .ALIEN_GROUP_PADDING_RIGHT(ALIEN_GROUP_PADDING_RIGHT)
+    ) alien_group_location1 (
+        .clock(CLOCK_50),
+        .enable(enable),
+        .global_reset(global_reset),
+        .alien_group_x(alien_group_x),
+        .alien_group_y(alien_group_y)
+    );
+
     player_location # (
         .SCREEN_WIDTH(SCREEN_WIDTH),
         .SCREEN_HEIGHT(SCREEN_HEIGHT),
@@ -129,7 +164,8 @@ module DE1_SoC (
         .out_y(player_y)
     );
 
-    assign LEDR[9:2] = player_x[9:2];
+    // assign LEDR[9:2] = player_x[9:2];
+    assign LEDR[9:2] = alien_group_x[9:2];
 
     logic player_drawer_reset, player_drawer_done;
     logic [9:0] player_drawer_out_x;
@@ -169,9 +205,22 @@ module DE1_SoC (
         .q_b(read_data)
     );
 
+    // logic [3:0] title_color;
+
+    // title_text_ram my_title_ram (
+    //     .address(vga_address),
+    //     .clock(CLOCK_50),
+    //     .q(title_color)
+    // );
+
     logic [9:0] x;
     logic [8:0] y;
     logic [7:0] r, g, b;
+
+    logic [3:0] color_converter_in;
+
+    // assign color_converter_in = (global_reset) ? title_color : vga_read_data;
+    assign color_converter_in = vga_read_data;
 
     color_converter # (
         .BACKGROUND_COLOR(BACKGROUND_COLOR),
@@ -180,7 +229,7 @@ module DE1_SoC (
         .ENEMY_COLOR(ENEMY_COLOR)
     )
     my_cc (
-        .which_color(vga_read_data),
+        .which_color(color_converter_in),
         .r(r),
         .g(g),
         .b(b)
@@ -194,7 +243,7 @@ module DE1_SoC (
     assign write_enable = (!player_drawer_done);
 
     video_driver #(.WIDTH(SCREEN_WIDTH), .HEIGHT(SCREEN_HEIGHT))
-        v1 (.CLOCK_50, .reset(glo), .x, .y, .r, .g, .b,
+        v1 (.CLOCK_50, .reset(global_reset), .x, .y, .r, .g, .b,
                 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
                 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 

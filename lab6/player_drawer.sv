@@ -57,8 +57,6 @@ module player_drawer
         endcase
     end
 
-    logic [3:0] case_t;
-
     // outputs
     always_ff @(posedge clock) begin
         if (ps == s_global_reset) begin
@@ -76,24 +74,20 @@ module player_drawer
                 (erase && curr_x < prev_x + (PLAYER_WIDTH / 2))) begin
                 curr_x = curr_x + 1;
                 erase = erase;
-                case_t <= 1;
             end else if ((!erase && curr_y <= input_y + (PLAYER_HEIGHT / 2)) ||
                      (erase && curr_y < prev_y + (PLAYER_HEIGHT / 2) - 1)) begin
                 curr_x = (erase) ? prev_x - (PLAYER_WIDTH / 2) : input_x - (PLAYER_WIDTH / 2);
                 curr_y = (ns == s_draw) ? curr_y + 1 : input_y - (PLAYER_HEIGHT / 2);
                 erase = erase;
-                case_t <= 2;
             end else if (erase) begin
                 curr_x = input_x - (PLAYER_WIDTH / 2);
                 curr_y = input_y - (PLAYER_HEIGHT / 2);
                 erase = 0;
                 prev_x = input_x;
                 prev_y = input_y;
-                case_t <= 3;
             end else begin
                 curr_x = input_x - (PLAYER_WIDTH / 2);
                 curr_y = input_y - (PLAYER_HEIGHT / 2);
-                case_t <= 4;
             end
         end
 
@@ -141,6 +135,10 @@ module player_drawer_tb ();
 
     integer i;
     initial begin
+        global_reset <= 1'b0;       @(posedge clock);
+        for (i = 0; i < 32 * 10; i++) begin
+                                    @(posedge clock);
+        end
         global_reset <= 1'b1;       @(posedge clock);
         global_reset <= 1'b0;       @(posedge clock);
                                     @(posedge clock);

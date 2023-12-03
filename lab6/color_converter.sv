@@ -3,7 +3,8 @@ module color_converter
     parameter BACKGROUND_COLOR = 24'h0,
     parameter PLAYER_COLOR = 24'h34CA7F,
     parameter LASER_COLOR = 24'he91e63,
-    parameter ENEMY_COLOR = 24'hFFFFFF
+    parameter ENEMY_COLOR = 24'hFFFFFF, 
+    parameter TITLE_TEXT_COLOR = 24'hFFB11E
     )
     (
     input logic [3:0] which_color,
@@ -27,6 +28,8 @@ module color_converter
                 my_color = LASER_COLOR;
             3:  
                 my_color = ENEMY_COLOR;
+            4: 
+                my_color = TITLE_TEXT_COLOR;
             default:
                 my_color = 24'b0;
         endcase

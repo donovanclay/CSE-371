@@ -1,0 +1,41 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /alien_group_drawer_tb/clock
+add wave -noupdate /alien_group_drawer_tb/enable
+add wave -noupdate /alien_group_drawer_tb/global_reset
+add wave -noupdate /alien_group_drawer_tb/reset
+add wave -noupdate /alien_group_drawer_tb/alien_alive
+add wave -noupdate /alien_group_drawer_tb/alien_draw_done
+add wave -noupdate /alien_group_drawer_tb/done
+add wave -noupdate /alien_group_drawer_tb/alien_draw_reset
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/input_group_x
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/out_center_x
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/input_group_y
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/out_center_y
+add wave -noupdate -radix hexadecimal /alien_group_drawer_tb/color
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/out_which_alien
+add wave -noupdate /alien_group_drawer_tb/i
+add wave -noupdate /alien_group_drawer_tb/dut/ps
+add wave -noupdate /alien_group_drawer_tb/dut/ns
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/dut/prev_group_x
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/dut/prev_group_y
+add wave -noupdate /alien_group_drawer_tb/dut/erase
+add wave -noupdate -radix unsigned /alien_group_drawer_tb/dut/test_case
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {15500 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {47303 ps}

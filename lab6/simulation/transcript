@@ -252,3 +252,2980 @@ do runlab_player_drawer.do
 # ** Note: $stop    : ../player_drawer.sv(166)
 #    Time: 554250 ps  Iteration: 1  Instance: /player_drawer_tb
 # Break in Module player_drawer_tb at ../player_drawer.sv line 166
+do runlab_player_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:55:14 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 17:55:14 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:55:25 on Nov 29,2023, Elapsed time: 4:34:41
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_drawer_tb 
+# Start time: 17:55:26 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.player_drawer_tb
+# Loading work.player_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../player_drawer.sv(170)
+#    Time: 586350 ps  Iteration: 1  Instance: /player_drawer_tb
+# Break in Module player_drawer_tb at ../player_drawer.sv line 170
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:23 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_ram.v 
+# -- Compiling module title_text_ram
+# 
+# Top level modules:
+# 	title_text_ram
+# End time: 20:50:23 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:23 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:50:24 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:50:27 on Nov 29,2023, Elapsed time: 2:55:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:50:28 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_ram
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'title_rom_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut File: ../title_text_ram.v
+# Loading altera_mf_ver.altsyncram
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_title_rom.do PAUSED at line 28
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:50 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_ram.v 
+# -- Compiling module title_text_ram
+# 
+# Top level modules:
+# 	title_text_ram
+# End time: 20:50:50 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:50:50 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:50:50 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:50:28 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: wave_title_rom
+# Error in macro ./runlab_title_rom.do line 34
+# Cannot open macro file: wave_title_rom
+#     while executing
+# "do wave_title_rom"
+add wave -position end  sim:/title_rom_tb/clock
+add wave -position end  sim:/title_rom_tb/address
+add wave -position end  sim:/title_rom_tb/q
+add wave -position end  sim:/title_rom_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_title_rom}
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:34 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_ram.v 
+# -- Compiling module title_text_ram
+# 
+# Top level modules:
+# 	title_text_ram
+# End time: 20:51:34 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:51:34 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:51:34 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:51:35 on Nov 29,2023, Elapsed time: 0:01:07
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:51:35 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "start menu.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read start menu.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "start menu.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : ../title_rom_tb.sv(26)
+#    Time: 650 ps  Iteration: 1  Instance: /title_rom_tb
+# Break in Module title_rom_tb at ../title_rom_tb.sv line 26
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:54:54 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_rom.v 
+# -- Compiling module title_text_rom
+# 
+# Top level modules:
+# 	title_text_rom
+# End time: 20:54:54 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:54:54 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:54:54 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:55:01 on Nov 29,2023, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:55:01 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "start menu.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read start menu.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "start menu.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : ../title_rom_tb.sv(26)
+#    Time: 650 ps  Iteration: 1  Instance: /title_rom_tb
+# Break in Module title_rom_tb at ../title_rom_tb.sv line 26
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:57:01 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_rom.v 
+# -- Compiling module title_text_rom
+# 
+# Top level modules:
+# 	title_text_rom
+# End time: 20:57:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:57:01 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:57:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:57:03 on Nov 29,2023, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:57:03 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "start_menu.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read start_menu.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "start_menu.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : ../title_rom_tb.sv(26)
+#    Time: 650 ps  Iteration: 1  Instance: /title_rom_tb
+# Break in Module title_rom_tb at ../title_rom_tb.sv line 26
+do runlab_title_rom.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:58:27 on Nov 29,2023
+# vlog -reportprogress 300 ../title_text_rom.v 
+# -- Compiling module title_text_rom
+# 
+# Top level modules:
+# 	title_text_rom
+# End time: 20:58:27 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:58:27 on Nov 29,2023
+# vlog -reportprogress 300 ../title_rom_tb.sv 
+# -- Compiling module title_rom_tb
+# 
+# Top level modules:
+# 	title_rom_tb
+# End time: 20:58:28 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 20:58:29 on Nov 29,2023, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work title_rom_tb -Lf altera_mf_ver 
+# Start time: 20:58:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.title_rom_tb
+# Loading work.title_text_rom
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "start_menu.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read start_menu.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "start_menu.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /title_rom_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : ../title_rom_tb.sv(26)
+#    Time: 650 ps  Iteration: 1  Instance: /title_rom_tb
+# Break in Module title_rom_tb at ../title_rom_tb.sv line 26
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:21:59 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:22:00 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:22:02 on Nov 29,2023, Elapsed time: 0:23:33
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_location_tb 
+# Start time: 21:22:02 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.player_location_tb
+# Loading work.player_location
+# ** Error: (vish-4014) No objects found matching '/player_location_tb/reset'.
+# Executing ONERROR command at macro ./wave_player_location line 5
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../player_location.sv(63)
+#    Time: 1750 ps  Iteration: 1  Instance: /player_location_tb
+# Break in Module player_location_tb at ../player_location.sv line 63
+add wave -position 3  sim:/player_location_tb/global_reset
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_player_location}
+do runlab_player_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:26:42 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:26:42 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:26:53 on Nov 29,2023, Elapsed time: 0:04:51
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_location_tb 
+# Start time: 21:26:53 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.player_location_tb
+# Loading work.player_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../player_location.sv(66)
+#    Time: 2050 ps  Iteration: 1  Instance: /player_location_tb
+# Break in Module player_location_tb at ../player_location.sv line 66
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:20 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:34:20 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:20 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:34:20 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:20 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:34:20 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:20 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# ** Error: ../DE1_SoC.sv(435): (vlog-2730) Undefined variable: 'clock'.
+# ** Error: (vlog-13069) ../DE1_SoC.sv(440): near "initial": syntax error, unexpected initial, expecting ';' or ','.
+# ** Error: ../DE1_SoC.sv(441): (vlog-13205) Syntax error found in the scope following 'i'. Is there a missing '::'?
+# End time: 21:34:20 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_DE1_SoC.do line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../DE1_SoC.sv""
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:01 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:35:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:01 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:35:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:01 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:35:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:01 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# ** Error: ../DE1_SoC.sv(436): (vlog-2730) Undefined variable: 'CLOCK_50_PERIOD'.
+# End time: 21:35:01 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_DE1_SoC.do line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../DE1_SoC.sv""
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:16 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:35:16 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:16 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:35:16 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:16 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:35:16 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:16 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# ** Error: ../DE1_SoC.sv(435): (vlog-2110) Illegal reference to net "CLOCK_50".
+# ** Error: ../DE1_SoC.sv(436): (vlog-2110) Illegal reference to net "CLOCK_50".
+# End time: 21:35:16 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_DE1_SoC.do line 21
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../DE1_SoC.sv""
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:36 on Nov 29,2023
+# vlog -reportprogress 300 CLOCK25_PLL.v 
+# ** Error: (vlog-7) Failed to open design unit file "CLOCK25_PLL.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 21:36:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_DE1_SoC.do line 24
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "CLOCK25_PLL.v""
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:27 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:37:27 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:27 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:37:27 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:27 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:37:27 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:27 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:37:28 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:28 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:37:28 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:28 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:37:28 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:28 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:37:28 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:28 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:37:28 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:37:29 on Nov 29,2023, Elapsed time: 0:10:36
+# Errors: 19, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb 
+# Start time: 21:37:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'DE1_SoC_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/my_ram File: ../display_ram.v
+# ** Error: (vsim-3033) ../display_ram.v(75): Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/my_ram File: ../display_ram.v
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# Loading work.color_converter
+# Loading work.video_driver
+# Loading work.CLOCK25_PLL
+# Loading work.CLOCK25_PLL_0002
+# ** Error: (vsim-3033) ../CLOCK25_PLL_0002.v(78): Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1/c25_gen/clock25_pll_inst File: ../CLOCK25_PLL_0002.v
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# ** Error: (vsim-3033) ../video_driver.sv(119): Instantiation of 'altera_up_avalon_video_vga_timing' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1 File: ../video_driver.sv
+#         Searched libraries:
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_DE1_SoC.do PAUSED at line 34
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:03 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:38:03 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:03 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:38:03 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:03 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:38:03 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:03 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:38:03 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:03 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:38:04 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:04 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:38:04 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:04 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:38:04 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:04 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:38:04 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 21:37:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'DE1_SoC_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/my_ram File: ../display_ram.v
+# Loading altera_mf_ver.altsyncram
+# Loading work.color_converter
+# Loading work.video_driver
+# Loading work.CLOCK25_PLL
+# Loading work.CLOCK25_PLL_0002
+# ** Error: (vsim-3033) ../CLOCK25_PLL_0002.v(78): Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1/c25_gen/clock25_pll_inst File: ../CLOCK25_PLL_0002.v
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# ** Error: (vsim-3033) ../video_driver.sv(119): Instantiation of 'altera_up_avalon_video_vga_timing' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1 File: ../video_driver.sv
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_DE1_SoC.do PAUSED at line 34
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:24 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:38:24 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:25 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:38:25 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 21:37:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.color_converter
+# Loading work.video_driver
+# Loading work.CLOCK25_PLL
+# Loading work.CLOCK25_PLL_0002
+# ** Error: (vsim-3033) ../CLOCK25_PLL_0002.v(78): Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1/c25_gen/clock25_pll_inst File: ../CLOCK25_PLL_0002.v
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# ** Error: (vsim-3033) ../video_driver.sv(119): Instantiation of 'altera_up_avalon_video_vga_timing' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1 File: ../video_driver.sv
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_DE1_SoC.do PAUSED at line 34
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:46 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:39:46 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:46 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:39:46 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:46 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:39:47 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:47 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:39:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:47 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:39:48 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:48 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:39:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:48 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:39:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:48 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:39:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:39:48 on Nov 29,2023
+# vlog -reportprogress 300 ../altera_up_avalon_video_vga_timing.v 
+# ** Error: (vlog-7) Failed to open design unit file "../altera_up_avalon_video_vga_timing.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 21:39:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_DE1_SoC.do line 26
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../altera_up_avalon_video_vga_timing.v""
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:41:05 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:05 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:41:06 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:06 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:41:06 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:41:06 on Nov 29,2023
+# vlog -reportprogress 300 ../altera_up_avalon_video_vga_timing.v 
+# -- Compiling module altera_up_avalon_video_vga_timing
+# 
+# Top level modules:
+# 	altera_up_avalon_video_vga_timing
+# End time: 21:41:06 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 21:37:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.color_converter
+# Loading work.video_driver
+# Loading work.CLOCK25_PLL
+# Loading work.CLOCK25_PLL_0002
+# ** Error: (vsim-3033) ../CLOCK25_PLL_0002.v(78): Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_tb/v1/c25_gen/clock25_pll_inst File: ../CLOCK25_PLL_0002.v
+#         Searched libraries:
+#             C:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/work
+# Loading work.altera_up_avalon_video_vga_timing
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_DE1_SoC.do PAUSED at line 35
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:42:44 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:42:44 on Nov 29,2023
+# vlog -reportprogress 300 ../altera_up_avalon_video_vga_timing.v 
+# -- Compiling module altera_up_avalon_video_vga_timing
+# 
+# Top level modules:
+# 	altera_up_avalon_video_vga_timing
+# End time: 21:42:45 on Nov 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 21:37:29 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.color_converter
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Error: Cannot open macro file: wave_DE1_SoC
+# Error in macro ./runlab_DE1_SoC.do line 41
+# Cannot open macro file: wave_DE1_SoC
+#     while executing
+# "do wave_DE1_SoC"
+add wave -position end  sim:/DE1_SoC_tb/CLOCK_50
+add wave -position end  sim:/DE1_SoC_tb/player_x
+add wave -position end  sim:/DE1_SoC_tb/player_y
+add wave -position end  sim:/DE1_SoC_tb/n8_left
+add wave -position end  sim:/DE1_SoC_tb/n8_right
+add wave -position end  sim:/DE1_SoC_tb/n8_select
+add wave -position end  sim:/DE1_SoC_tb/n8_start
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_DE1_SoC}
+do runlab_DE1_SoC.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:47 on Nov 29,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:45:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:47 on Nov 29,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:45:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:47 on Nov 29,2023
+# vlog -reportprogress 300 ../display_ram.v 
+# -- Compiling module display_ram
+# 
+# Top level modules:
+# 	display_ram
+# End time: 21:45:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:47 on Nov 29,2023
+# vlog -reportprogress 300 ../DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_tb
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_tb
+# End time: 21:45:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:47 on Nov 29,2023
+# vlog -reportprogress 300 ../n8_display.v 
+# -- Compiling module n8_display
+# 
+# Top level modules:
+# 	n8_display
+# End time: 21:45:47 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:48 on Nov 29,2023
+# vlog -reportprogress 300 ../video_driver.sv 
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	video_driver
+# End time: 21:45:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:48 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL.v 
+# -- Compiling module CLOCK25_PLL
+# 
+# Top level modules:
+# 	CLOCK25_PLL
+# End time: 21:45:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:48 on Nov 29,2023
+# vlog -reportprogress 300 ../CLOCK25_PLL_0002.v 
+# -- Compiling module CLOCK25_PLL_0002
+# 
+# Top level modules:
+# 	CLOCK25_PLL_0002
+# End time: 21:45:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:48 on Nov 29,2023
+# vlog -reportprogress 300 ../altera_up_avalon_video_vga_timing.v 
+# -- Compiling module altera_up_avalon_video_vga_timing
+# 
+# Top level modules:
+# 	altera_up_avalon_video_vga_timing
+# End time: 21:45:48 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:45:49 on Nov 29,2023, Elapsed time: 0:08:20
+# Errors: 13, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_tb -Lf altera_mf_ver 
+# Start time: 21:45:50 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.DE1_SoC_tb
+# Loading work.n8_display
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.color_converter
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../DE1_SoC.sv(444)
+#    Time: 29950 ps  Iteration: 1  Instance: /DE1_SoC_tb
+# Break in Module DE1_SoC_tb at ../DE1_SoC.sv line 444
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:46 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# ** Error: (vlog-13069) ../alien_group_location.sv(13): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting ';'.
+# End time: 23:06:46 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_location.sv""
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:06:59 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# ** Error: (vlog-13069) ../alien_group_location.sv(13): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting ';'.
+# End time: 23:06:59 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_location.sv""
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:09 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# ** Error: (vlog-13069) ../alien_group_location.sv(70): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: ../alien_group_location.sv(80): Illegal declaration after the statement near line '64'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ../alien_group_location.sv(82): (vlog-2730) Undefined variable: '.*'.
+# ** Error: ../alien_group_location.sv(82): Checker 'alien_group_location' not found.  Instantiation 'dut' must be of a visible checker.
+# ** Error: ../alien_group_location.sv(85): Illegal declaration after the statement near line '82'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ../alien_group_location.sv(92): (vlog-2730) Undefined variable: 'left'.
+# ** Error: ../alien_group_location.sv(92): (vlog-2730) Undefined variable: 'right'.
+# ** Error: ../alien_group_location.sv(92): (vlog-2730) Undefined variable: 'CLOCK_50'.
+# End time: 23:07:09 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_location.sv""
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:09:40 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 23:09:40 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:09:42 on Nov 29,2023, Elapsed time: 1:23:52
+# Errors: 19, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 23:09:43 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# ** Error: Cannot open macro file: wave_alien_group_location
+# Error in macro ./runlab_alien_group_location.do line 33
+# Cannot open macro file: wave_alien_group_location
+#     while executing
+# "do wave_alien_group_location"
+add wave -position end  sim:/alien_group_location_tb/clock
+add wave -position end  sim:/alien_group_location_tb/enable
+add wave -position end  sim:/alien_group_location_tb/global_reset
+add wave -position end  sim:/alien_group_location_tb/location
+add wave -position end  sim:/alien_group_location_tb/x
+add wave -position end  sim:/alien_group_location_tb/y
+add wave -position end  sim:/alien_group_location_tb/i
+add wave -position end  sim:/alien_group_location_tb/j
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:10:12 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 23:10:12 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:10:14 on Nov 29,2023, Elapsed time: 0:00:31
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 23:10:14 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(102)
+#    Time: 299950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 102
+add wave -position end  sim:/alien_group_location_tb/dut/x
+add wave -position end  sim:/alien_group_location_tb/dut/y
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:11:36 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 23:11:36 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:11:39 on Nov 29,2023, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 23:11:39 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(102)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 102
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:03 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# ** Error: ../alien_group_location.sv(44): (vlog-2730) Undefined variable: 'Y'.
+# -- Compiling module alien_group_location_tb
+# End time: 23:13:03 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_location.sv""
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:12 on Nov 29,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 23:13:12 on Nov 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:13:15 on Nov 29,2023, Elapsed time: 0:01:36
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 23:13:15 on Nov 29,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(106)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 106
+add wave -position end  sim:/alien_group_location_tb/dut/ps
+add wave -position end  sim:/alien_group_location_tb/dut/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:49:04 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:49:04 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:49:08 on Nov 30,2023, Elapsed time: 17:35:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:49:09 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(106)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 106
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:49:40 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:49:40 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:49:54 on Nov 30,2023, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:49:54 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(107)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 107
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:50:32 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:50:32 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:50:35 on Nov 30,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:50:36 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(107)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 107
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:17 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:55:17 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:55:19 on Nov 30,2023, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:55:19 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in alien_group_location_tb for port 'alien_group_x'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_location_tb/dut File: ../alien_group_location.sv
+# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in alien_group_location_tb for port 'alien_group_y'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_location_tb/dut File: ../alien_group_location.sv
+# ** Warning: (vsim-3017) ../alien_group_location.sv(90): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_location_tb/dut File: ../alien_group_location.sv
+# ** Warning: (vsim-3722) ../alien_group_location.sv(90): [TFMPC] - Missing connection for port 'alien_group_x'.
+# ** Warning: (vsim-3722) ../alien_group_location.sv(90): [TFMPC] - Missing connection for port 'alien_group_y'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_alien_group_location.do PAUSED at line 27
+do ru
+# Cannot open macro file: ru
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:44 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:55:44 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:55:19 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# ** Error: (vish-4014) No objects found matching '/alien_group_location_tb/x'.
+# Executing ONERROR command at macro ./wave_alien_group_location line 7
+# ** Error: (vish-4014) No objects found matching '/alien_group_location_tb/y'.
+# Executing ONERROR command at macro ./wave_alien_group_location line 8
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(111)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 111
+add wave -position end  sim:/alien_group_location_tb/clock
+add wave -position end  sim:/alien_group_location_tb/enable
+add wave -position end  sim:/alien_group_location_tb/global_reset
+add wave -position end  sim:/alien_group_location_tb/location
+add wave -position end  sim:/alien_group_location_tb/alien_group_x
+add wave -position end  sim:/alien_group_location_tb/alien_group_y
+add wave -position end  sim:/alien_group_location_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:56:17 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:56:17 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:56:20 on Nov 30,2023, Elapsed time: 0:01:01
+# Errors: 8, Warnings: 3
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:56:20 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(111)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 111
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:59:05 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# ** Error: (vlog-13069) ../alien_group_location.sv(58): near "=": syntax error, unexpected '=', expecting ++ or --.
+# ** Error: (vlog-13069) ../alien_group_location.sv(61): near "else": syntax error, unexpected else.
+# ** Error: ../alien_group_location.sv(63): (vlog-13205) Syntax error found in the scope following 'y'. Is there a missing '::'?
+# End time: 16:59:05 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_location.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_location.sv""
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:59:18 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 16:59:18 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:59:21 on Nov 30,2023, Elapsed time: 0:03:01
+# Errors: 6, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 16:59:21 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(108)
+#    Time: 269950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 108
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:00:01 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 17:00:02 on Nov 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:00:04 on Nov 30,2023, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 17:00:04 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(108)
+#    Time: 1079950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 108
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_location}
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:23:57 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../aliens_alive_ram.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:23:57 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_aliens_alive_ram.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../aliens_alive_ram.sv""
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:06 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.sv 
+# ** Error: (vlog-7) Failed to open design unit file "../aliens_alive_ram.sv" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:24:06 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_aliens_alive_ram.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../aliens_alive_ram.sv""
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:21 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:24:21 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:21 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# ** Error: ../aliens_alive_ram_tb.sv(21): (vlog-2730) Undefined variable: 'y'.
+# ** Error: ../aliens_alive_ram_tb.sv(21): (vlog-2730) Undefined variable: 'x'.
+# ** Error: (vlog-13069) ../aliens_alive_ram_tb.sv(26): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: (vlog-13069) ../aliens_alive_ram_tb.sv(30): near "<=": syntax error, unexpected <=.
+# ** Error: ../aliens_alive_ram_tb.sv(30): (vlog-13205) Syntax error found in the scope following 'which_alien'. Is there a missing '::'?
+# End time: 18:24:21 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_aliens_alive_ram.do line 19
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../aliens_alive_ram_tb.sv""
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:52 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:24:52 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:24:53 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# ** Error: (vlog-13069) ../aliens_alive_ram_tb.sv(24): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: (vlog-13069) ../aliens_alive_ram_tb.sv(28): near "<=": syntax error, unexpected <=.
+# ** Error: ../aliens_alive_ram_tb.sv(28): (vlog-13205) Syntax error found in the scope following 'which_alien'. Is there a missing '::'?
+# End time: 18:24:53 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_aliens_alive_ram.do line 19
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../aliens_alive_ram_tb.sv""
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:27 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:25:27 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:27 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# 
+# Top level modules:
+# 	aliens_alive_ram_tb
+# End time: 18:25:27 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:25:28 on Nov 30,2023, Elapsed time: 1:25:24
+# Errors: 22, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work aliens_alive_ram_tb -Lf altera_mf_ver 
+# Start time: 18:25:29 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.aliens_alive_ram_tb
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) ../aliens_alive_ram_tb.sv(7): [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: ../aliens_alive_ram.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /aliens_alive_ram_tb/dut File: ../aliens_alive_ram.v
+# ** Error: Cannot open macro file: wave_aliens_alive_ram
+# Error in macro ./runlab_aliens_alive_ram.do line 34
+# Cannot open macro file: wave_aliens_alive_ram
+#     while executing
+# "do wave_aliens_alive_ram"
+add wave -position end  sim:/aliens_alive_ram_tb/clock
+add wave -position end  sim:/aliens_alive_ram_tb/enable
+add wave -position end  sim:/aliens_alive_ram_tb/which_alien
+add wave -position end  sim:/aliens_alive_ram_tb/alive_in
+add wave -position end  sim:/aliens_alive_ram_tb/alive_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_aliens_alive_ram}
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:02 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:26:02 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:26:02 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# 
+# Top level modules:
+# 	aliens_alive_ram_tb
+# End time: 18:26:02 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:26:03 on Nov 30,2023, Elapsed time: 0:00:34
+# Errors: 3, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work aliens_alive_ram_tb -Lf altera_mf_ver 
+# Start time: 18:26:03 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.aliens_alive_ram_tb
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "aliens_alive_init_data.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /aliens_alive_ram_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read aliens_alive_init_data.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "aliens_alive_init_data.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+#    Time: 0 ps  Iteration: 0  Instance: /aliens_alive_ram_tb/dut/altsyncram_component/m_default/altsyncram_inst
+# ** Note: $stop    : ../aliens_alive_ram_tb.sv(31)
+#    Time: 2150 ps  Iteration: 1  Instance: /aliens_alive_ram_tb
+# Break in Module aliens_alive_ram_tb at ../aliens_alive_ram_tb.sv line 31
+do runlab_alien_group_location.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:30 on Nov 30,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 18:27:30 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:32 on Nov 30,2023, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_location_tb -Lf altera_mf_ver 
+# Start time: 18:27:32 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.alien_group_location_tb
+# Loading work.alien_group_location
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_location.sv(110)
+#    Time: 1079950 ps  Iteration: 1  Instance: /alien_group_location_tb
+# Break in Module alien_group_location_tb at ../alien_group_location.sv line 110
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:39 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:27:39 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:27:39 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# 
+# Top level modules:
+# 	aliens_alive_ram_tb
+# End time: 18:27:39 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:42 on Nov 30,2023, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work aliens_alive_ram_tb -Lf altera_mf_ver 
+# Start time: 18:27:42 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.aliens_alive_ram_tb
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../aliens_alive_ram_tb.sv(31)
+#    Time: 2150 ps  Iteration: 1  Instance: /aliens_alive_ram_tb
+# Break in Module aliens_alive_ram_tb at ../aliens_alive_ram_tb.sv line 31
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_aliens_alive_ram}
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:07 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 18:29:07 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:07 on Nov 30,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# 
+# Top level modules:
+# 	aliens_alive_ram_tb
+# End time: 18:29:08 on Nov 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:30:00 on Nov 30,2023, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work aliens_alive_ram_tb -Lf altera_mf_ver 
+# Start time: 18:30:00 on Nov 30,2023
+# Loading sv_std.std
+# Loading work.aliens_alive_ram_tb
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../aliens_alive_ram_tb.sv(31)
+#    Time: 2250 ps  Iteration: 1  Instance: /aliens_alive_ram_tb
+# Break in Module aliens_alive_ram_tb at ../aliens_alive_ram_tb.sv line 31
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:53:38 on Dec 01,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(18): near ")": syntax error, unexpected ')'.
+# End time: 16:53:38 on Dec 01,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:11 on Dec 01,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(80): near ";": syntax error, unexpected ';', expecting ':'.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(83): near "endcase": syntax error, unexpected endcase.
+# -- Compiling module alien_group_drawer_tb
+# End time: 16:54:11 on Dec 01,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:54:24 on Dec 01,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error (suppressible): (vlog-7033) ../alien_group_drawer.sv(162): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ../alien_group_drawer.sv(43).
+# ** Error (suppressible): (vlog-7033) ../alien_group_drawer.sv(164): Variable 'ns' driven in a combinational block, may not be driven by any other process. See ../alien_group_drawer.sv(43).
+# -- Compiling module alien_group_drawer_tb
+# End time: 16:54:24 on Dec 01,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:55:09 on Dec 01,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 16:55:09 on Dec 01,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:55:10 on Dec 01,2023, Elapsed time: 22:25:10
+# Errors: 12, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 16:55:11 on Dec 01,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(94): Unresolved reference to 'ALIEN_START_X'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(94): Unresolved reference to 'ALIEN_START_X'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(95): Unresolved reference to 'ALIEN_START_Y'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(95): Unresolved reference to 'ALIEN_START_Y'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(133): Unresolved reference to 'ALIEN_X'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(133): Unresolved reference to 'ALIEN_X'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(134): Unresolved reference to 'ALIEN_Y'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# ** Error: (vsim-3043) ../alien_group_drawer.sv(134): Unresolved reference to 'ALIEN_Y'.
+#    Time: 0 ps  Iteration: 0  Instance: /alien_group_drawer_tb/dut File: ../alien_group_drawer.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab_alien_group_drawer.do PAUSED at line 27
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:05:19 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(95)
+# ** at ../alien_group_drawer.sv(95): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(134)
+# ** at ../alien_group_drawer.sv(134): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:05:19 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:10:59 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ** while parsing macro expansion: 'ALIEN_START_X' starting at ../alien_group_drawer.sv(94)
+# ** at ../alien_group_drawer.sv(94): (vlog-2730) Undefined variable: '\ '.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_X' starting at ../alien_group_drawer.sv(94)
+# ** at ../alien_group_drawer.sv(94): near "ALIEN_GROUP_START_X": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(95)
+# ** at ../alien_group_drawer.sv(95): near "ALIEN_GROUP_START_Y": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: ** while parsing macro expansion: 'ALIEN_X' starting at ../alien_group_drawer.sv(133)
+# ** at ../alien_group_drawer.sv(133): (vlog-2730) Undefined variable: '\ '.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_X' starting at ../alien_group_drawer.sv(133)
+# ** at ../alien_group_drawer.sv(133): near "group_x": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(134)
+# ** at ../alien_group_drawer.sv(134): near "group_y": syntax error, unexpected IDENTIFIER, expecting ';'.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:10:59 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_aliens_alive_ram.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:09 on Dec 02,2023
+# vlog -reportprogress 300 ../aliens_alive_ram.v 
+# -- Compiling module aliens_alive_ram
+# 
+# Top level modules:
+# 	aliens_alive_ram
+# End time: 13:11:10 on Dec 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:10 on Dec 02,2023
+# vlog -reportprogress 300 ../aliens_alive_ram_tb.sv 
+# -- Compiling module aliens_alive_ram_tb
+# 
+# Top level modules:
+# 	aliens_alive_ram_tb
+# End time: 13:11:10 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work aliens_alive_ram_tb -Lf altera_mf_ver 
+# Start time: 16:55:11 on Dec 01,2023
+# Loading sv_std.std
+# Loading work.aliens_alive_ram_tb
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../aliens_alive_ram_tb.sv(31)
+#    Time: 2250 ps  Iteration: 1  Instance: /aliens_alive_ram_tb
+# Break in Module aliens_alive_ram_tb at ../aliens_alive_ram_tb.sv line 31
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:11:18 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(95)
+# ** at ../alien_group_drawer.sv(95): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(134)
+# ** at ../alien_group_drawer.sv(134): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:11:18 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:13:48 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(95): (vlog-2730) Undefined variable: 'WHICH_ALIEN'.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(96): near "curr_center_y": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(135)
+# ** at ../alien_group_drawer.sv(135): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:13:48 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:14:06 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(96)
+# ** at ../alien_group_drawer.sv(96): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(135)
+# ** at ../alien_group_drawer.sv(135): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:14:06 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:14:32 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(96)
+# ** at ../alien_group_drawer.sv(96): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(135)
+# ** at ../alien_group_drawer.sv(135): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:14:32 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:16:32 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(97)
+# ** at ../alien_group_drawer.sv(97): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(136)
+# ** at ../alien_group_drawer.sv(136): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:16:32 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:17:04 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(102)
+# ** at ../alien_group_drawer.sv(102): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(141)
+# ** at ../alien_group_drawer.sv(141): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:17:04 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+DO runlab_alien_group_drawer.do
+# invalid command name "DO"
+DO runlab_alien_group_drawer.do
+# invalid command name "DO"
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:54 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:25:54 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:25:55 on Dec 02,2023, Elapsed time: 20:30:44
+# Errors: 41, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:25:56 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# ** Error: Cannot open macro file: wave_alien_group_drawer
+# Error in macro ./runlab_alien_group_drawer.do line 33
+# Cannot open macro file: wave_alien_group_drawer
+#     while executing
+# "do wave_alien_group_drawer"
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:55 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(48): 'i' is an invalid type in Generate loop. Must be a genvar.
+# ** Error (suppressible): ../alien_group_drawer.sv(49): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(50): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(53): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(56): near "(": syntax error, unexpected '('.
+# ** Error: ../alien_group_drawer.sv(62): (vlog-2730) Undefined variable: 'ps'.
+# ** Error: ../alien_group_drawer.sv(63): (vlog-2730) Undefined variable: 's_global_reset'.
+# ** Error: ../alien_group_drawer.sv(64): (vlog-2730) Undefined variable: 'ns'.
+# ** Error: ../alien_group_drawer.sv(64): (vlog-2730) Undefined variable: 's_draw_alien'.
+# ** Error: ../alien_group_drawer.sv(70): (vlog-2730) Undefined variable: 's_is_alive'.
+# ** Error: ../alien_group_drawer.sv(72): (vlog-2730) Undefined variable: 's_done'.
+# ** Error: ../alien_group_drawer.sv(75): (vlog-2730) Undefined variable: 's_is_alive'.
+# ** Error: ../alien_group_drawer.sv(79): (vlog-2730) Undefined variable: 's_is_alive'.
+# ** Error: ../alien_group_drawer.sv(86): (vlog-2730) Undefined variable: 's_done'.
+# ** Error: ../alien_group_drawer.sv(93): (vlog-2730) Undefined variable: 's_start'.
+# ** Error: ../alien_group_drawer.sv(98): (vlog-2730) Undefined variable: 's_done'.
+# ** Error: ../alien_group_drawer.sv(101): (vlog-2730) Undefined variable: 's_done'.
+# ** Error: ../alien_group_drawer.sv(109): (vlog-2730) Undefined variable: 'ps'.
+# ** Error: ../alien_group_drawer.sv(109): (vlog-2730) Undefined variable: 's_global_reset'.
+# ** Error: ../alien_group_drawer.sv(121): (vlog-2730) Undefined variable: 's_draw_alien'.
+# ** Error: ../alien_group_drawer.sv(127): (vlog-2730) Undefined variable: 's_start'.
+# ** Error: ../alien_group_drawer.sv(133): (vlog-2730) Undefined variable: 'ps'.
+# ** Error: ../alien_group_drawer.sv(133): (vlog-2730) Undefined variable: 's_done'.
+# ** Error: ../alien_group_drawer.sv(137): (vlog-2730) Undefined variable: 's_draw_alien'.
+# ** Error: ../alien_group_drawer.sv(153): (vlog-2730) Undefined variable: 's_is_alive'.
+# ** Error: ../alien_group_drawer.sv(174): (vlog-2730) Undefined variable: 's_start'.
+# ** Error: ../alien_group_drawer.sv(184): (vlog-2730) Undefined variable: 's_global_reset'.
+# ** Error: ../alien_group_drawer.sv(186): (vlog-2730) Undefined variable: 's_start'.
+# ** Error: ../alien_group_drawer.sv(188): (vlog-2730) Undefined variable: 'ns'.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(190): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(215): near "endmodule": syntax error, unexpected endmodule.
+# End time: 13:30:55 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 31, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:31:16 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(48): 'i' is an invalid type in Generate loop. Must be a genvar.
+# ** Error (suppressible): ../alien_group_drawer.sv(49): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(50): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(53): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(56): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:31:16 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:31:57 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(48): 'i' is an invalid type in Generate loop. Must be a genvar.
+# ** Error (suppressible): ../alien_group_drawer.sv(49): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../alien_group_drawer.sv(56): (vlog-2730) Undefined variable: 'WHICH_ALIEN'.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:31:57 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:26 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_START_Y' starting at ../alien_group_drawer.sv(117)
+# ** at ../alien_group_drawer.sv(117): near "(": syntax error, unexpected '('.
+# ** Error: (vlog-13069) ** while parsing macro expansion: 'ALIEN_Y' starting at ../alien_group_drawer.sv(156)
+# ** at ../alien_group_drawer.sv(156): near "(": syntax error, unexpected '('.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:32:26 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:32:51 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:32:51 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:32:52 on Dec 02,2023, Elapsed time: 0:06:56
+# Errors: 53, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:32:52 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# ** Error: Cannot open macro file: wave_alien_group_drawer
+# Error in macro ./runlab_alien_group_drawer.do line 33
+# Cannot open macro file: wave_alien_group_drawer
+#     while executing
+# "do wave_alien_group_drawer"
+add wave -position end  sim:/alien_group_drawer_tb/clock
+add wave -position end  sim:/alien_group_drawer_tb/enable
+add wave -position end  sim:/alien_group_drawer_tb/global_reset
+add wave -position end  sim:/alien_group_drawer_tb/reset
+add wave -position end  sim:/alien_group_drawer_tb/alien_alive
+add wave -position end  sim:/alien_group_drawer_tb/alien_draw_done
+add wave -position end  sim:/alien_group_drawer_tb/done
+add wave -position end  sim:/alien_group_drawer_tb/alien_draw_reset
+add wave -position end  sim:/alien_group_drawer_tb/input_group_x
+add wave -position end  sim:/alien_group_drawer_tb/out_center_x
+add wave -position end  sim:/alien_group_drawer_tb/input_group_y
+add wave -position end  sim:/alien_group_drawer_tb/out_center_y
+add wave -position end  sim:/alien_group_drawer_tb/color
+add wave -position end  sim:/alien_group_drawer_tb/out_which_alien
+add wave -position end  sim:/alien_group_drawer_tb/i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:18 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:33:18 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:33:19 on Dec 02,2023, Elapsed time: 0:00:27
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:33:19 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(212)
+#    Time: 150 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 212
+add wave -position end  sim:/alien_group_drawer_tb/dut/ps
+add wave -position end  sim:/alien_group_drawer_tb/dut/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:06 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:34:06 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:34:07 on Dec 02,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:34:07 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(212)
+#    Time: 150 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 212
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:44 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:34:44 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:35:03 on Dec 02,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:35:03 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(215)
+#    Time: 2150 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 215
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:28 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:36:29 on Dec 02,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 13:36:32 on Dec 02,2023, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:36:32 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(221)
+#    Time: 4350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 221
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:38:32 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:38:32 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:38:33 on Dec 02,2023, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:38:33 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(221)
+#    Time: 4350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 221
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:09 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:39:09 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:39:13 on Dec 02,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:39:13 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(221)
+#    Time: 4350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 221
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:44:20 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:44:20 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:44:42 on Dec 02,2023, Elapsed time: 0:05:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:44:42 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(223)
+#    Time: 15350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 223
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:49:43 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(43): (vlog-2730) Undefined variable: 'ps'.
+# ** Error (suppressible): ../alien_group_drawer.sv(46): (vlog-2388) 'ps' already declared in this scope (alien_group_drawer).
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:49:44 on Dec 02,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:46 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(51): near "always_comb": syntax error, unexpected "SystemVerilog keyword 'always_comb'".
+# ** Error (suppressible): ../alien_group_drawer.sv(57): (vlog-2720) A generate begin/end pair has been found outside of generate construct.
+# ** Error: ../alien_group_drawer.sv(57): 's_draw_alien' already exists; must not be redefined as a generate block
+# ** Error: (vlog-13069) ../alien_group_drawer.sv(60): near "=": syntax error, unexpected '='.
+# ** Error: ../alien_group_drawer.sv(60): (vlog-13205) Syntax error found in the scope following 'ns'. Is there a missing '::'?
+# End time: 13:50:46 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:51:24 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:51:24 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:51:28 on Dec 02,2023, Elapsed time: 0:06:46
+# Errors: 11, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:51:28 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(214)
+#    Time: 15350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 214
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:40 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:52:40 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:52:44 on Dec 02,2023, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:52:44 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(214)
+#    Time: 15350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 214
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:10 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(49): (vlog-2730) Undefined variable: 'BACKGROUND_COLOR'.
+# ** Error: ../alien_group_drawer.sv(49): (vlog-2730) Undefined variable: 'ENEMY_COLOR'.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:58:10 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:25 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# ** Error: ../alien_group_drawer.sv(49): (vlog-2730) Undefined variable: 'BACKGROUND_COLOR_num'.
+# -- Compiling module alien_group_drawer_tb
+# End time: 13:58:25 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab_alien_group_drawer.do line 18
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "../alien_group_drawer.sv""
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:37 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 13:58:37 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:58:37 on Dec 02,2023, Elapsed time: 0:05:53
+# Errors: 9, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 13:58:38 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 30350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+add wave -position end  sim:/alien_group_drawer_tb/dut/prev_group_x
+add wave -position end  sim:/alien_group_drawer_tb/dut/prev_group_y
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:03 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:00:03 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:00:05 on Dec 02,2023, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:00:05 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 30350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:00:53 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:00:53 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:01:10 on Dec 02,2023, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:01:10 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 30350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+add wave -position end  sim:/alien_group_drawer_tb/dut/erase
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:02 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:04:02 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:04:03 on Dec 02,2023, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:04:03 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 30350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:04:38 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:04:38 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:04:44 on Dec 02,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:04:44 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 30350 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:00 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:05:00 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:05:15 on Dec 02,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:05:15 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(227)
+#    Time: 45050 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 227
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:15:41 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:15:41 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:15:45 on Dec 02,2023, Elapsed time: 0:10:30
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:15:46 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(231)
+#    Time: 45050 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 231
+add wave -position end  sim:/alien_group_drawer_tb/dut/test_case
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/donov/OneDrive - donovan.clay/OneDrive/1) School/2023-24 UW/1) Fall/CSE 371/lab6/simulation/wave_alien_group_drawer}
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:16:14 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:16:14 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:16:15 on Dec 02,2023, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:16:15 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(231)
+#    Time: 45050 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 231
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:19:01 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:19:01 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:19:03 on Dec 02,2023, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:19:03 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(231)
+#    Time: 45050 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 231
+do runlab_alien_group_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:20:59 on Dec 02,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 14:20:59 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:21:03 on Dec 02,2023, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alien_group_drawer_tb 
+# Start time: 14:21:03 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.alien_group_drawer_tb
+# Loading work.alien_group_drawer
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../alien_group_drawer.sv(244)
+#    Time: 74750 ps  Iteration: 1  Instance: /alien_group_drawer_tb
+# Break in Module alien_group_drawer_tb at ../alien_group_drawer.sv line 244
+do runlab_player_drawer.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:02 on Dec 02,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 14:42:02 on Dec 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:42:04 on Dec 02,2023, Elapsed time: 0:21:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work player_drawer_tb 
+# Start time: 14:42:05 on Dec 02,2023
+# Loading sv_std.std
+# Loading work.player_drawer_tb
+# Loading work.player_drawer
+# ** Error: (vish-4014) No objects found matching '/player_drawer_tb/dut/case_t'.
+# Executing ONERROR command at macro ./wave_player_drawer line 22
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../player_drawer.sv(164)
+#    Time: 586350 ps  Iteration: 1  Instance: /player_drawer_tb
+# Break in Module player_drawer_tb at ../player_drawer.sv line 164
