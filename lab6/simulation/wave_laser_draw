@@ -1,0 +1,49 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix unsigned /laser_draw_tb/clock
+add wave -noupdate -radix unsigned /laser_draw_tb/laser_alive
+add wave -noupdate -radix unsigned /laser_draw_tb/laser_draw_start
+add wave -noupdate -radix unsigned /laser_draw_tb/laser_draw_reset
+add wave -noupdate -radix unsigned /laser_draw_tb/laser_x
+add wave -noupdate -radix unsigned /laser_draw_tb/laser_y
+add wave -noupdate -radix unsigned /laser_draw_tb/out_x
+add wave -noupdate -radix unsigned /laser_draw_tb/out_y
+add wave -noupdate -radix unsigned /laser_draw_tb/done
+add wave -noupdate -radix unsigned /laser_draw_tb/i
+add wave -noupdate -divider {New Divider}
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/clock
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/laser_alive
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/laser_draw_start
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/laser_draw_reset
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/laser_x
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/laser_y
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/out_x
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/out_y
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/done
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/input_x
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/curr_x
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/prev_x
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/input_y
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/curr_y
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/prev_y
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/erase
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/ps
+add wave -noupdate -radix unsigned /laser_draw_tb/dut/ns
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {1855 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {1700 ps} {2700 ps}

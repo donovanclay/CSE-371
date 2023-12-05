@@ -1,18 +1,29 @@
+`ifndef ALIEN_X
 `define ALIEN_X(WHICH_ALIEN) \
     group_x + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
+`endif ALIEN_X
+`ifndef ALIEN_Y
 `define ALIEN_Y(WHICH_ALIEN) \
     group_y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
+`endif ALIEN_Y
 
+`ifndef ERASE_ALIEN_X
 `define ERASE_ALIEN_X(WHICH_ALIEN) \
     prev_group_x + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
+`endif ERASE_ALIEN_X
+`ifndef ERASE_ALIEN_Y
 `define ERASE_ALIEN_Y(WHICH_ALIEN) \
     prev_group_y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
+`endif ERASE_ALIEN_Y
 
+`ifndef ALIEN_START_X
 `define ALIEN_START_X(WHICH_ALIEN) \
     ALIEN_GROUP_START_X + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
-
+`endif ALIEN_START_X
+`ifndef ALIEN_START_Y
 `define ALIEN_START_Y(WHICH_ALIEN) \
     ALIEN_GROUP_START_Y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
+`endif ALIEN_START_Y
 
 module alien_group_drawer 
     #(
@@ -26,7 +37,7 @@ module alien_group_drawer
     parameter ENEMY_COLOR_NUM = 3
     )
     (
-    input logic clock, enable, global_reset, reset, alien_alive, alien_draw_done,
+    input logic clock, global_reset, reset, alien_alive, alien_draw_done,
     input logic [9:0] input_group_x,
     input logic [8:0] input_group_y,
     output logic [9:0] out_center_x,
@@ -66,6 +77,8 @@ module alien_group_drawer
                     else 
                         ns = s_is_alive;
                 end
+                else
+                    ns = s_draw_alien;
             end
 
             s_is_alive: begin
@@ -107,6 +120,7 @@ module alien_group_drawer
             curr_center_x = `ALIEN_START_X(0);
             curr_center_y = `ALIEN_START_Y(0);
             erase = 0;
+            alien_draw_reset = 1;
         end
 
         if (ps == s_draw_alien) begin
@@ -119,12 +133,7 @@ module alien_group_drawer
             group_x = input_group_x;
             group_y = input_group_y;
         end
-    end
 
-    assign done = (ps == s_done);
-
-    // mealy outputs
-    always_ff @(posedge clock) begin
         if (ps == s_draw_alien) begin
             if (alien_draw_done) begin
                 if (which_alien == 19) begin
@@ -141,11 +150,15 @@ module alien_group_drawer
             end
         end 
 
+        if (ns == s_is_alive) begin
+            alien_draw_reset = 1;
+        end
+
         if (ps == s_is_alive) begin
             if (alien_alive) begin
                 curr_center_x = (erase) ? `ERASE_ALIEN_X(which_alien) : `ALIEN_X(which_alien);
                 curr_center_y = (erase) ? `ERASE_ALIEN_Y(which_alien) : `ALIEN_Y(which_alien);
-                alien_draw_reset = 1;
+                // alien_draw_reset = 1;
                 test_case = 1;
             end 
             else begin
@@ -173,6 +186,62 @@ module alien_group_drawer
         end
     end
 
+    assign done = (ps == s_done);
+
+    // mealy outputs
+    // always_ff @(posedge clock) begin
+    //     if (ps == s_draw_alien) begin
+    //         if (alien_draw_done) begin
+    //             if (which_alien == 19) begin
+    //                 if (erase) begin
+    //                     erase = 0;
+    //                     which_alien = 0;
+    //                     group_x = input_group_x;
+    //                     group_y = input_group_y;
+    //                     prev_group_x = input_group_x;
+    //                     prev_group_y = input_group_y;
+    //                 end
+    //             end else
+    //                 which_alien = which_alien + 1;
+    //         end
+    //     end 
+
+    //     if (ns == s_is_alive) begin
+    //         alien_draw_reset = 1;
+    //     end
+
+    //     if (ps == s_is_alive) begin
+    //         if (alien_alive) begin
+    //             curr_center_x = (erase) ? `ERASE_ALIEN_X(which_alien) : `ALIEN_X(which_alien);
+    //             curr_center_y = (erase) ? `ERASE_ALIEN_Y(which_alien) : `ALIEN_Y(which_alien);
+    //             // alien_draw_reset = 1;
+    //             test_case = 1;
+    //         end 
+    //         else begin
+    //             if (which_alien == 19) begin
+    //                 if (erase) begin
+    //                     erase = 0;
+    //                     which_alien = 0;
+    //                     group_x = input_group_x;
+    //                     group_y = input_group_y;
+    //                     prev_group_x = input_group_x;
+    //                     prev_group_y = input_group_y;
+    //                 end
+    //                 test_case = 2;
+    //             end else
+    //                 which_alien = which_alien + 1;
+    //                 test_case = 3;
+    //         end
+    //     end
+
+    //     if (ps == s_start) begin
+    //         if (!(prev_group_x == input_group_x && prev_group_y == input_group_y)) begin
+    //             erase = 1;
+    //             which_alien = 0;
+    //         end
+    //     end
+    // end
+
     always_ff @(posedge clock) begin
         if (global_reset)
             ps = s_global_reset;
@@ -184,7 +253,7 @@ module alien_group_drawer
 endmodule  // alien_group_drawer
 
 module alien_group_drawer_tb();
-    logic clock, enable, global_reset, reset, alien_alive, alien_draw_done, done, alien_draw_reset;
+    logic clock, global_reset, reset, alien_alive, alien_draw_done, done, alien_draw_reset;
     logic [9:0] input_group_x, out_center_x;
     logic [8:0] input_group_y, out_center_y;
     logic [3:0] color;

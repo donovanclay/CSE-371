@@ -1,0 +1,43 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /alien_hit_tb/clock
+add wave -noupdate -radix unsigned /alien_hit_tb/group_x
+add wave -noupdate -radix unsigned /alien_hit_tb/group_y
+add wave -noupdate -radix unsigned /alien_hit_tb/laser_x
+add wave -noupdate -radix unsigned /alien_hit_tb/laser_y
+add wave -noupdate /alien_hit_tb/hit_alien
+add wave -noupdate -radix unsigned /alien_hit_tb/which_alien
+add wave -noupdate /alien_hit_tb/i
+add wave -noupdate -divider {New Divider}
+add wave -noupdate -radix decimal /alien_hit_tb/dut/laser_x
+add wave -noupdate -radix decimal /alien_hit_tb/dut/laser_y
+add wave -noupdate -radix decimal /alien_hit_tb/dut/group_x
+add wave -noupdate -radix decimal /alien_hit_tb/dut/group_y
+add wave -noupdate -radix unsigned /alien_hit_tb/dut/which_alien
+add wave -noupdate -radix decimal /alien_hit_tb/dut/hit_alien
+add wave -noupdate -radix decimal /alien_hit_tb/dut/x_res
+add wave -noupdate -radix decimal /alien_hit_tb/dut/y_res
+add wave -noupdate -radix decimal /alien_hit_tb/dut/neg_x_res
+add wave -noupdate -radix decimal /alien_hit_tb/dut/neg_y_res
+add wave -noupdate -radix decimal /alien_hit_tb/dut/alien_x
+add wave -noupdate -radix decimal /alien_hit_tb/dut/alien_y
+add wave -noupdate /alien_hit_tb/dut/bool1
+add wave -noupdate /alien_hit_tb/dut/bool2
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {232 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {1 ns}

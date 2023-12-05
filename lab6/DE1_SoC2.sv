@@ -1,4 +1,4 @@
-module DE1_SoC (
+module DE1_SoC1 (
     input CLOCK_50,
     inout [35:0] V_GPIO,
     output [9:0] LEDR,
@@ -123,7 +123,19 @@ module DE1_SoC (
 
     assign enable = (count == (2** 18) - 1);
     
-    assign LEDR[1] = enable;
+    logic [20:0] count2;
+    logic enable2;
+    always_ff @(posedge CLOCK_50) begin
+        if (global_reset)
+            count2 = 0;
+        else 
+            count2 = count2 + 1;
+    end
+    
+
+    assign enable2 = (count2 == (2** 21) - 1);
+    
+    // assign LEDR[1] = enable;
 
     logic [9:0] alien_group_x;
     logic [8:0] alien_group_y;
@@ -137,7 +149,7 @@ module DE1_SoC (
         .ALIEN_GROUP_PADDING_RIGHT(ALIEN_GROUP_PADDING_RIGHT)
     ) alien_group_location1 (
         .clock(CLOCK_50),
-        .enable(enable),
+        .enable(enable2),
         .global_reset(global_reset),
         .alien_group_x(alien_group_x),
         .alien_group_y(alien_group_y)
@@ -154,6 +166,9 @@ module DE1_SoC (
         .wren(alien_alive_wren),
         .q(alien_alive_read_data)
     );
+    
+    // assign LEDR[0] = alien_alive_read_data;
+    // assign alien_alive_read_data = 1;
 
     player_location # (
         .SCREEN_WIDTH(SCREEN_WIDTH),
@@ -179,29 +194,8 @@ module DE1_SoC (
 
     // assign LEDR[9:2] = player_x[9:2];
     assign LEDR[9:2] = alien_group_x[9:2];
+    // assign LEDR[8:2] = alien_group_y[8:2];
 
-    logic player_drawer_global_reset, player_drawer_reset, player_drawer_done;
-    logic [9:0] player_drawer_out_x;
-    logic [8:0] player_drawer_out_y;
-    logic [3:0] player_drawer_which_color;
-
-    player_drawer #(
-        .START_X(START_X),
-        .START_Y(START_Y),
-        .PLAYER_WIDTH(PLAYER_WIDTH),
-        .PLAYER_HEIGHT(PLAYER_HEIGHT)
-    )
-    player_drawer1 (
-        .clock(CLOCK_50),
-        .global_reset(global_reset),
-        .reset(player_drawer_reset),
-        .player_x(player_x),
-        .player_y(player_y),
-        .out_x(player_drawer_out_x),
-        .out_y(player_drawer_out_y),
-        .which_color(player_drawer_which_color),
-        .done(player_drawer_done)
-    );
 
     logic [18:0] vga_address, write_address;
     logic [3:0] vga_write_data, write_data, vga_read_data, read_data;
@@ -217,12 +211,46 @@ module DE1_SoC (
         .q_a(vga_read_data),
         .q_b(read_data)
     );
+    
+    logic [9:0] in_group_x;
+    logic [8:0] in_group_y;
+    enum {s_lower, s_higher} ps1, ns1;
+    always_comb begin
+        case (ps1)
+            s_lower:
+                ns1 = s_higher;
+            s_higher:
+                ns1 = s_lower;
+        endcase
+    end
+    
+    always_ff @(posedge CLOCK_50) begin
+        if (ps1 == s_lower) begin
+            in_group_x = 200;
+            in_group_y = 300;
+        end
+        else begin
+            in_group_x = 200;
+            in_group_y = 250;
+        end
+    end
+    
+    
+    
+    always_ff @(posedge CLOCK_50) begin
+        if (global_reset)
+            ps1 = s_higher;
+        else if (enable2)
+            ps1 = ns1;
+        else
+            ps1 = ps1;
+    end
 
-    logic alien_group_drawer_done, alien_group_global_reset, alien_group_reset, alien_valid;
+    logic alien_group_drawer_done, alien_group_global_reset, alien_group_reset, valid;
+    
     logic [9:0] alien_out_x;
     logic [8:0] alien_out_y;
     logic [3:0] alien_out_color;
-    // logic [4:0] which_alien;
     alien_group_drawer_organizer #(
         .NUM_ALIENS(NUM_ALIENS),
         .ALIEN_GROUP_START_X(ALIEN_GROUP_START_X),
@@ -232,10 +260,11 @@ module DE1_SoC (
         .ALIEN_GAP(ALIEN_GAP),
         .BACKGROUND_COLOR_NUM(BACKGROUND_COLOR_NUM),
         .ENEMY_COLOR_NUM(ALIEN_COLOR_NUM)
-    ) organizer (
+    ) (
         .clock(CLOCK_50),
-        .global_reset(alien_group_global_reset),
-        .group_reset(alien_group_reset),
+        .global_reset(global_reset),
+        .group_reset(alien_group_drawer_done),
+        // .group_reset(1'b0),
         .alien_alive(alien_alive_read_data),
         .input_group_x(alien_group_x),
         .input_group_y(alien_group_y),
@@ -246,39 +275,6 @@ module DE1_SoC (
         .group_done(alien_group_drawer_done),
         .valid(alien_valid)
     );
-
-    logic [9:0] draw_controller_x;
-    logic [8:0] draw_controller_y;
-    logic [3:0] draw_which_color;
-
-    drawing_state_machine draw_controller (
-        .clock(CLOCK_50),
-        .enable(enable),
-        .global_reset(global_reset),
-        .player_drawer_out_x(player_drawer_out_x),
-        .player_drawer_out_y(player_drawer_out_y),
-        .alien_group_out_x(alien_out_x),
-        .alien_group_out_y(alien_out_y),
-        .player_drawer_which_color(player_drawer_which_color),
-        .alien_group_which_color(alien_out_color),
-        .player_drawer_done(player_drawer_done),
-        .alien_group_drawer_done(alien_group_drawer_done),
-        .player_global_reset(player_drawer_global_reset),
-        .player_reset(player_drawer_reset),
-        .alien_group_global_reset(alien_group_global_reset),
-        .alien_group_reset(alien_group_reset),
-        .out_x(draw_controller_x),
-        .out_y(draw_controller_y),
-        .out_which_color(draw_which_color)
-    );
-
-    // logic [3:0] title_color;
-
-    // title_text_ram my_title_ram (
-    //     .address(vga_address),
-    //     .clock(CLOCK_50),
-    //     .q(title_color)
-    // );
 
     logic [9:0] x;
     logic [8:0] y;
@@ -304,17 +300,18 @@ module DE1_SoC (
 
     assign vga_address = SCREEN_WIDTH * y + x;
     assign vga_write_enable = 1'b0;
-    assign write_address = SCREEN_WIDTH * draw_controller_y +
-                           draw_controller_x;
-    assign write_data = draw_which_color;
+    assign write_address = SCREEN_WIDTH * alien_out_y +
+                          alien_out_x;
+    assign write_data = alien_out_color;
     // assign write_enable = (!player_drawer_done);
-    assign write_enable = 1;
+    assign write_enable = (!alien_group_drawer_done) && alien_valid;
 
     video_driver #(.WIDTH(SCREEN_WIDTH), .HEIGHT(SCREEN_HEIGHT))
         v1 (.CLOCK_50, .reset(global_reset), .x, .y, .r, .g, .b,
                 .VGA_R, .VGA_G, .VGA_B, .VGA_BLANK_N,
                 .VGA_CLK, .VGA_HS, .VGA_SYNC_N, .VGA_VS);
 
-    assign LEDR[0] = player_drawer_done;
+    // assign LEDR[0] = player_drawer_done;
+    assign LEDR[1] = alien_group_drawer_done;
 
 endmodule

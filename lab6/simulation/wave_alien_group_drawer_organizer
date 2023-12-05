@@ -1,0 +1,36 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /alien_group_drawer_organizer_tb/clock
+add wave -noupdate /alien_group_drawer_organizer_tb/global_reset
+add wave -noupdate /alien_group_drawer_organizer_tb/group_reset
+add wave -noupdate /alien_group_drawer_organizer_tb/alien_alive
+add wave -noupdate /alien_group_drawer_organizer_tb/group_done
+add wave -noupdate /alien_group_drawer_organizer_tb/valid
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/out_x
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/out_y
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/out_color
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/which_alien
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/write
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/alien_group_x
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/alien_group_y
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/count
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/enable
+add wave -noupdate -radix unsigned /alien_group_drawer_organizer_tb/i
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {2077641 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {9626768 ps}

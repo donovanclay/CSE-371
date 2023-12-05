@@ -57,6 +57,7 @@ module player_drawer
         endcase
     end
 
+
     // outputs
     always_ff @(posedge clock) begin
         if (ps == s_global_reset) begin
@@ -135,10 +136,6 @@ module player_drawer_tb ();
 
     integer i;
     initial begin
-        global_reset <= 1'b0;       @(posedge clock);
-        for (i = 0; i < 32 * 10; i++) begin
-                                    @(posedge clock);
-        end
         global_reset <= 1'b1;       @(posedge clock);
         global_reset <= 1'b0;       @(posedge clock);
                                     @(posedge clock);
