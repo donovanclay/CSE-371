@@ -14,3 +14,187 @@ Trace back: Too many nested dialog boxes
     (command bound to event)
   <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
   <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:50:30 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:51:01 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:51:31 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:52:01 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:52:31 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:53:01 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:53:31 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:54:01 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:proc:24: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 13:54:31 PST 2023
+Trace back: Too many nested dialog boxes
+    while executing
+"error "Too many nested dialog boxes""
+    (procedure "tk_dialog" line 32)
+    invoked from within
+"tk_dialog .srcobjdlg "Warning!" "$msg" "" 1 Overwrite Reload Ignore"
+    (object "::.main_pane.source2.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 18)
+    invoked from within
+"::.main_pane.source2.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source2.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {Too many nested dialog boxes}
+  <1:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/dialog.tcl:178: ::tk::dialog::error::bgerror {Too many nested dialog boxes}
+Tue Dec 05 21:01:13 PST 2023
+Trace back: invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree"
+    while executing
+"$wt cursoractivenumber"
+    (object "::.main_pane.dataflow.interior.cs.body.pw.df.c" method "::vsimwidgets::Dataflow::Base::UserChangedActiveTime" body line 9)
+    invoked from within
+"::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime"
+    (in namespace inscope "::vsimwidgets::Dataflow::Base" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Dataflow::Base {::.main_pane.dataflow.interior.cs.body.pw.df.c UserChangedActiveTime}"
+    ("eval" body line 1)
+    invoked from within
+"eval [$timebar cget -timechangecb]"
+    (procedure "::vsimwidgets::TimeBar::TimeChangeHandler" body line 17)
+    invoked from within
+"::vsimwidgets::TimeBar::TimeChangeHandler ::vsimPriv acttime write"
+    (write trace on "::vsimPriv(acttime)")
+    invoked from within
+"set ::vsimPriv(acttime) $t"
+    (procedure "::TimeBarCmd::SetActiveTime" line 10)
+    invoked from within
+"::TimeBarCmd::SetActiveTime $t "--store""
+    (procedure "::vsimwidgets::TimeBar::SetActiveTime" body line 18)
+    invoked from within
+"SetActiveTime $_acttimeAfterDrag --postdrag"
+    (procedure "::vsimwidgets::TimeBar::WaveCursorDragChange" body line 23)
+    invoked from within
+"::vsimwidgets::TimeBar::WaveCursorDragChange vsimPriv dragging_cursor write"
+    (write trace on "vsimPriv(dragging_cursor)")
+    invoked from within
+"set vsimPriv(dragging_cursor) 0"
+    (procedure "Wave::1Up" line 76)
+    invoked from within
+"Wave::1Up $widget $x $y"
+    (procedure "Wave::SelectUp" line 4)
+    invoked from within
+"Wave::SelectUp	 .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data 156 426 826 642 "
+    (command bound to event)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree"}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't set "vsimPriv(dragging_cursor)": can't set "::vsimPriv(acttime)": invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree"}

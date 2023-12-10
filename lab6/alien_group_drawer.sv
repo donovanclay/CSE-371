@@ -1,29 +1,17 @@
-`ifndef ALIEN_X
 `define ALIEN_X(WHICH_ALIEN) \
     group_x + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
-`endif ALIEN_X
-`ifndef ALIEN_Y
 `define ALIEN_Y(WHICH_ALIEN) \
     group_y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
-`endif ALIEN_Y
 
-`ifndef ERASE_ALIEN_X
 `define ERASE_ALIEN_X(WHICH_ALIEN) \
     prev_group_x + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
-`endif ERASE_ALIEN_X
-`ifndef ERASE_ALIEN_Y
 `define ERASE_ALIEN_Y(WHICH_ALIEN) \
     prev_group_y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
-`endif ERASE_ALIEN_Y
 
-`ifndef ALIEN_START_X
 `define ALIEN_START_X(WHICH_ALIEN) \
     ALIEN_GROUP_START_X + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
-`endif ALIEN_START_X
-`ifndef ALIEN_START_Y
 `define ALIEN_START_Y(WHICH_ALIEN) \
     ALIEN_GROUP_START_Y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
-`endif ALIEN_START_Y
 
 module alien_group_drawer 
     #(

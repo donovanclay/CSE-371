@@ -1,0 +1,58 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix unsigned /big_testbench_tb/CLOCK_50
+add wave -noupdate -radix unsigned /big_testbench_tb/enable
+add wave -noupdate -radix unsigned /big_testbench_tb/enable2
+add wave -noupdate -radix unsigned /big_testbench_tb/n8_a
+add wave -noupdate /big_testbench_tb/n8_left
+add wave -noupdate /big_testbench_tb/n8_right
+add wave -noupdate /big_testbench_tb/n8_start
+add wave -noupdate -radix unsigned /big_testbench_tb/alien_group_x
+add wave -noupdate -radix unsigned /big_testbench_tb/alien_group_y
+add wave -noupdate -radix unsigned /big_testbench_tb/player_x
+add wave -noupdate -radix unsigned /big_testbench_tb/player_y
+add wave -noupdate -radix unsigned /big_testbench_tb/alien_out_x
+add wave -noupdate -radix unsigned /big_testbench_tb/alien_out_y
+add wave -noupdate -radix unsigned /big_testbench_tb/my_top_level_laser/my_manager/laser_x
+add wave -noupdate -radix unsigned /big_testbench_tb/my_top_level_laser/my_manager/laser_y
+add wave -noupdate -radix unsigned /big_testbench_tb/laser_out_x
+add wave -noupdate -radix unsigned /big_testbench_tb/laser_out_y
+add wave -noupdate -radix unsigned /big_testbench_tb/draw_controller_x
+add wave -noupdate -radix unsigned /big_testbench_tb/draw_controller_y
+add wave -noupdate -radix unsigned /big_testbench_tb/draw_which_color
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/my_laser_drawer/erase
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/my_laser_drawer/laser_alive
+add wave -noupdate /big_testbench_tb/my_top_level_laser/out_laser_manager_done
+add wave -noupdate /big_testbench_tb/draw_controller/laser_done
+add wave -noupdate -radix unsigned /big_testbench_tb/draw_controller/ps
+add wave -noupdate -radix unsigned /big_testbench_tb/draw_controller/ns
+add wave -noupdate -divider {laser draw states}
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/my_laser_drawer/ps
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/my_laser_drawer/ns
+add wave -noupdate -divider {laser states}
+add wave -noupdate /big_testbench_tb/my_top_level_laser/laser_alive
+add wave -noupdate /big_testbench_tb/my_top_level_laser/laser_enable
+add wave -noupdate /big_testbench_tb/my_top_level_laser/finished_one_frame
+add wave -noupdate /big_testbench_tb/my_top_level_laser/ps
+add wave -noupdate /big_testbench_tb/my_top_level_laser/ns
+add wave -noupdate -divider {manager states}
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/ps
+add wave -noupdate /big_testbench_tb/my_top_level_laser/my_manager/ns
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {116509596 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {116507803 ps} {116537223 ps}

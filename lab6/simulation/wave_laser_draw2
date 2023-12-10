@@ -1,0 +1,55 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/clock
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/global_reset
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/laser_draw_reset
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/fire
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/alien_alive_data_in
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/player_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/alien_group_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/player_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/alien_group_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_which_alien
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_which_color
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_alien_alive_data
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_laser_done
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_alien_alive_wren
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/out_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/laser_alive
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/just_shot
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/erase
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/check_aliens_done
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/check_aliens_reset
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/alien_killed
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/next_offscreen
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/input_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/input_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/curr_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/curr_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/prev_x
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/prev_y
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/check_alien_which_alien
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/ps
+add wave -noupdate -radix unsigned /laser_draw2_tb/dut/ns
+add wave -noupdate /laser_draw2_tb/my_ram/address
+add wave -noupdate /laser_draw2_tb/my_ram/data
+add wave -noupdate /laser_draw2_tb/my_ram/wren
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {119450 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {0 ps} {1288193 ps}

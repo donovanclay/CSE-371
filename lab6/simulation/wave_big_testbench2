@@ -1,0 +1,43 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /big_testbench2_tb/CLOCK_50
+add wave -noupdate /big_testbench2_tb/global_reset
+add wave -noupdate /big_testbench2_tb/n8_left
+add wave -noupdate /big_testbench2_tb/n8_right
+add wave -noupdate /big_testbench2_tb/n8_a
+add wave -noupdate /big_testbench2_tb/enable
+add wave -noupdate /big_testbench2_tb/enable2
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_alien_alive_wren
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_alien_alive_write_data
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_x
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_y
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_which_color
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/out_which_alien
+add wave -noupdate -radix unsigned /big_testbench2_tb/draw_controller/ps
+add wave -noupdate /big_testbench2_tb/out_laser_alive
+add wave -noupdate -radix unsigned /big_testbench2_tb/my_laser_drawer/input_x
+add wave -noupdate -radix unsigned /big_testbench2_tb/my_laser_drawer/input_y
+add wave -noupdate -radix unsigned /big_testbench2_tb/alien_group_x
+add wave -noupdate -radix unsigned /big_testbench2_tb/alien_group_y
+add wave -noupdate -radix unsigned /big_testbench2_tb/my_laser_drawer/out_which_alien
+add wave -noupdate -radix unsigned /big_testbench2_tb/my_laser_drawer/which_alien_writing
+add wave -noupdate -radix unsigned /big_testbench2_tb/my_laser_drawer/check_alien_which_alien
+add wave -noupdate /big_testbench2_tb/my_laser_drawer/ps
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {134206434 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 172
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 100
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {134205455 ps} {134209133 ps}

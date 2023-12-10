@@ -1,19 +1,40 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /drawing_state_machine_tb/clock
-add wave -noupdate /drawing_state_machine_tb/enable
-add wave -noupdate /drawing_state_machine_tb/global_reset
-add wave -noupdate /drawing_state_machine_tb/player_drawer_done
-add wave -noupdate /drawing_state_machine_tb/alien_group_drawer_done
-add wave -noupdate /drawing_state_machine_tb/player_global_reset
-add wave -noupdate /drawing_state_machine_tb/player_reset
-add wave -noupdate /drawing_state_machine_tb/alien_group_global_reset
-add wave -noupdate /drawing_state_machine_tb/alien_group_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/clock
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/enable
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/global_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_drawer_done
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_drawer_done
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/finished_one_frame
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_alien_alive_wren
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_done
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_drawer_out_x
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_out_x
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_out_x
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_drawer_out_y
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_out_y
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_out_y
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_drawer_which_color
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_which_color
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_which_color
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_which_alien
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_which_alien
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_global_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/player_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_global_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/alien_group_reset
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/laser_enable
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_alien_alive_wren
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_alien_alive_write_data
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_x
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_y
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_which_color
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/out_which_alien
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/ps
+add wave -noupdate -radix unsigned /drawing_state_machine_tb/dut/ns
 add wave -noupdate /drawing_state_machine_tb/i
-add wave -noupdate /drawing_state_machine_tb/dut/ps
-add wave -noupdate /drawing_state_machine_tb/dut/ns
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {206 ps} 0}
+WaveRestoreCursors {{Cursor 1} {250 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 170
 configure wave -valuecolwidth 100
@@ -29,4 +50,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {977 ps}
+WaveRestoreZoom {0 ps} {1523 ps}

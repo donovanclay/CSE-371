@@ -1,14 +1,17 @@
 module laser_draw #(
     parameter LASER_WIDTH = 5,
-    parameter LASER_LENGTH = 10, 
+    parameter LASER_LENGTH = 10,
     parameter ALIEN_WIDTH = 40,
-    parameter ALIEN_HEIGHT = 21
+    parameter ALIEN_HEIGHT = 21,
+    parameter BACKGROUND_COLOR_NUM = 0,
+    parameter LASER_COLOR_NUM = 2
 ) (
     input logic clock, laser_alive, laser_draw_start, laser_draw_reset,
     input logic [9:0] laser_x,
     input logic [8:0] laser_y,
     output logic [9:0] out_x,
     output logic [8:0] out_y,
+    output logic [3:0] out_which_color,
     output logic done
 );
     logic [9:0] input_x, curr_x, prev_x;
@@ -18,6 +21,7 @@ module laser_draw #(
     enum {s_start, s_draw, s_draw_reset, s_done} ps, ns;
 
     assign done = (ps == s_done);
+    assign out_which_color = (erase) ? BACKGROUND_COLOR_NUM : LASER_COLOR_NUM;
 
     always_comb begin
         case (ps)
@@ -126,6 +130,7 @@ module laser_draw_tb ();
     logic [9:0] out_x;
     logic [8:0] out_y;
     logic done;
+    logic [3:0] out_which_color;
 
     laser_draw dut (.*);
 

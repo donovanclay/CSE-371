@@ -113,7 +113,7 @@ module DE1_SoC1 (
 
     logic enable;
 
-    logic [17:0] count;
+    logic [19:0] count;
 
     always_ff @(posedge CLOCK_50) begin
         if (global_reset)
@@ -122,7 +122,7 @@ module DE1_SoC1 (
             count = count + 1;
     end
 
-    assign enable = (count == (2** 18) - 1);
+    assign enable = (count == (2** 20) - 1);
     
     logic [20:0] count2;
     logic enable2;
@@ -158,7 +158,7 @@ module DE1_SoC1 (
 
     logic [4:0] which_alien;
     logic alien_alive_write_data, alien_alive_read_data, alien_alive_wren;
-    assign alien_alive_wren = 0;
+    // assign alien_alive_wren = 0;
 
     aliens_alive_ram alive_ram (
         .address(which_alien),
@@ -217,7 +217,7 @@ module DE1_SoC1 (
         .done(player_drawer_done)
     );
 
-    assign LEDR[9:2] = player_x[9:2];
+    assign LEDR[9:3] = player_x[9:3];
     // assign LEDR[9:2] = alien_group_x[9:2];
     // assign LEDR[8:2] = alien_group_y[8:2];
 
@@ -237,7 +237,7 @@ module DE1_SoC1 (
         .q_b(read_data)
     );
 
-    logic alien_group_drawer_done, alien_group_global_reset, alien_group_reset, valid;
+    logic alien_group_drawer_done, alien_group_global_reset, alien_group_reset, valid, alien_group_which_alien;
     
     logic [9:0] alien_out_x;
     logic [8:0] alien_out_y;
@@ -261,11 +261,49 @@ module DE1_SoC1 (
         .out_x(alien_out_x),
         .out_y(alien_out_y),
         .out_color(alien_out_color),
-        .which_alien(which_alien),
+        .which_alien(alien_group_which_alien),
         .group_done(alien_group_drawer_done),
         .valid(alien_valid)
     );
+
+
     
+    logic laser_enable, laser_done, finished_one_frame, laser_alien_alive_write_data, laser_alien_alive_wren, out_laser_manager_done, laser_alive;
+    logic [9:0] laser_out_x;
+    logic [8:0] laser_out_y;
+    logic [4:0] laser_which_alien;
+    logic [3:0] laser_which_color;
+
+    laser_top_level #(
+        .PLAYER_HEIGHT(PLAYER_HEIGHT),
+        .PLAYER_WIDTH(PLAYER_WIDTH),
+        .LASER_LENGTH(LASER_LENGTH),
+        .LASER_WIDTH(LASER_WIDTH),
+        .ALIEN_WIDTH(ALIEN_WIDTH),
+        .ALIEN_HEIGHT(ALIEN_HEIGHT),
+        .ALIEN_GAP(ALIEN_GAP),
+        .BACKGROUND_COLOR_NUM(BACKGROUND_COLOR_NUM),
+        .LASER_COLOR_NUM(LASER_COLOR_NUM)
+    ) my_top_level_laser (
+        .clock(CLOCK_50),
+        .laser_enable(laser_enable),
+        .global_reset(global_reset),
+        .fire(n8_a),
+        .alien_alive(alien_alive_read_data),
+        .player_x(player_x),
+        .player_y(player_x),
+        .alien_group_x(alien_group_x),
+        .alien_group_y(alien_group_y),
+        .out_x(laser_out_x),
+        .out_y(laser_out_y),
+        .finished_one_frame(finished_one_frame),
+        .alien_alive_write_data(laser_alien_alive_write_data),
+        .alien_alive_wren(laser_alien_alive_wren),
+        .out_laser_manager_done(out_laser_manager_done),
+        .which_alien(laser_which_alien),
+        .out_which_color(laser_which_color),
+        .out_laser_alive(laser_alive)
+    );
 
     logic [9:0] draw_controller_x;
     logic [8:0] draw_controller_y;
@@ -275,21 +313,31 @@ module DE1_SoC1 (
         .clock(CLOCK_50),
         .enable(enable),
         .global_reset(global_reset),
+        .player_drawer_done(player_drawer_done),
+        .alien_group_drawer_done(alien_group_drawer_done),
+        .finished_one_frame(finished_one_frame),
+        .laser_alien_alive_wren(laser_alien_alive_wren),
+        .laser_alien_alive_write_data(laser_alien_alive_write_data),
+        .laser_done(out_laser_manager_done),
         .player_drawer_out_x(player_drawer_out_x),
         .player_drawer_out_y(player_drawer_out_y),
         .alien_group_out_x(alien_out_x),
         .alien_group_out_y(alien_out_y),
+        .laser_out_x(laser_out_x),
+        .laser_out_y(laser_out_y),
         .player_drawer_which_color(player_drawer_which_color),
         .alien_group_which_color(alien_out_color),
-        .player_drawer_done(player_drawer_done),
-        .alien_group_drawer_done(alien_group_drawer_done),
+        .laser_which_color(laser_which_color),
+        .alien_group_which_alien(alien_group_which_alien),
+        .laser_which_alien(laser_which_alien),
         .player_global_reset(player_drawer_global_reset),
         .player_reset(player_drawer_reset),
         .alien_group_global_reset(alien_group_global_reset),
         .alien_group_reset(alien_group_reset),
         .out_x(draw_controller_x),
         .out_y(draw_controller_y),
-        .out_which_color(draw_which_color)
+        .out_which_color(draw_which_color),
+        .out_which_alien(which_alien)
     );
 
     logic [9:0] x;
@@ -331,5 +379,6 @@ module DE1_SoC1 (
 
     assign LEDR[0] = player_drawer_done;
     assign LEDR[1] = alien_group_drawer_done;
+    assign LEDR[2] = laser_alive;
 
 endmodule
