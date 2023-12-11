@@ -28,7 +28,6 @@ module player_drawer
     assign out_x = (!done) ? curr_x : 10'bZ;
     assign out_y = (!done) ? curr_y : 9'bZ;
     assign which_color = (erase) ? background_color : player_color;
-    // assign which_color = player_color;
     assign done = (ps == s_done);
 
     always_comb begin

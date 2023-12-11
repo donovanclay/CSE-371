@@ -1,13 +1,3 @@
-// `ifndef ALIEN_X
-// `define ALIEN_X(WHICH_ALIEN) \
-//     group_x + (((WHICH_ALIEN % 5) - 2) * (ALIEN_WIDTH + ALIEN_GAP))
-// `endif
-
-// `ifndef ALIEN_Y
-// `define ALIEN_Y(WHICH_ALIEN) \
-//     group_y - (3 * (ALIEN_GAP / 2) + ALIEN_HEIGHT / 2) + ((WHICH_ALIEN / 5) * (ALIEN_HEIGHT + ALIEN_GAP))
-// `endif
-
 module alien_hit 
  #(
     parameter ALIEN_WIDTH = 40,

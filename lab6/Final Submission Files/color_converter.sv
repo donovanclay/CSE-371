@@ -8,15 +8,11 @@ module color_converter
     )
     (
     input logic [3:0] which_color,
-    // output logic [23:0] color
     output logic [7:0] r, g, b
 );
 
     logic [23:0] my_color;
-    // logic [7:0] test_color;
     assign {r, g, b} = my_color;
-
-    // assign test_color = PLAYER_COLOR[23:16];
 
     always_comb begin
         case(which_color)
