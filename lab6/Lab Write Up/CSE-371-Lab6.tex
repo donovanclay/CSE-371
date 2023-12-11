@@ -69,89 +69,169 @@
     \newpage
     
     \section{Design Procedure}
-        In this lab, we implemented a system that has the ability to display animations on a VGA terminal using the DE1\_SoC's computer video-out port, this system is also known as a VGA controller. Many of the modules needed were provided as starter code, therefore we were tasked with designing and programming the modules responsible for drawing lines and creating a system to output an animation to the VGA terminal.
+    In this lab, we decided to build Space Invaders as we were tasked to design our own project. The system implements the provided N8 controller and VGA display driver modules. The N8 controller's joystick controls the movement of the player and the buttons register the firing of the lasers. The purpose of the game is to fire the laser to kill all 20 of the aliens on the display. Once this is done, the game is over. There are additional modules and systems implemented in the program to control, update, and simulate the player, laser, and aliens on the VGA display. There is a global reset switch on SW[0] to start or restart the game.
         
-        \subsection{Task \#1}
-            The first task in this lab was to download the starter code for the project and become familiar with it. We began with an overview of the background information. The VGA terminal is a 640x480 resolution and the configuration of the pixels are determined by the pixel buffer module provided. The pixel buffer controller outputs data in sequential order, starting from the top left corner and proceeding horizontally, then vertically until reaching the bottom right corner. To change the contents of a pixel, simply pass a coordinate to the buffer along with the color of the pixel. The last step in this task was to run the simulation on LabsLand to ensure that the starter code would output as expected.
+        \subsection{Display RAM Module}
+            In this lab, the VGA driver we are provided ``gives'' a xy-coordinate on the screen and asks for the color that the pixel should be. So we thought the easiest way to implement the display would be to use a 2-port RAM to store the color of every pixel on the screen. The VGA driver is free to read from the RAM whenever it wants and from wherever it wants. The other read/write port is for updating the data whenever the game dictates that the screen should look different. Since colors are 24 bit numbers in this implementation, it was far too much memory to store the full 24bit encoding of every pixel. So, we figured we could just ``which color'' the pixel should be. For example, store 0 for black, 1 for red, 2 for blue. This meant we could reduce the width of each address enormously. So the RAM only stores 4 bits at each address.
 
-            The screen began in a rainbow gradient and once the system started it became a black screen as expected.
-        \subsection{Task \#2}
-            The next step was to draw a line on the VGA terminal using the line\_drawer module. The purpose of this module was to receive a start point and an endpoint with x and y coordinates, every clock cycle the system outputs the coordinates of a point along the line connecting the input points so that (x0, y0) slowly increments to (x1, y1). The line between the two points will be drawn on the VGA terminal by the line\_drawer module outputting each coordinate to the pixel buffer with an associated color, in this case white. 
+        \subsection{Color Converter Module}
+            With the display RAM module only storing ``which color'' and not the actual encoding of the color, we needed a decoder so the VGA driver could be supplied the correct information about the color of pixels. So this color converter module is pretty much a 16 to 1 MUX, with many of the inputs undefined because we only ended up using 5 colors. 
 
-            
-            
-            To implement the line\_drawer module, we used the Bresenham algorithm. The system begins in the start state which sets all the values of my\_x0, my\_y0, my\_x1, and my\_y1. The values that are hard coded in the module may not be the same as the corresponding inputs. The idea our implementation runs with is that x0 is always incremented by 1 every clock cycle and y0 is only incremented when the error of y is greater than one. For example, a slope of 1/2 would wait two increments of x before y is increased because the error is finally greater than or equal to 1, the error would be (0, .50, 1) which we would then increase y. Technically if the slope of the line is less than one then the (x0, y0) and (x1, y1) values match input. If the slope of the line is greater than one, then the inputs become (y0, x0) and (y1, x1) so that y0 is now in the x place and gets increased every cycle and x0 is now responsible for incrementing when the error is greater than one. Considering the system only works when the slope is less than one, this ensures that it also works for when slope is greater than 1. A variable called is\_steep tracks this value swap and updates other parts of the code to ensure the system still works when this happens. The last case for the start is that if x0 $>$ x1, the line goes to the left instead of the right, in this case the x0 becomes x1 and y0 becomes y1, and vice versa, then the system runs as it typically would. These conditionals and swapping of values ensure that our system works for all cases. 
-            
-            Once the system is in the draw state, the coordinates of the line begin to be incremented and output to the pixel buffer. The is\_steep variable described before determines if the system should use delta\_x or delta\_y to track error and updates accordingly. Then the system begins to increase x every clock cycle and y when the error is greater than 1. The swapping in the start state and the variable ensure that the entire system works regardless of the orientation of the system. Once x0 and x1 are equal or x0 is greater, the system switches to the done state. In this state it signals to the top-level controller that the line is done and the top-level then coordinates its next state.
+        \subsection{Aliens Alive RAM Module}
+            The game must hold state of which aliens are alive and which are dead. We decided to use a RAM to hold this information. The RAM holds 20 1-bit words: 0 for dead, 1 for alive.
+
+        \subsection{Player Location Module}
+            This module holds the XY coordinate of the player. When the user presses left on the controller, the x coordinate decreases and when the user presses right on the controller, the y coordinate increases. The module also constrains the location of the player to walls of the screen. Meaning if you hold left, you will eventually hit an invisible wall on the left side of the screen and the spaceship won't move anymore to the left.
+
+        \subsection{Alien Group Location Module}
+            This module holds the XY coordinate of the group of aliens. Since all the aliens move as a group, we only need to know the location of the group to know the location of each alien. The group of aliens move left and right across the screen and when they reach the left or right side of the screen they move a little bit closer to the player's side of the screen.
+
+        \subsection{Drawing State Machine Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.59]{Images/Drawing State Machine ASM.pdf}
+                \caption{Drawing State Machine ASM chart}
+            \end{figure}
+            The drawing state machine is responsible for updating the players, aliens, and lasers on the VGA display based on the state of the game. The game first begins with a global reset switch that syncs the system to the start state and resets to the beginning conditions. The start stage only lasts one clock cycle as only a brief moment is needed to reset the system before switching to the initialized player stage. Whether the game is just beginning or a new game is started from an old one, the player on the VGA display must be reset to its default location. After this, the player is drawn for the new game. This stage lasts for as long as it takes for the system to draw the new player. The next stage is similar to before but now the system must reset, initialize, and draw the aliens. The state of whether the alien is alive or not is stored in a RAM file, so the RAM must be reset so the program knows to draw all 20 of the aliens. The initialized aliens stage takes as long as the system needs to draw all the aliens before moving on to the next stages in the system.
+            The starting conditions of the system are now done and the game must be updated to simulate the playing experience. The N8 controller controls the movement of the player, it decides whether the player moves left/right, or if it shoots the laser. Based on the joystick inputs from the controller driver in the system, the location of the player must be updated. The old player location is erased from the VGA display and then drawn again to simulate movement. Once this is completed, the system moves onto the draw laser stage, which checks the laser button on the N8 controller to either draw another laser or update the location of another laser to simulate a moving blast. The laser system is explained in more depth in the next section. Once ll the new location of the laser is updated, the drawing state machine moves onto its final task, drawing the updated alien location. The RAM file must be checked to ensure the state of the alive aliens that must be drawn in the next update. Next, the location of all the aliens are updated. The aliens are restricted to only moving right or left until they hit a certain bound and must switch direction. Once, the state of the alive aliens is checked and all their locations are updated, the old copies must be erased and the new ones must be drawn. Again, the stage takes as long as the system needs to update and draw all the aliens. This is the last state in the machine before it transitions back to the player drawer stage so the cycle can continue. The moving parts of the game are the player, the aliens, and the lasers. Therefore the system must continuously cycle through updating and drawing them to simulate the movement of the game. The game only ends once the global reset key is switched or there are no more aliens in play.
         
-        \newpage
-        \subsection{Task \#3}
-            The final step of the lab was to use the line\_drawer to make an animation of our choice. To implement our animation, we thought it would be best to provide our line\_drawer module with x0, y0, x1, y1 values output in order by a ROM. The following diagram shows the encoding of the data stored in the ROM. 
-           
-            The system begins in a start state which resets the address counter and the line\_drawer module. Then it moves to the stall state for a clock cycle before moving to the “drawline” state. The purpose of the stall state is to wait for the ROM to output it's data. In the draw line state, it turns off the reset signal so the line\_drawer module will start and stays in the state until the module signals that it is done drawing the line. Then the next state of the system is the finished\_line state, which increases the count of the address accessed by the ROM and resets the line\_drawer again to prepare for the next line input. The ROM holds data which draws 3 lines and then erases the lines and then draws the 3 lines again with the y coordinates shifted down by one. This makes it appear as if the lines are moving down the screen. The system continues to do this until all the addresses of the ROM have been read and output, then it cyles back to the start state to start at the beginning of the ROM. 
+        \subsection{Alien Group Drawer Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.45]{Images/Alien Group Drawer.pdf}
+                \caption{Alien Group Drawer ASM chart}
+            \end{figure}
+            There is a state machine responsible for tracking and updating the values of all the aliens. The alien group drawer can start from a reset which resets all aliens and location back to the default values. Otherwise, the system is entered on a system restart and put in the start stage. In this stage, the location of the next cycle of aliens is passed as input into the system. The system compares if the previous value is equal to the expected. If so, then the machine entering the done stage exits. If the value of the alien locations has to be updated then the erase signal is turned high and the first alien is checked in the is alive state. If the alien is not alive, then the system checks if the algorithm has reached the last alien, again if not then the alien is increased and the search to find and alive alien countries by cycling through this stage. If the alien is alive, then the alien draw stage is entered. The location of this alien is updated in the alien drawer and the system stalls in the draw one alien stage until the other system is done. Once the system is done, then the number of alien is checked to see if it is the last alien again. If it is then there must be a final check of all the aliens before the system transitions to the done stage and terminates. In the case that it is not the last alien after updating, then the system switches to the is alive stage to find the next alive alien to update.
 
-            The other part of task \#3 was making the reset function which ``erases'' everything from the screen. Since we know the dimensions of the display never changes, we chose to implement this by drawing 480 horizontal lines with the color off. The x-coordinates of the erasing lines will always be the same so we only needed a counter for the y-value of the lines. For the erasing, the state logic for starting the line drawer module and waiting for it to finish is exactly the same. The only difference is we increment a y-value, rather than a read address. 
+        \subsection{Alien Drawer Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.57]{Images/Alien Drawer.pdf}
+                \caption{Alien Drawer ASM chart}
+            \end{figure}
+            The alien drawer begins with a reset into the start state that sets the values of the alien location as input. If the previous alien value is equal to the alien values passed, then the current values are set accordingly and the next state of the machine is done. If the values of the aliens do not coincide with the previous values, then they must be redrawn so the erase signal is set high and then current values are set to alterations of the previous values before entering the draw stage. The draw stage can also be entered from a global reset which resets all values back to default. The draw stage continues to iterate until the current location of the alien is equal to that of the input. Once the x and y values are equal to the expected value, the erase signal is set low and the new location of the alien can be output and drawn onto the VGA display. The state of the machine then changes to done and exits.
 
-           
+        \subsection{Alien Check Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.57]{Images/Alien Check ASM.pdf}
+                \caption{Alien Check ASM chart}
+            \end{figure}
+            The laser drawer uses an alien check state machine to determine whether a laser hit an alien or not. On reset, the system is entered in the start stage that takes the laser location x and y and resets the value of the alien to 19. The system then checks if the alien, number 19, is alive. If so then it determines if the alien is hit. Considering only one alien can be hit by one laser, once an alien is determined to be hit, the system transitions to the killed stage and the alien in question is output so the system can be updated. If that alien is not hit, then it switches to the next alien to check to see if the laser hit them or not.The system then repeats the process with the next alien. If all aliens are checked and none are hit, the system enters the none killed stage and signals are output accordingly so the system does not update.
 
-            The most important part of the top level module is controlling the line drawing module. It uses the module to both run the animation and ``erase'' the screen when SW[0] is on. So, the top level module has logic to manage the read address of the ROM, reseting the line drawer, and the y-coordinate for ``erasing''. It also includes a clock divider to slow down the speed that it goes through the ROM's addresses. However, the line drawer still draws at the full 50MHz speed.
+        \subsection{Player Drawer Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.57]{Images/Player Drawer.pdf}
+                \caption{Player Drawer ASM chart}
+            \end{figure}
+            There is also a system responsible for tracking and updating the values of the player's location with the input of the N8 controller. The player drawer begins from a reset of the state machine that sets new values for the input into the module. The module then compares the values received on the system reset to the values that were last in the system. In the case that they are the same values as previous, the state machine moves into the done state to signify that no values should be updated since last iteration. In the case that they are not the same as the last iteration, the state machine sets the erase signal to high and updates the current values to be 16 less than they were previously, this ensures that the state will be updated on the next cycle, and then moves into the draw state The draw state then continues to iterate through, updating the current values of x and y until they are equal to the proper input. Finally the erase signal is turned off and the proper value is set for the player to be drawn on the next cycle. The machine then enters the done state and finishes.
 
-    \newpage
+        \subsection{Top Level Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.17]{Images/Top Level Module Block Diagram.pdf}
+                \caption{Top Level Block Diagram}
+            \end{figure}
+
     \section{Results}
-        The system we implemented in this lab has the ability to output pixel configurations to a VGA terminal as well as draw lines on the terminal to create an animation. The VGA driver code in this lab was provided, so we only implemented and tested two modules, the line\_drawer and the top module. However, there was not much testing of the VGA terminal output as completion of the third task could be confirmed with a simple eye-test of the final output. The only module that did require testing was the line\_drawer module. 
+    The system we implemented in the lab was a game similar to Space Invaders. The N8 controller allowed the user to be able to control the player's movement and laser gun. Other modules were made to simulate the aliens and their behavior within the game. The modules consist of many algorithmic state machines that are tasked with updating the location of the players, aliens, and laser blasts based on the current conditions of the game. Finally, there is a drawer that cycles through drawing the updated pieces to the VGA display.
 
-        \subsection{Line-Drawer Testbench}
-            
-            
-            These test benches show the input values of x0, y0, x1, y1 and process of the line drawer module incrementally moving from (x0, y0) to (x1, y1). In all the testbenches, we can see the line drawer's output starts at either (x0, y0) or (x1, y1) and finishes at the opposing coordinate. These test benches thoroughly exhaust all the different cases of lines the line drawing module can be asked to draw. 
+        \subsection{Color Converter Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Color Converter .png}
+                \caption{Color Converter Testbench}
+            \end{figure}
+            The color converter has ``which\_color'' as an input and outputs the RGG values which correspond to that color. This testbench shows that the color converter module correctly converts from the number of the color to the RGB value of the color we want.
 
-        \subsection{DE1\_SoC}
-            As stated in the section above, the top-level did not require any testing as the output could be viewed simply with an eye-test. The output that was given when we ran our system in LabsLand was the following. \\
-            
-            The animation outputs in a legible manner the word/name “CAM”.
+        \subsection{Player Location Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Player Location.png}
+                \caption{Player Location Testbench}
+            \end{figure}
+            This module takes the clock, enable, left, right, and global reset as input signals. It outputs the x and y value of the location of the center of the player's spaceship. The testbench shows that upon global reset, the x and y values are reset to the starting location on the screen. It shows that when enable is high, the x value is decremented when left is high and is incremented when right is high. It also constrains the x value so that the player does not reach the edge of the screen.
+
+        \subsection{Alien Group Location}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Alien Group Location.png}
+                \caption{Alien Group Location Testbench}
+            \end{figure}
+            This module takes the clock, enable, and global reset as input signals. It outputs the x and y values of the center of the group of aliens. The module is essentially a 2D counter. Initially the aliens move to the left, so after the global reset the x value starts decrementing. Once the x value reaches the value where the left most aliens are close to touching the edge of the screen, the y value is incremented and the x values start incrementing until the group reaches the right side of the screen. Then the process repeats. The testbench shows that the y value is incremented and the x value increment/decrement direction changes when the group hits the edge of screen.
+        \subsection{Drawing State Machine Module}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Drawing State Machine.png}
+                \caption{Drawing State Machine Testbench}
+            \end{figure}
+            The drawing state machine module is in charge of handling what gets drawn and in which order. For every new frame the drawing state machine first draws the player, then the laser (if it exists), and then the group of aliens. The test bench shows that the module correctly initially draws the player, and then once the player is finished, switches to drawing the group of aliens, and then once the group of aliens is done, draws the laser, then the group of aliens, then the player and then the cycle repeats. This testbench shows that the machine correctly switches states when it sees that the player, alien group, and laser are finished drawing.
+
+        \subsection{Alien Group Drawer}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Alien Group Drawer.png}
+                \caption{Alien Group Drawer Testbench}
+            \end{figure}
+            This testbench manages drawing the aliens. It goes through each alien, if its alive, then it will draw it. It takes the clock, a global reset, a reset, input data from alien alive RAM, alien draw done, and the location of the group of aliens. This testbench shows that the module correctly cycles through all 20 of the aliens and correctly outputs the reset signal when an alien needs to be drawn, and moves on to the next alien when that alien has finished drawing.
+        \subsection{Alien Drawer}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.49]{Images/Testbench Alien Drawer.png}
+                \caption{Alien Drawer Testbench}
+            \end{figure}
+            This module takes the clock, reset, and the center of the alien that is going to be drawn as inputs. It outputs the xy coordinate of a pixel that needs to be colored and outputs done when the alien has finished drawing. The testbench shows that the module correctly starts when the reset signal is high. The testbench then shows that the module ``draws'' the rectangle of the pixels that make up of the alien. It then shows that the done signal is high once the module has finished drawing one alien.
+        \subsection{Player Drawer}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Player Drawer.png}
+                \caption{Player Drawer Testbench}
+            \end{figure}
+
+        \subsection{Top Level}
+
+
         \newpage
         \subsection{Flow Summary}
-            \begin{description}
-                \item \textbf{DE1\_SoC} \\
-                    Fitter Status : Successful - Thu Dec  7 23:12:26 2023 \\
-                    Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition \\
-                    Revision Name : DE1\_SoC1 \\
-                    Top-level Entity Name : DE1\_SoC1 \\
-                    Family : Cyclone V \\
-                    Device : 5CSEMA5F31C6 \\
-                    Timing Models : Final \\
-                    Logic utilization (in ALMs) : 905 / 32,070 ( 3 \% ) \\
-                    Total registers : 637 \\
-                    Total pins : 118 / 457 ( 26 \% ) \\
-                    Total virtual pins : 0 \\
-                    Total block memory bits : 1,228,820 / 4,065,280 ( 30 \% ) \\
-                    Total RAM Blocks : 151 / 397 ( 38 \% ) \\
-                    Total DSP Blocks : 5 / 87 ( 6 \% ) \\
-                    Total HSSI RX PCSs : 0 \\
-                    Total HSSI PMA RX Deserializers : 0 \\
-                    Total HSSI TX PCSs : 0 \\
-                    Total HSSI PMA TX Serializers : 0 \\
-                    Total PLLs : 1 / 6 ( 17 \% ) \\
-                    Total DLLs : 0 / 4 ( 0 \% ) \\
+            Fitter Status : Successful - Thu Dec  7 23:12:26 2023 \\
+            Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition \\
+            Revision Name : DE1\_SoC1 \\
+            Top-level Entity Name : DE1\_SoC1 \\
+            Family : Cyclone V \\
+            Device : 5CSEMA5F31C6 \\
+            Timing Models : Final \\
+            Logic utilization (in ALMs) : 905 / 32,070 ( 3 \% ) \\
+            Total registers : 637 \\
+            Total pins : 118 / 457 ( 26 \% ) \\
+            Total virtual pins : 0 \\
+            Total block memory bits : 1,228,820 / 4,065,280 ( 30 \% ) \\
+            Total RAM Blocks : 151 / 397 ( 38 \% ) \\
+            Total DSP Blocks : 5 / 87 ( 6 \% ) \\
+            Total HSSI RX PCSs : 0 \\
+            Total HSSI PMA RX Deserializers : 0 \\
+            Total HSSI TX PCSs : 0 \\
+            Total HSSI PMA TX Serializers : 0 \\
+            Total PLLs : 1 / 6 ( 17 \% ) \\
+            Total DLLs : 0 / 4 ( 0 \% ) \\
 
-                    Analysis \& Synthesis Status : Successful - Thu Dec  7 23:11:37 2023 \\
-                    Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition \\
-                    Revision Name : DE1\_SoC1 \\
-                    Top-level Entity Name : DE1\_SoC3 \\
-                    Family : Cyclone V \\
-                    Logic utilization (in ALMs) : N/A \\
-                    Total registers : 588 \\
-                    Total pins : 118 \\
-                    Total virtual pins : 0 \\
-                    Total block memory bits : 1,228,820 \\
-                    Total DSP Blocks : 5 \\
-                    Total HSSI RX PCSs : 0 \\
-                    Total HSSI PMA RX Deserializers : 0 \\
-                    Total HSSI TX PCSs : 0 \\
-                    Total HSSI PMA TX Serializers : 0 \\
-                    Total PLLs : 1 \\
-                    Total DLLs : 0 \\
-            \end{description}
+            Analysis \& Synthesis Status : Successful - Thu Dec  7 23:11:37 2023 \\
+            Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition \\
+            Revision Name : DE1\_SoC1 \\
+            Top-level Entity Name : DE1\_SoC3 \\
+            Family : Cyclone V \\
+            Logic utilization (in ALMs) : N/A \\
+            Total registers : 588 \\
+            Total pins : 118 \\
+            Total virtual pins : 0 \\
+            Total block memory bits : 1,228,820 \\
+            Total DSP Blocks : 5 \\
+            Total HSSI RX PCSs : 0 \\
+            Total HSSI PMA RX Deserializers : 0 \\
+            Total HSSI TX PCSs : 0 \\
+            Total HSSI PMA TX Serializers : 0 \\
+            Total PLLs : 1 \\
+            Total DLLs : 0 \\
             
     \newpage
     \section{Experience Report}

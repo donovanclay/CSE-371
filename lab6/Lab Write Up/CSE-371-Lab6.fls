@@ -1255,12 +1255,76 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 OUTPUT CSE-371-Lab6.toc
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./Images/Drawing State Machine ASM.pdf
+INPUT ./Images/Drawing State Machine ASM.pdf
+INPUT Images/Drawing State Machine ASM.pdf
+INPUT ./Images/Drawing State Machine ASM.pdf
+INPUT ./Images/Drawing State Machine ASM.pdf
+INPUT ./Images/Alien Group Drawer.pdf
+INPUT ./Images/Alien Group Drawer.pdf
+INPUT Images/Alien Group Drawer.pdf
+INPUT ./Images/Alien Group Drawer.pdf
+INPUT ./Images/Alien Group Drawer.pdf
+INPUT ./Images/Alien Drawer.pdf
+INPUT ./Images/Alien Drawer.pdf
+INPUT Images/Alien Drawer.pdf
+INPUT ./Images/Alien Drawer.pdf
+INPUT ./Images/Alien Drawer.pdf
+INPUT ./Images/Alien Check ASM.pdf
+INPUT ./Images/Alien Check ASM.pdf
+INPUT Images/Alien Check ASM.pdf
+INPUT ./Images/Alien Check ASM.pdf
+INPUT ./Images/Alien Check ASM.pdf
+INPUT ./Images/Player Drawer.pdf
+INPUT ./Images/Player Drawer.pdf
+INPUT Images/Player Drawer.pdf
+INPUT ./Images/Player Drawer.pdf
+INPUT ./Images/Player Drawer.pdf
+INPUT ./Images/Top Level Module Block Diagram.pdf
+INPUT ./Images/Top Level Module Block Diagram.pdf
+INPUT Images/Top Level Module Block Diagram.pdf
+INPUT ./Images/Top Level Module Block Diagram.pdf
+INPUT ./Images/Top Level Module Block Diagram.pdf
+INPUT ./Images/Testbench Color Converter .png
+INPUT ./Images/Testbench Color Converter .png
+INPUT Images/Testbench Color Converter .png
+INPUT ./Images/Testbench Color Converter .png
+INPUT ./Images/Testbench Color Converter .png
+INPUT ./Images/Testbench Player Location.png
+INPUT ./Images/Testbench Player Location.png
+INPUT Images/Testbench Player Location.png
+INPUT ./Images/Testbench Player Location.png
+INPUT ./Images/Testbench Player Location.png
+INPUT ./Images/Testbench Alien Group Location.png
+INPUT ./Images/Testbench Alien Group Location.png
+INPUT Images/Testbench Alien Group Location.png
+INPUT ./Images/Testbench Alien Group Location.png
+INPUT ./Images/Testbench Alien Group Location.png
+INPUT ./Images/Testbench Drawing State Machine.png
+INPUT ./Images/Testbench Drawing State Machine.png
+INPUT Images/Testbench Drawing State Machine.png
+INPUT ./Images/Testbench Drawing State Machine.png
+INPUT ./Images/Testbench Drawing State Machine.png
+INPUT ./Images/Testbench Alien Group Drawer.png
+INPUT ./Images/Testbench Alien Group Drawer.png
+INPUT Images/Testbench Alien Group Drawer.png
+INPUT ./Images/Testbench Alien Group Drawer.png
+INPUT ./Images/Testbench Alien Group Drawer.png
+INPUT ./Images/Testbench Alien Drawer.png
+INPUT ./Images/Testbench Alien Drawer.png
+INPUT Images/Testbench Alien Drawer.png
+INPUT ./Images/Testbench Alien Drawer.png
+INPUT ./Images/Testbench Alien Drawer.png
+INPUT ./Images/Testbench Player Drawer.png
+INPUT ./Images/Testbench Player Drawer.png
+INPUT Images/Testbench Player Drawer.png
+INPUT ./Images/Testbench Player Drawer.png
+INPUT ./Images/Testbench Player Drawer.png
 INPUT CSE-371-Lab6.aux
 INPUT ./CSE-371-Lab6.out
 INPUT ./CSE-371-Lab6.out
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb

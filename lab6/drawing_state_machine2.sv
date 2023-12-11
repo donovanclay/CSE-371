@@ -10,7 +10,7 @@ module drawing_state_machine2 (
     output logic [9:0] out_x,
     output logic [8:0] out_y,
     output logic [3:0] out_which_color,
-    output logic []
+    // output logic []
     output logic [4:0] out_which_alien
 );
 

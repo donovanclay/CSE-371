@@ -58,7 +58,17 @@ module player_location_tb ();
         end
         global_reset <= 0; enable <= 1; left <= 1; right <= 0; @(posedge CLOCK_50);
 
-        for (i = 0; i < 16; i++) begin
+        for (i = 0; i < 8; i++) begin
+                    @(posedge CLOCK_50);
+        end
+        enable <= 0; @(posedge CLOCK_50);
+        for (i = 0; i < 5; i++) begin
+                    @(posedge CLOCK_50);
+        end
+
+        global_reset <= 0; enable <= 1; left <= 0; right <= 1; @(posedge CLOCK_50);
+
+        for (i = 0; i < 8; i++) begin
                     @(posedge CLOCK_50);
         end
 

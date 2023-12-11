@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  9 DEC 2023 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  10 DEC 2023 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -940,43 +940,125 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.69     \newpage
-                  [1] [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+                  [1]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Drawing State Machine ASM.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Drawing State Machine ASM.pdf, id=173, 728.7225pt x 962.63638pt>
+File: Images/Drawing State Machine ASM.pdf Graphic file (type pdf)
+<use Images/Drawing State Machine ASM.pdf>
+Package pdftex.def Info: Images/Drawing State Machine ASM.pdf  used on input line 92.
+(pdftex.def)             Requested size: 429.94255pt x 567.95056pt.
+[2] [3 <./Images/Drawing State Machine ASM.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Alien Group Drawer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Alien Group Drawer.pdf, id=195, 975.645pt x 826.04607pt>
+File: Images/Alien Group Drawer.pdf Graphic file (type pdf)
+<use Images/Alien Group Drawer.pdf>
+Package pdftex.def Info: Images/Alien Group Drawer.pdf  used on input line 101.
+(pdftex.def)             Requested size: 439.0362pt x 371.7173pt.
+[4]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Alien Drawer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Alien Drawer.pdf, id=201, 702.70526pt x 674.52pt>
+File: Images/Alien Drawer.pdf Graphic file (type pdf)
+<use Images/Alien Drawer.pdf>
+Package pdftex.def Info: Images/Alien Drawer.pdf  used on input line 109.
+(pdftex.def)             Requested size: 400.54616pt x 384.4804pt.
+[5 <./Images/Alien Group Drawer.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Alien Check ASM.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Alien Check ASM.pdf, id=217, 664.40218pt x 717.64107pt>
+File: Images/Alien Check ASM.pdf Graphic file (type pdf)
+<use Images/Alien Check ASM.pdf>
+Package pdftex.def Info: Images/Alien Check ASM.pdf  used on input line 117.
+(pdftex.def)             Requested size: 378.71318pt x 409.05966pt.
+[6 <./Images/Alien Drawer.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Player Drawer.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Player Drawer.pdf, id=234, 637.42137pt x 674.52pt>
+File: Images/Player Drawer.pdf Graphic file (type pdf)
+<use Images/Player Drawer.pdf>
+Package pdftex.def Info: Images/Player Drawer.pdf  used on input line 125.
+(pdftex.def)             Requested size: 363.33395pt x 384.4804pt.
+[7 <./Images/Alien Check ASM.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/Top Level Module Block Diagram.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/Top Level Module Block Diagram.pdf, id=250, 2512.34605pt x 1127.17107pt>
+File: Images/Top Level Module Block Diagram.pdf Graphic file (type pdf)
+<use Images/Top Level Module Block Diagram.pdf>
+Package pdftex.def Info: Images/Top Level Module Block Diagram.pdf  used on input line 133.
+(pdftex.def)             Requested size: 427.09319pt x 191.61655pt.
+[8 <./Images/Player Drawer.pdf>]
+<Images/Testbench Color Converter .png, id=266, 849.92531pt x 241.65282pt>
+File: Images/Testbench Color Converter .png Graphic file (type png)
+<use Images/Testbench Color Converter .png>
+Package pdftex.def Info: Images/Testbench Color Converter .png  used on input line 143.
+(pdftex.def)             Requested size: 450.45827pt x 128.07538pt.
+<Images/Testbench Player Location.png, id=268, 827.34094pt x 186.6975pt>
+File: Images/Testbench Player Location.png Graphic file (type png)
+<use Images/Testbench Player Location.png>
+Package pdftex.def Info: Images/Testbench Player Location.png  used on input line 151.
+(pdftex.def)             Requested size: 438.48862pt x 98.94919pt.
+ [9 <./Images/Top Level Module Block Diagram.pdf> <./Images/Testbench Color Converter .png>]
+<Images/Testbench Alien Group Location.png, id=291, 817.55438pt x 210.03468pt>
+File: Images/Testbench Alien Group Location.png Graphic file (type png)
+<use Images/Testbench Alien Group Location.png>
+Package pdftex.def Info: Images/Testbench Alien Group Location.png  used on input line 159.
+(pdftex.def)             Requested size: 433.30177pt x 111.31784pt.
+<Images/Testbench Drawing State Machine.png, id=292, 795.72281pt x 362.85562pt>
+File: Images/Testbench Drawing State Machine.png Graphic file (type png)
+<use Images/Testbench Drawing State Machine.png>
+Package pdftex.def Info: Images/Testbench Drawing State Machine.png  used on input line 166.
+(pdftex.def)             Requested size: 421.73108pt x 192.31256pt.
+ [10 <./Images/Testbench Player Location.png> <./Images/Testbench Alien Group Location.png>]
+<Images/Testbench Alien Group Drawer.png, id=302, 788.9475pt x 356.83313pt>
+File: Images/Testbench Alien Group Drawer.png Graphic file (type png)
+<use Images/Testbench Alien Group Drawer.png>
+Package pdftex.def Info: Images/Testbench Alien Group Drawer.png  used on input line 174.
+(pdftex.def)             Requested size: 418.14017pt x 189.12065pt.
+ [11 <./Images/Testbench Drawing State Machine.png> <./Images/Testbench Alien Group Drawer.png>]
+<Images/Testbench Alien Drawer.png, id=313, 953.81343pt x 240.14719pt>
+File: Images/Testbench Alien Drawer.png Graphic file (type png)
+<use Images/Testbench Alien Drawer.png>
+Package pdftex.def Info: Images/Testbench Alien Drawer.png  used on input line 181.
+(pdftex.def)             Requested size: 467.37267pt x 117.67313pt.
+<Images/Testbench Player Drawer.png, id=314, 816.04875pt x 298.86656pt>
+File: Images/Testbench Player Drawer.png Graphic file (type png)
+<use Images/Testbench Player Drawer.png>
+Package pdftex.def Info: Images/Testbench Player Drawer.png  used on input line 188.
+(pdftex.def)             Requested size: 432.50378pt x 158.39851pt.
+ [12 <./Images/Testbench Alien Drawer.png> <./Images/Testbench Player Drawer.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--217
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 115--136
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--235
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--154
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[7] (./CSE-371-Lab6.aux)
+[14] (./CSE-371-Lab6.aux)
 Package rerunfilecheck Info: File `CSE-371-Lab6.out' has not changed.
-(rerunfilecheck)             Checksum: 19611C757D633CC9CAD83DC85CB78DBA;1009.
+(rerunfilecheck)             Checksum: 33E7D2E90B902BDE658AC759F71D3EC7;3584.
  ) 
 Here is how much of TeX's memory you used:
- 34474 strings out of 476093
- 733338 string characters out of 5795577
+ 34622 strings out of 476093
+ 737722 string characters out of 5795577
  1861787 words of memory out of 5000000
- 54309 multiletter control sequences out of 15000+600000
+ 54408 multiletter control sequences out of 15000+600000
  520658 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,96p,1689b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on CSE-371-Lab6.pdf (8 pages, 102061 bytes).
+ 84i,12n,96p,1920b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on CSE-371-Lab6.pdf (15 pages, 454643 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
