@@ -444,3 +444,133 @@ do runlab_player_drawer.do
 # ** Note: $stop    : ../player_drawer.sv(161)
 #    Time: 554250 ps  Iteration: 1  Instance: /player_drawer_tb
 # Break in Module player_drawer_tb at ../player_drawer.sv line 161
+do runlab_big_testbench2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:06 on Dec 10,2023
+# vlog -reportprogress 300 ../alien_group_location.sv 
+# -- Compiling module alien_group_location
+# -- Compiling module alien_group_location_tb
+# 
+# Top level modules:
+# 	alien_group_location_tb
+# End time: 21:46:06 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:06 on Dec 10,2023
+# vlog -reportprogress 300 ../player_location.sv 
+# -- Compiling module player_location
+# -- Compiling module player_location_tb
+# 
+# Top level modules:
+# 	player_location_tb
+# End time: 21:46:06 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:06 on Dec 10,2023
+# vlog -reportprogress 300 ../player_drawer.sv 
+# -- Compiling module player_drawer
+# -- Compiling module player_drawer_tb
+# 
+# Top level modules:
+# 	player_drawer_tb
+# End time: 21:46:06 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:06 on Dec 10,2023
+# vlog -reportprogress 300 ../alien_group_drawer_organizer.sv 
+# -- Compiling module alien_group_drawer_organizer
+# -- Compiling module alien_group_drawer_organizer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_organizer_tb
+# End time: 21:46:06 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:06 on Dec 10,2023
+# vlog -reportprogress 300 ../alien_group_drawer.sv 
+# -- Compiling module alien_group_drawer
+# -- Compiling module alien_group_drawer_tb
+# 
+# Top level modules:
+# 	alien_group_drawer_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:07 on Dec 10,2023
+# vlog -reportprogress 300 ../alien_drawer.sv 
+# -- Compiling module alien_drawer
+# -- Compiling module alien_drawer_tb
+# 
+# Top level modules:
+# 	alien_drawer_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:07 on Dec 10,2023
+# vlog -reportprogress 300 ../laser_manager.sv 
+# -- Compiling module laser_manager
+# -- Compiling module laser_manager_tb
+# 
+# Top level modules:
+# 	laser_manager_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:07 on Dec 10,2023
+# vlog -reportprogress 300 ../laser_top_level.sv 
+# -- Compiling module laser_top_level
+# -- Compiling module laser_top_level_tb
+# 
+# Top level modules:
+# 	laser_top_level_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:07 on Dec 10,2023
+# vlog -reportprogress 300 ../drawing_state_machine.sv 
+# -- Compiling module drawing_state_machine
+# -- Compiling module drawing_state_machine_tb
+# 
+# Top level modules:
+# 	drawing_state_machine_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:46:07 on Dec 10,2023
+# vlog -reportprogress 300 ../big_testbench2.sv 
+# -- Compiling module big_testbench2_tb
+# 
+# Top level modules:
+# 	big_testbench2_tb
+# End time: 21:46:07 on Dec 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:46:13 on Dec 10,2023, Elapsed time: 0:14:50
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work big_testbench2_tb -Lf altera_mf_ver 
+# Start time: 21:46:14 on Dec 10,2023
+# Loading sv_std.std
+# Loading work.big_testbench2_tb
+# Loading work.alien_group_location
+# Loading work.aliens_alive_ram
+# Loading altera_mf_ver.altsyncram
+# Loading work.player_location
+# Loading work.player_drawer
+# Loading work.display_ram
+# Loading work.alien_group_drawer_organizer
+# Loading work.alien_drawer
+# Loading work.alien_group_drawer
+# Loading work.laser_draw2
+# Loading work.alien_check
+# Loading work.alien_hit
+# Loading work.drawing_state_machine2
+# Loading work.color_converter
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ../big_testbench2.sv(412)
+#    Time: 229520850 ps  Iteration: 1  Instance: /big_testbench2_tb
+# Break in Module big_testbench2_tb at ../big_testbench2.sv line 412

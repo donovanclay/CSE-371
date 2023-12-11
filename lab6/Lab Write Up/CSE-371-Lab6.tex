@@ -188,9 +188,15 @@
                 \includegraphics[scale = 0.53]{Images/Testbench Player Drawer.png}
                 \caption{Player Drawer Testbench}
             \end{figure}
+            This module draws the player. So, it takes the clock, global reset, reset, and the XY coordinates of the player as inputs. It then outputs the XY coordines of a pixel, the color that pixel should be, and whether the module is done drawing the player for this frame. The test bench shows that the player is drawn initially when the global reset signal is high. It also shows that when the player XY coordinate changes and the reset signal is high, the module ``erases'' the drawing from the previous frame and redraws the player at its new location. It also shows that the output which\_color and done corerctly match the stage of the machine.
 
         \subsection{Top Level}
-
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.53]{Images/Testbench Top Level.png}
+                \caption{Top Level Testbench}
+            \end{figure}
+            This testbench is as close to a top level test bench as we could get. Since it is very complicated to simulate the N8 controllers and VGA driver, those are the only things that were left out of the testbench module. This test bench shows that the game correctly starts on the global reset signal. It demonstrates the drawing state machine going through all it states, the player moving to the left, and the player firing a laser. Once that laser hits an alien, the laser and the alien ``die'' and the alien alive RAM get written to. This testbench showed that all the connections between the lower level modules are correct. There is no logic at this level. `'
 
         \newpage
         \subsection{Flow Summary}
@@ -235,14 +241,12 @@
             
     \newpage
     \section{Experience Report}
-        This lab was harder, it took a while for us to figure out how to properly set the values for y\_step and initializing the values of my\_x0, my\_y0, my\_x1, my\_y1. Those were the main bugs because the lab spec outlines code for sequential code, but we have to translate it into something combinational. \\
+        This lab was much harder than all the others. The hardest part about all of this was probably having to erase the previous frame's drawings. That significantly complicated stuff. Also managing which module was writing to the RAM at what time was hard. We also sigfnificantly underestimated how much work Space Invaders is. \\
 
-        This lab took approximately 23 hours, broken down as follows:
+        This lab took approximately 66 hours, broken down as follows:
         \begin{description}
-            \item[Design:] 15 minutes
-            \item[Coding:] 12 hours
-            \item[Debugging:] 7 hours
-            \item[Write up:] 3 hours
+            \item[Design, Coding \& Debugging:] 51 hours
+            \item[Write up:] 15 hours
         \end{description}   
         
 \end{document}

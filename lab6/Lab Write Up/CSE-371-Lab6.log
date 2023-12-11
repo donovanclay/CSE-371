@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  10 DEC 2023 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  10 DEC 2023 22:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,37 +1028,43 @@ File: Images/Testbench Player Drawer.png Graphic file (type png)
 Package pdftex.def Info: Images/Testbench Player Drawer.png  used on input line 188.
 (pdftex.def)             Requested size: 432.50378pt x 158.39851pt.
  [12 <./Images/Testbench Alien Drawer.png> <./Images/Testbench Player Drawer.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--217
+<Images/Testbench Top Level.png, id=325, 817.55438pt x 391.4625pt>
+File: Images/Testbench Top Level.png Graphic file (type png)
+<use Images/Testbench Top Level.png>
+Package pdftex.def Info: Images/Testbench Top Level.png  used on input line 196.
+(pdftex.def)             Requested size: 433.30177pt x 207.47412pt.
+ [13 <./Images/Testbench Top Level.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--235
+Underfull \hbox (badness 10000) in paragraph at lines 224--241
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[14] (./CSE-371-Lab6.aux)
+[15] (./CSE-371-Lab6.aux)
 Package rerunfilecheck Info: File `CSE-371-Lab6.out' has not changed.
 (rerunfilecheck)             Checksum: 33E7D2E90B902BDE658AC759F71D3EC7;3584.
  ) 
 Here is how much of TeX's memory you used:
- 34622 strings out of 476093
- 737722 string characters out of 5795577
+ 34631 strings out of 476093
+ 737982 string characters out of 5795577
  1861787 words of memory out of 5000000
- 54408 multiletter control sequences out of 15000+600000
+ 54414 multiletter control sequences out of 15000+600000
  520658 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,96p,1920b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on CSE-371-Lab6.pdf (15 pages, 454643 bytes).
+Output written on CSE-371-Lab6.pdf (16 pages, 487739 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
