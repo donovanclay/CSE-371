@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  10 DEC 2023 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.12)  10 DEC 2023 23:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -992,79 +992,79 @@ Package pdftex.def Info: Images/Top Level Module Block Diagram.pdf  used on inpu
 <Images/Testbench Color Converter .png, id=266, 849.92531pt x 241.65282pt>
 File: Images/Testbench Color Converter .png Graphic file (type png)
 <use Images/Testbench Color Converter .png>
-Package pdftex.def Info: Images/Testbench Color Converter .png  used on input line 143.
+Package pdftex.def Info: Images/Testbench Color Converter .png  used on input line 144.
 (pdftex.def)             Requested size: 450.45827pt x 128.07538pt.
-<Images/Testbench Player Location.png, id=268, 827.34094pt x 186.6975pt>
+ [9 <./Images/Top Level Module Block Diagram.pdf>]
+<Images/Testbench Player Location.png, id=288, 827.34094pt x 186.6975pt>
 File: Images/Testbench Player Location.png Graphic file (type png)
 <use Images/Testbench Player Location.png>
-Package pdftex.def Info: Images/Testbench Player Location.png  used on input line 151.
+Package pdftex.def Info: Images/Testbench Player Location.png  used on input line 152.
 (pdftex.def)             Requested size: 438.48862pt x 98.94919pt.
- [9 <./Images/Top Level Module Block Diagram.pdf> <./Images/Testbench Color Converter .png>]
-<Images/Testbench Alien Group Location.png, id=291, 817.55438pt x 210.03468pt>
+<Images/Testbench Alien Group Location.png, id=289, 817.55438pt x 210.03468pt>
 File: Images/Testbench Alien Group Location.png Graphic file (type png)
 <use Images/Testbench Alien Group Location.png>
-Package pdftex.def Info: Images/Testbench Alien Group Location.png  used on input line 159.
+Package pdftex.def Info: Images/Testbench Alien Group Location.png  used on input line 160.
 (pdftex.def)             Requested size: 433.30177pt x 111.31784pt.
-<Images/Testbench Drawing State Machine.png, id=292, 795.72281pt x 362.85562pt>
+ [10 <./Images/Testbench Color Converter .png> <./Images/Testbench Player Location.png>]
+<Images/Testbench Drawing State Machine.png, id=299, 795.72281pt x 362.85562pt>
 File: Images/Testbench Drawing State Machine.png Graphic file (type png)
 <use Images/Testbench Drawing State Machine.png>
-Package pdftex.def Info: Images/Testbench Drawing State Machine.png  used on input line 166.
+Package pdftex.def Info: Images/Testbench Drawing State Machine.png  used on input line 167.
 (pdftex.def)             Requested size: 421.73108pt x 192.31256pt.
- [10 <./Images/Testbench Player Location.png> <./Images/Testbench Alien Group Location.png>]
-<Images/Testbench Alien Group Drawer.png, id=302, 788.9475pt x 356.83313pt>
+ [11 <./Images/Testbench Alien Group Location.png> <./Images/Testbench Drawing State Machine.png>]
+<Images/Testbench Alien Group Drawer.png, id=310, 788.9475pt x 356.83313pt>
 File: Images/Testbench Alien Group Drawer.png Graphic file (type png)
 <use Images/Testbench Alien Group Drawer.png>
-Package pdftex.def Info: Images/Testbench Alien Group Drawer.png  used on input line 174.
+Package pdftex.def Info: Images/Testbench Alien Group Drawer.png  used on input line 175.
 (pdftex.def)             Requested size: 418.14017pt x 189.12065pt.
- [11 <./Images/Testbench Drawing State Machine.png> <./Images/Testbench Alien Group Drawer.png>]
-<Images/Testbench Alien Drawer.png, id=313, 953.81343pt x 240.14719pt>
+<Images/Testbench Alien Drawer.png, id=311, 953.81343pt x 240.14719pt>
 File: Images/Testbench Alien Drawer.png Graphic file (type png)
 <use Images/Testbench Alien Drawer.png>
-Package pdftex.def Info: Images/Testbench Alien Drawer.png  used on input line 181.
+Package pdftex.def Info: Images/Testbench Alien Drawer.png  used on input line 182.
 (pdftex.def)             Requested size: 467.37267pt x 117.67313pt.
-<Images/Testbench Player Drawer.png, id=314, 816.04875pt x 298.86656pt>
+<Images/Testbench Player Drawer.png, id=312, 816.04875pt x 298.86656pt>
 File: Images/Testbench Player Drawer.png Graphic file (type png)
 <use Images/Testbench Player Drawer.png>
-Package pdftex.def Info: Images/Testbench Player Drawer.png  used on input line 188.
+Package pdftex.def Info: Images/Testbench Player Drawer.png  used on input line 189.
 (pdftex.def)             Requested size: 432.50378pt x 158.39851pt.
- [12 <./Images/Testbench Alien Drawer.png> <./Images/Testbench Player Drawer.png>]
-<Images/Testbench Top Level.png, id=325, 817.55438pt x 391.4625pt>
+ [12 <./Images/Testbench Alien Group Drawer.png> <./Images/Testbench Alien Drawer.png>]
+<Images/Testbench Top Level.png, id=323, 817.55438pt x 391.4625pt>
 File: Images/Testbench Top Level.png Graphic file (type png)
 <use Images/Testbench Top Level.png>
-Package pdftex.def Info: Images/Testbench Top Level.png  used on input line 196.
+Package pdftex.def Info: Images/Testbench Top Level.png  used on input line 197.
 (pdftex.def)             Requested size: 433.30177pt x 207.47412pt.
- [13 <./Images/Testbench Top Level.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--223
+ [13 <./Images/Testbench Player Drawer.png> <./Images/Testbench Top Level.png>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 204--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--241
+Underfull \hbox (badness 10000) in paragraph at lines 225--242
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
-[15] (./CSE-371-Lab6.aux)
+[16] (./CSE-371-Lab6.aux)
 Package rerunfilecheck Info: File `CSE-371-Lab6.out' has not changed.
 (rerunfilecheck)             Checksum: 33E7D2E90B902BDE658AC759F71D3EC7;3584.
  ) 
 Here is how much of TeX's memory you used:
- 34631 strings out of 476093
- 737982 string characters out of 5795577
+ 34632 strings out of 476093
+ 737989 string characters out of 5795577
  1861787 words of memory out of 5000000
  54414 multiletter control sequences out of 15000+600000
  520658 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,96p,1920b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,96p,1920b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on CSE-371-Lab6.pdf (16 pages, 487739 bytes).
+Output written on CSE-371-Lab6.pdf (17 pages, 488776 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

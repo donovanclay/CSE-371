@@ -133,6 +133,7 @@
                 \includegraphics[scale = 0.17]{Images/Top Level Module Block Diagram.pdf}
                 \caption{Top Level Block Diagram}
             \end{figure}
+            This is the top level module of the DE1\_SoC. It makes all the connections between the RAM modules, input modules, and the player, laser, and alien drawing modules. This diagram shows how each of the player drawer, alien drawer, and laser drawer's outputs go into the drawing state machine which, apart from designating which module's turn it is to run, also acts like a MUX for which drawing module actually gets to control reading and writing to the display RAM and the aliens alive RAM. It also illustrates how the VGA driver uses one of the port of the display RAM for reading, and gets its input from a color converter. The other port on the display is designated for writing updates about the state of the game. 
 
     \section{Results}
     The system we implemented in the lab was a game similar to Space Invaders. The N8 controller allowed the user to be able to control the player's movement and laser gun. Other modules were made to simulate the aliens and their behavior within the game. The modules consist of many algorithmic state machines that are tasked with updating the location of the players, aliens, and laser blasts based on the current conditions of the game. Finally, there is a drawer that cycles through drawing the updated pieces to the VGA display.
@@ -241,11 +242,11 @@
             
     \newpage
     \section{Experience Report}
-        This lab was much harder than all the others. The hardest part about all of this was probably having to erase the previous frame's drawings. That significantly complicated stuff. Also managing which module was writing to the RAM at what time was hard. We also sigfnificantly underestimated how much work Space Invaders is. \\
+        This lab was much harder than all the others. The hardest part about all of this was probably having to erase the previous frame's drawings. That significantly complicated stuff. Also managing which module was writing to the RAM at what time was hard. We also significantly underestimated how much work Space Invaders is. \\
 
-        This lab took approximately 66 hours, broken down as follows:
+        This lab took approximately 75 hours, broken down as follows:
         \begin{description}
-            \item[Design, Coding \& Debugging:] 51 hours
+            \item[Design, Coding \& Debugging:] 60 hours
             \item[Write up:] 15 hours
         \end{description}   
         

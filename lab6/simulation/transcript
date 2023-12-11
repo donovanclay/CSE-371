@@ -574,3 +574,5 @@ do runlab_big_testbench2.do
 # ** Note: $stop    : ../big_testbench2.sv(412)
 #    Time: 229520850 ps  Iteration: 1  Instance: /big_testbench2_tb
 # Break in Module big_testbench2_tb at ../big_testbench2.sv line 412
+# End time: 22:25:29 on Dec 10,2023, Elapsed time: 0:39:15
+# Errors: 0, Warnings: 0
