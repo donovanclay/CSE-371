@@ -40,7 +40,6 @@ module alien_group_drawer
     logic [8:0] group_y, prev_group_y, center_y, curr_center_y;
     logic erase;
     logic [4:0] which_alien;
-    logic [4:0] test_case;
 
     enum {s_global_reset, s_draw_alien, s_is_alive, s_done, s_start} ps, ns;
 
@@ -147,8 +146,6 @@ module alien_group_drawer
             if (alien_alive) begin
                 curr_center_x = (erase) ? `ERASE_ALIEN_X(which_alien) : `ALIEN_X(which_alien);
                 curr_center_y = (erase) ? `ERASE_ALIEN_Y(which_alien) : `ALIEN_Y(which_alien);
-                // alien_draw_reset = 1;
-                test_case = 1;
             end 
             else begin
                 if (which_alien == 19) begin
@@ -160,10 +157,8 @@ module alien_group_drawer
                         prev_group_x = input_group_x;
                         prev_group_y = input_group_y;
                     end
-                    test_case = 2;
                 end else
                     which_alien = which_alien + 1;
-                    test_case = 3;
             end
         end
 
@@ -176,60 +171,6 @@ module alien_group_drawer
     end
 
     assign done = (ps == s_done);
-
-    // mealy outputs
-    // always_ff @(posedge clock) begin
-    //     if (ps == s_draw_alien) begin
-    //         if (alien_draw_done) begin
-    //             if (which_alien == 19) begin
-    //                 if (erase) begin
-    //                     erase = 0;
-    //                     which_alien = 0;
-    //                     group_x = input_group_x;
-    //                     group_y = input_group_y;
-    //                     prev_group_x = input_group_x;
-    //                     prev_group_y = input_group_y;
-    //                 end
-    //             end else
-    //                 which_alien = which_alien + 1;
-    //         end
-    //     end 
-
-    //     if (ns == s_is_alive) begin
-    //         alien_draw_reset = 1;
-    //     end
-
-    //     if (ps == s_is_alive) begin
-    //         if (alien_alive) begin
-    //             curr_center_x = (erase) ? `ERASE_ALIEN_X(which_alien) : `ALIEN_X(which_alien);
-    //             curr_center_y = (erase) ? `ERASE_ALIEN_Y(which_alien) : `ALIEN_Y(which_alien);
-    //             // alien_draw_reset = 1;
-    //             test_case = 1;
-    //         end 
-    //         else begin
-    //             if (which_alien == 19) begin
-    //                 if (erase) begin
-    //                     erase = 0;
-    //                     which_alien = 0;
-    //                     group_x = input_group_x;
-    //                     group_y = input_group_y;
-    //                     prev_group_x = input_group_x;
-    //                     prev_group_y = input_group_y;
-    //                 end
-    //                 test_case = 2;
-    //             end else
-    //                 which_alien = which_alien + 1;
-    //                 test_case = 3;
-    //         end
-    //     end
-
-    //     if (ps == s_start) begin
-    //         if (!(prev_group_x == input_group_x && prev_group_y == input_group_y)) begin
-    //             erase = 1;
-    //             which_alien = 0;
-    //         end
-    //     end
-    // end
 
     always_ff @(posedge clock) begin
         if (global_reset)

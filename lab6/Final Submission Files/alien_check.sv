@@ -36,9 +36,6 @@ module alien_check #(
                     ns = s_check;
             end
 
-            // s_check:
-            //     ns = s_check2;
-
             s_check: begin
                 if (alien_alive) begin
                     if (alien_hit)
